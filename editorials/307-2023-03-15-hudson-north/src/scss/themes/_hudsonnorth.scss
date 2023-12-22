@@ -1,0 +1,77 @@
+/* -----------------------------------------------
+ * EDITORIAL SPECIFIC THEMES
+----------------------------------------------- */
+
+// COLORS
+$hNorthGrey: #f3f3f3;
+
+// Cards
+.hbc-card {
+  &--theme {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+    &__outer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      // margin-bottom: 60px;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      background: $hNorthGrey;
+      margin-bottom: 50px;
+
+      picture {
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      @include respond-to(large) {
+        width: calc(99% / 3);
+        margin-bottom: 0;
+        margin-right: 0.5%;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .flexible {
+      flex-grow: 1;
+      padding: 50px 50px 0;
+      border-top: 8px solid $white;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+// Social Carousel Section
+.hbc-social {
+  text-align: center;
+  margin: 0 auto 150px;
+  padding-bottom: 3rem;
+  max-width: 100%;
+  background: $hNorthGrey;
+
+  h5 {
+    margin: 5.4rem 0 4.3rem;
+  }
+
+  &__carousel {
+    max-width: 125rem;
+    margin: 1rem auto 3rem;
+  }
+}

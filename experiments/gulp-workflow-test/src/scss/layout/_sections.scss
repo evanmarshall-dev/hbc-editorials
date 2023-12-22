@@ -1,0 +1,71 @@
+// File: _sections.scss
+
+/* -----------------------------------------------
+ * HBC CONTAINER/WRAPPERS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-wrapper {
+    &--main {
+      background-color: #fff;
+      padding: 0 2rem 6.625rem;
+
+      @include respond-to(medium) {
+        padding: 0 4.375rem 6.25rem;
+      }
+    }
+
+    &--header {
+      position: inherit;
+      text-align: center;
+      padding-top: 5rem;
+      background-color: #fff;
+      color: $bg-blue;
+
+      @include respond-to(medium) {
+        padding-top: 5.625rem;
+      }
+    }
+
+    &--cards {
+      text-align: center;
+      padding-top: 3.875rem;
+
+      @include respond-to(medium) {
+        padding-top: 4.375rem;
+      }
+    }
+
+    &--links {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+      justify-content: center;
+      align-items: center;
+
+      @include respond-to(medium) {
+        flex-direction: row;
+        padding-top: 5.625rem;
+      }
+    }
+
+    &--disclaimer {
+      padding: 4.5rem 2rem 0;
+      text-align: center;
+      color: #000;
+
+      @include respond-to(medium) {
+        padding: 3.625rem 13.5rem 0;
+      }
+    }
+
+    &--footer {
+      background: $bd-red;
+      text-align: center;
+      padding-bottom: 3.375rem;
+
+      @include respond-to(medium) {
+        padding-bottom: 2.125rem;
+      }
+    }
+  }
+}

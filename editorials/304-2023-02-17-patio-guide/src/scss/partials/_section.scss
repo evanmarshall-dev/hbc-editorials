@@ -1,0 +1,321 @@
+// --------------- section.scss
+.home-slots,
+#maincontent {
+  padding-top: 0 !important;
+}
+// START #DSG-EDITORIAL - MAIN CONTENT STYLES.
+#dsg-editorial.dsg-editorial {
+  margin-top: 0 !important;
+  font-family: $sans;
+  scroll-behavior: smooth;
+
+  // --------------- MOBILE FIRST STYLING
+
+  // BASE ELEMENT STYLES.
+  hr {
+    @include hLine(98%, auto, auto, 5rem);
+  }
+
+  a {
+    &.btn {
+      @include cta(1.75rem, 100%, 1rem, uppercase);
+    }
+  }
+
+  // SECTION STYLES.
+  section {
+    // SEC01 SECTION IS FOR HERO IMAGE WITH TEXT OVERLAY.
+    &.sec01 {
+      position: relative;
+      text-align: center;
+
+      .overlay__centered {
+        @include imgTextOverlay(100%);
+
+        h1 {
+          @include fontSans(4.375rem, 5.25rem, 0 1rem 0);
+        }
+
+        h2 {
+          @include fontSans(1.375rem, 1.75rem, 2rem);
+        }
+      }
+    }
+
+    // SEC02 SECTION IS FOR SINGLE COLUMN SECTION WITH CENTERED TEXT.
+    // SEC03 SECTION IS FOR HERO IMAGE WITH TEXT CENTERED BELOW IMAGE.
+    &.sec02,
+    &.sec03 {
+      @include flexCenter(0 0 4rem);
+
+      &.sectionHeader {
+        padding: 8rem 15% 2rem;
+      }
+
+      &.carouselHeader {
+        padding: 0 15% 2rem;
+      }
+
+      h1 {
+        @include fontSans(3.375rem, 5.25rem, 0 2rem 0);
+        // word-break: break-all;
+      }
+
+      h2 {
+        @include fontSans(1.875rem, 2.25rem, 2rem);
+      }
+
+      p {
+        @include fontSans(1.375rem, 1.75rem, 0 2rem 2rem);
+        width: inherit;
+      }
+
+      .sec02Btns,
+      .sec03Btns {
+        @include flexBtns(space-between, 100%);
+
+        .btn {
+          width: calc(96% / 2);
+          margin: 1rem 0;
+
+          &.backTop {
+            @include toTop(2rem, 1rem, uppercase);
+          }
+
+          &:last-of-type {
+            margin: 0;
+            width: 100%;
+          }
+        }
+
+        &.doubleBtn {
+          flex-wrap: nowrap;
+
+          .btn {
+            width: calc(96% / 2);
+
+            &:last-of-type {
+              margin: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    // THREEUPCARDS SECTION IS FOR THREE BLURBS WITH IMAGES TAKING UP 1/3 OF THE SPACE ON DESKTOP (THREE UP ROW).
+    &.threeUpCards,
+    &.twoUpCards {
+      @include threeUpFlex(row, wrap, space-between, center, 0, 0 0 5rem);
+
+      .threeUpWrapper,
+      .twoUpWrapper {
+        display: block;
+        width: 100%;
+      }
+
+      .threeUpCard,
+      .twoUpCard {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn {
+          width: 90%;
+          margin: 0 0 5rem;
+        }
+      }
+
+      .threeUpCardCopy,
+      .twoUpCardCopy {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        padding: 1rem;
+
+        h2 {
+          @include fontSans(1.875rem, 2.25rem, 0 0 2rem 0);
+        }
+
+        p {
+          @include fontSans(1.375rem, 1.75rem, 0 0 2rem 0);
+        }
+
+        small {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    // CAROUSEL FOR CUSTOM VISNAV.
+    &.hbc-carousel {
+      ul {
+        width: 100%;
+        position: absolute;
+        bottom: -19px;
+      }
+
+      .slick-dots li {
+        margin: 0 5px 0 5px;
+      }
+
+      // a {
+      //   border-bottom: none;
+      //   .copyoverlay {
+      //     position: absolute;
+      //     top: 50%;
+      //     left: 50%;
+      //     transform: translate(-50%, -50%);
+      //     text-align: center;
+      //     color: #fff;
+      //     width: 100%;
+      //   }
+      // }
+    }
+
+    // SFCC FIX/HACK FOR BACK TO TOP BUTTON (ONLY NEEDED WHEN ADDING EDITORIAL TO OLD CODE WITH A BACK TO TOP CONTENT ASSET ALREADY INCLUDED).
+    // &.sec__05 {
+    //   margin: 0 auto;
+    //   text-align: center;
+
+    //   a.learn {
+    //     font-weight: 800;
+    //     text-align: center;
+    //     text-transform: uppercase;
+    //     border-bottom: 1px solid #000;
+    //     font-size: 18px;
+    //   }
+    // }
+  }
+
+  // TAB NAVIGATION STYLES.
+  .tabs {
+    overflow: hidden;
+
+    .tab-links {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 4rem 0;
+
+      li {
+        flex: 1;
+        text-align: center;
+      }
+
+      a {
+        @include navTab(uppercase, bold);
+      }
+    }
+
+    .tab-content .tab {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+// END #DSG-EDITORIAL - MAIN CONTENT STYLES.
+
+// --------------- RESPONSIVE STYLING
+
+// TO BE USED FOR STYLING BETWEEN 768px AND 1023px.
+// @media only screen and (min-width: 768px) {
+//   #dsg-editorial.dsg-editorial {
+//   }
+// }
+
+// TO BE USED FOR STYLING ABOVE 1023px.
+@media only screen and (min-width: $large-breakpoint) {
+  // START #DSG-EDITORIAL - MAIN CONTENT STYLES.
+  #dsg-editorial.dsg-editorial {
+    hr {
+      @include hLine(80%, auto, auto, 5rem);
+    }
+
+    section {
+      &.sec02,
+      &.sec03 {
+        @include flexCenter(0);
+
+        .sec02Btns,
+        .sec03Btns {
+          @include flexBtns(space-between, 100%);
+          flex-wrap: nowrap;
+
+          &.singleBtn {
+            justify-content: space-around;
+          }
+
+          .btn {
+            width: calc(98% / 3);
+
+            &:last-of-type {
+              width: calc(98% / 3);
+              margin: 1rem 0;
+            }
+          }
+
+          &.doubleBtn {
+            .btn {
+              width: calc(96% / 2);
+
+              &:last-of-type {
+                margin: 1rem 0;
+              }
+            }
+          }
+        }
+      }
+
+      &.sec03 {
+        p {
+          @include fontSans(1.375rem, 1.75rem, 0);
+          width: calc(100% / 3);
+        }
+      }
+
+      &.threeUpCards,
+      &.twoUpCards {
+        display: flex;
+        flex-wrap: wrap;
+
+        .threeUpWrapper {
+          display: flex;
+          width: 32.3333%;
+        }
+
+        .twoUpWrapper {
+          display: flex;
+          width: 49%;
+        }
+
+        .threeUpCard,
+        .twoUpCard {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          justify-content: space-between;
+          align-items: normal;
+
+          .btn {
+            width: 99%;
+          }
+        }
+      }
+    }
+
+    nav {
+      &.tabs {
+        .tab-links {
+          margin: 5rem 0 8rem;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+// END #DSG-EDITORIAL - MAIN CONTENT STYLES.

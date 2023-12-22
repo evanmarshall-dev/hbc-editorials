@@ -1,0 +1,73 @@
+// File: _accordion.scss
+
+/* -----------------------------------------------
+ * HBC ACCORDION STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-accordion {
+    &__wrapper {
+      padding: 5% 0;
+      text-align: center;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &__button {
+      @include font($baySans, 400, normal, null, null, 1.125rem);
+      background-color: $hbc-yellow;
+      color: $hbc-blue;
+      cursor: pointer;
+      padding: 1.5rem 3rem;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: 0;
+      transition: 0.4s;
+
+      &--active {
+        background-color: $spring-wood;
+        color: $hbc-blue;
+      }
+
+      &:after {
+        content: "\002B";
+        color: $spring-wood;
+        font-weight: bold;
+        float: right;
+      }
+
+      &--active:after {
+        content: "\2212";
+        color: $hbc-blue;
+        font-weight: bold;
+        float: right;
+      }
+    }
+
+    &__panel {
+      background-color: $spring-wood;
+      color: $hbc-blue;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
+      p {
+        padding: 1rem 2rem;
+
+        a {
+          text-transform: lowercase;
+          font-size: 1.125rem;
+        }
+      }
+
+      &--wrapper {
+        margin: 5%;
+
+        @include respond-to(large) {
+          margin: 5% 0 0;
+        }
+      }
+    }
+  }
+}

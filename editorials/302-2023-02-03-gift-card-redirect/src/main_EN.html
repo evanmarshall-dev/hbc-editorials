@@ -1,0 +1,43 @@
+<div id="dsg-editorial" class="dsg-editorial dsg-en">
+  <section class="sec01">
+    <picture>
+      <a
+        href="https://hudsonsbay.wgiftcard.com/rbc/hudsonsbay?sre=302_020322_LANDING-PAGE_E-GIFTCARD-VALENTINES-DAY-PROMO_HERO-SLIDE_1_VALENTINES-DAY-PR_CHECK-YOUR-BALANCE"
+      >
+        <source
+          srcset="<%=img('REDIRECT_HERO_MOBILE_EN.jpg', 'jpg')%>"
+          media="(max-width: 768px)"
+        />
+        <source
+          srcset="<%=img('REDIRECT_HERO_DESKTOP_EN.jpg', 'jpg')%>"
+          media="(max-width: 1023px)"
+        />
+        <img
+          src="<%=img('REDIRECT_HERO_DESKTOP_EN.jpg', 'jpg')%>"
+          alt="Click below to be redirected to The Bay's e-Gift Card service provider, Buy A Tab."
+          class="lazy"
+        />
+      </a>
+    </picture>
+  </section>
+  <section class="sec__05">
+    <time><strong id="dsg-seconds">4</strong> seconds</time>.
+  </section>
+</div>
+<!-- END #dsg-editorial -->
+
+<script>
+  !(function (e, n, t) {
+    n.addEventListener("DOMContentLoaded", function (t) {
+      var o =
+          "https://hudsonsbay.wgiftcard.com/rbc/hudsonsbay?sre=302_020322_LANDING-PAGE_E-GIFTCARD-VALENTINES-DAY-PROMO_HERO-SLIDE_1_VALENTINES-DAY-PR_CHECK-YOUR-BALANCE",
+        a = n.getElementById("dsg-seconds"),
+        d = a.innerHTML,
+        s = setInterval(function () {
+          (d = --d),
+            (a.textContent = d),
+            d <= 0 && (clearInterval(s), (e.location.href = o));
+        }, 1e3);
+    });
+  })(window, document);
+</script>

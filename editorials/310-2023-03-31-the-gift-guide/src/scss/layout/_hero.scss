@@ -1,0 +1,75 @@
+// /* -----------------------------------------------
+//  * HERO STYLES
+// ----------------------------------------------- */
+// #dsg-editorial.dsg-editorial {
+//   section {
+//     &.hbc-hero {
+//       max-width: 2000px;
+//       position: relative;
+//       margin-bottom: 100px;
+
+//       &__bg {
+//         width: 100%;
+//         height: auto;
+//         margin-bottom: 0;
+//         // background-color: $rle-beige;
+
+//         @include backImage(
+//           // $rle-beige,
+//           "306_031023",
+//           "EVERGREEN_RLE-HERO",
+//           "MOBILE",
+//           contain,
+//           1536,
+//           1536
+//         );
+
+//         @include respond-to(medium) {
+//           @include backImage(
+//             // $rle-beige,
+//             "306_031023",
+//             "EVERGREEN_RLE-HERO",
+//             "TABLET",
+//             contain,
+//             812,
+//             2048
+//           );
+//         }
+
+//         @include respond-to(medium) {
+//           @include backImage(
+//             // $rle-beige,
+//             "306_031023",
+//             "EVERGREEN_RLE-HERO",
+//             // "DESKTOP_Rev1",
+//             // Comment out below when using English
+//             "DESKTOP_FR",
+//             contain,
+//             1142,
+//             2880
+//           );
+//         }
+//       }
+
+//       &__content {
+//         padding: 0 40px 0;
+//         margin: 100px 0 0;
+//         text-align: center;
+
+//         h3 {
+//           &.hbc-hero__heading {
+//             // margin-bottom: 40px;
+//             width: calc(100% - 20%);
+//             margin: 0 auto 40px;
+//             // color: $rle-green;
+//           }
+//         }
+
+//         @include respond-to(medium) {
+//           display: none;
+//           visibility: hidden;
+//         }
+//       }
+//     }
+//   }
+// }

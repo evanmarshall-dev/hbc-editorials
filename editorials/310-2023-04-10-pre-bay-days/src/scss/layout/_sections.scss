@@ -1,0 +1,50 @@
+/* -----------------------------------------------
+ * SECTION STYLES
+----------------------------------------------- */
+#dsg-editorial.dsg-editorial {
+  main {
+    background: $bd-orange;
+    color: $white;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    // margin: 0 80px;
+    // width: calc(768px - 80px);
+    // margin: 0 auto;
+    // margin: 20px 40px 0;
+  }
+
+  // ONE COLUMN FLEX SECTION
+  section {
+    &.sec01 {
+      @include bayflex(row, wrap, center, center, 0, 0, 100%, auto, center);
+    }
+  }
+
+  // ONE COLUMN SECTION WITH SMALLER WIDTH
+  section {
+    &.sec02 {
+      width: 100%;
+
+      @include respond-to(medium) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // FOR LEFT/RIGHT PADDING AROUND MAIN CONTENT
+  section {
+    &.hbc {
+      &__wrapper {
+        padding: 50px 5% 0;
+
+        @include respond-to(medium) {
+          padding: 50px 15% 0;
+        }
+      }
+    }
+  }
+}

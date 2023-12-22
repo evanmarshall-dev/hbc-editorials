@@ -1,0 +1,42 @@
+/* -----------------------------------------------
+ * BASE STYLES
+----------------------------------------------- */
+// *,
+// *::after,
+// *::before {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: inherit; /* EVAN: SET TO INHERIT SO WHOLE PAGE INHERITS BODY BOX SIZING PROPERTY */
+// }
+
+// html {
+//   font-size: 62.5%; /* EVAN: SET PAGE DEFAULT FONT SIZE TO 10px (16px * 0.625) SO REM UNITS EASILY CALCULATED BY DIVIDING THE PIXEL SIZE BY 10 */
+// }
+
+body {
+  margin: 0;
+}
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// .home-slots,
+// #maincontent {
+//   padding-top: 0 !important;
+// }
+
+/*margin fix*/
+// .home-slots {
+//   margin-bottom: 0;
+// }
+
+// #dsg-editorial.dsg-editorial {
+//   margin-top: 1rem;
+// }
+
+/*SFCC header fix*/
+// #dsg-editorial.dsg-editorial header {
+//   z-index: 1 !important;
+// }

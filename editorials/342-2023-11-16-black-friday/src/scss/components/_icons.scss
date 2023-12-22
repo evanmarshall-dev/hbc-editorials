@@ -1,0 +1,47 @@
+// File: _icons.scss
+
+/* -----------------------------------------------
+* SVG/ICONS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-icon {
+    width: 80%;
+    z-index: 2;
+    // margin-bottom: 1rem;
+
+    @include respond-to(large) {
+      width: 40%;
+      margin-bottom: 1.5rem;
+    }
+
+    &--absolute-one {
+      position: absolute;
+      rotate: 90deg;
+      top: 149%;
+      left: -24%;
+
+      @include respond-to(large) {
+        position: absolute;
+        rotate: 0deg;
+        top: 70%;
+        left: 74%;
+      }
+    }
+
+    &--absolute-two {
+      transform: scaleY(-1);
+      position: absolute;
+      rotate: 90deg;
+      top: 149%;
+      left: 34%;
+
+      @include respond-to(large) {
+        transform: scaleY(-1);
+        position: absolute;
+        rotate: 0deg;
+        top: 20%;
+        left: 74%;
+      }
+    }
+  }
+}

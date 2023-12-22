@@ -1,0 +1,7 @@
+/* -----------------------------------------------
+ * REM CALC FUNCTION
+----------------------------------------------- */
+@function calculateRem($size) {
+  $remSize: $size / 10px;
+  @return $remSize * 1rem;
+}

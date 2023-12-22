@@ -1,0 +1,37 @@
+<div id="dsg-editorial" class="dsg-editorial dsg-en">
+  <section class="sec04">
+    <div class="sec04-wrapper">
+      <h1>
+        You are now being redirected to
+        <a
+          href="https://downiewenjack.ca/the-blanket-fund/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >downiewenjack.ca/the-blanket-fund</a
+        >.
+      </h1>
+    </div>
+  </section>
+  <section class="sec__05">
+    <time
+      >You will be redirected in
+      <strong id="dsg-seconds">4</strong> seconds</time
+    >.
+  </section>
+</div>
+<!-- END #dsg-editorial -->
+
+<script>
+  !(function (e, n, t) {
+    n.addEventListener("DOMContentLoaded", function (t) {
+      var o = "https://downiewenjack.ca/the-blanket-fund/",
+        a = n.getElementById("dsg-seconds"),
+        d = a.innerHTML,
+        s = setInterval(function () {
+          (d = --d),
+            (a.textContent = d),
+            d <= 0 && (clearInterval(s), (e.location.href = o));
+        }, 1e3);
+    });
+  })(window, document);
+</script>

@@ -1,0 +1,145 @@
+// File: _links.scss
+
+/* -----------------------------------------------
+ * HBC CTA/LINK STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-link {
+    @include font($baySans, 700, normal, 1, uppercase, 1.375rem);
+    text-decoration: none;
+    color: $hol-beige;
+    background-color: $hol-red;
+    padding: 1rem 1.563rem;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    margin-top: 1.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      border: none;
+      border-radius: 30px;
+      color: $hol-beige;
+      background-color: darken($color: $hol-red, $amount: 5%);
+      // border-color: lighten($color: $hbc-yellow, $amount: 5%);
+    }
+
+    @include respond-to(medium) {
+      width: calc(100% / 3);
+      margin-right: 2rem;
+      margin-top: inherit;
+
+      &:first-child {
+        margin-top: inherit;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &--alt {
+      @extend .hbc-ed-link;
+      background-color: transparent;
+      z-index: 2;
+      color: $hbc-blue;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        background-color: darken($color: $spring-wood, $amount: 5%);
+        border-color: darken($color: $hbc-yellow, $amount: 5%);
+        color: lighten($color: $hbc-blue, $amount: 5%);
+      }
+    }
+
+    &--underline {
+      @include font($baySans, 700, normal, 1, uppercase, 1.375rem);
+      text-decoration: underline;
+      color: #fff;
+      // padding: 1rem 1.563rem;
+      border-radius: 0;
+      border: none;
+      text-align: center;
+      z-index: 2;
+      width: 100%;
+      // padding-top: 2.875rem;
+      display: inline-block;
+
+      // @include respond-to(medium) {
+      //   padding-top: 2.5rem;
+      // }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        border: none;
+        color: #fff;
+      }
+
+      &-alt {
+        @extend .hbc-ed-link--underline;
+        color: rgba(0, 0, 0, 1);
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+
+    &--full {
+      @include font($baySans, 400, null, 1, null, 1.375rem);
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      background-color: $hbc-blue;
+      padding: 0.9rem 0;
+      border-radius: 2.5rem;
+      border: 0.125rem solid $hbc-blue;
+      text-align: center;
+      z-index: 2;
+      display: inline-block;
+      width: 100%;
+      text-transform: uppercase;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        background-color: darken($color: $hbc-blue, $amount: 5%);
+        border-color: darken($color: $hbc-blue, $amount: 5%);
+        color: #fff;
+      }
+    }
+  }
+
+  &-button {
+    @include font($baySerif, 300, normal, 1, uppercase, null);
+    text-decoration: none;
+    text-underline-offset: 0.25rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}

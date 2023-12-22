@@ -1,0 +1,62 @@
+// File: _banners.scss
+
+/* -----------------------------------------------
+ * HBC BANNERS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-wrapper {
+    &--main {
+      position: relative;
+      margin: 0 auto;
+      width: 90% !important;
+      max-width: 1250px;
+      text-align: center;
+
+      @include respond-to(large) {
+        width: 100%;
+        max-width: 1250px;
+      }
+
+      svg {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 5%;
+
+        @include respond-to(large) {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  &-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include respond-to(large) {
+      padding-right: 5% !important;
+    }
+
+    &__wrapper {
+      &--outer {
+        background-color: $hbc-yellow;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      &--inner {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+
+        @include respond-to(large) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

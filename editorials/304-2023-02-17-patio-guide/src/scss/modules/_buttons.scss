@@ -1,0 +1,81 @@
+// @author Evan Marshall
+// --------------------------------------------------
+// links.scss
+// --------------------------------------------------
+// link, CTA styling goes here
+
+// The Bay Tech Default CTA
+@mixin cta($lheight, $width, $fsize, $ttransform) {
+  @include transition;
+  @include rounded;
+  line-height: $lheight;
+  width: $width;
+  font-size: $fsize;
+  text-transform: $ttransform;
+  padding: 0.75rem 0;
+  font-family: $sans;
+  display: inline-block;
+  background: none;
+  text-align: center;
+  border: 2px solid $black;
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+// The Bay Tech Back to Top CTA
+@mixin toTop($lheight, $fsize, $ttransform) {
+  @include transition;
+  line-height: $lheight;
+  font-size: $fsize;
+  text-transform: $ttransform;
+  padding: 0.75rem 0;
+  font-family: $sans;
+  display: inline-block;
+  background: none;
+  text-align: center;
+  border: none;
+  color: $black;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+// The Bay Tech Navigation Tabs
+@mixin navTab($ttransform, $fweight) {
+  @include transition;
+  text-transform: $ttransform;
+  padding: 0.625rem;
+  font-family: $sans;
+  font-weight: $fweight;
+  display: block;
+  text-align: center;
+  border: none;
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+
+  &:hover {
+    background-color: $iron;
+    // text-decoration: underline;
+  }
+
+  &.active {
+    background-color: $iron;
+    // text-decoration: underline;
+  }
+}

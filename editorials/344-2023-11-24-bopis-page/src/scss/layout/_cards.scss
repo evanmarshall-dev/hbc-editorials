@@ -1,0 +1,33 @@
+// File: _cards.scss
+
+/* -----------------------------------------------
+ * HBC CARDS/#-UP-ROWS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-card {
+    @include flex(column, null, center, null);
+
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+
+    &__wrapper {
+      &--outer {
+        @include flex(row, wrap, null, null);
+
+        width: 100%;
+        background-color: $hbc-yellow;
+      }
+
+      &--inner {
+        @include flex(row, null, null, null);
+
+        width: 100%;
+
+        @include respond-to(large) {
+          width: calc(100% / 2);
+        }
+      }
+    }
+  }
+}

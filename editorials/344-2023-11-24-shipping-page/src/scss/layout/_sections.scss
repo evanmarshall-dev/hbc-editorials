@@ -1,0 +1,62 @@
+// File: _sections.scss
+
+/* -----------------------------------------------
+ * HBC CONTAINER/WRAPPERS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-wrapper {
+    &--main {
+      // background-color: #f7f7f7;
+      padding-bottom: 8.625rem;
+      text-align: center;
+
+      @include respond-to(medium) {
+        padding-bottom: 7rem;
+      }
+    }
+
+    &--header {
+      position: inherit;
+      text-align: center;
+      padding: 2rem 0;
+      // background-color: #f7f7f7;
+      color: $hbc-black;
+    }
+
+    &--table {
+      position: inherit;
+      text-align: center;
+      padding: 0 0 2rem;
+      // background-color: #f7f7f7;
+      color: $hbc-black;
+    }
+
+    &--links {
+      display: flex;
+      flex-direction: column;
+      padding: 2.25rem 2.5rem 0;
+
+      @include respond-to(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4.125rem 6.25rem 0;
+      }
+    }
+
+    &--disclaimer {
+      padding: 0 0 2rem;
+      text-align: center;
+      color: #000;
+    }
+
+    &--footer {
+      background: $hbc-black;
+      text-align: center;
+      padding-bottom: 3.375rem;
+
+      @include respond-to(medium) {
+        padding-bottom: 2.125rem;
+      }
+    }
+  }
+}

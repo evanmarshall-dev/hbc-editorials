@@ -1,0 +1,102 @@
+// File: _modals.scss
+
+/* -----------------------------------------------
+ * HBC MODAL STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-modal {
+    max-width: 80%;
+    border: 0;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 0.5);
+    border-radius: 1.25rem;
+    // overflow: hidden;
+    transition: transform 0.5s ease;
+    background-color: #fcfaf3;
+    font-family: $baySans;
+    padding: 2rem 3rem;
+    overflow-y: auto;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &::backdrop {
+      background: rgb(0 0 0 / 0.5);
+    }
+
+    &__close {
+      position: sticky;
+      // position: fixed;
+      top: 0;
+      // right: 0;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      background-color: $hbc-blue;
+      font-size: 2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border-bottom-left-radius: 20px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    &__link {
+      position: relative;
+      border: none;
+      outline: none;
+      background: transparent;
+      display: block;
+      cursor: pointer;
+      padding-block: 0;
+      padding-inline: 0;
+
+      &--image {
+        display: block;
+        width: 100%;
+      }
+
+      &--overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        border-radius: 15%;
+        font-family: $baySans;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+        padding: 0 2rem;
+
+        &-title {
+          font-size: 2rem;
+          font-weight: 400;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 1;
+
+          & > * {
+            transform: translateY(0);
+          }
+        }
+
+        & > * {
+          transform: translateY(20px);
+          transition: transform 0.25s;
+        }
+      }
+    }
+  }
+}

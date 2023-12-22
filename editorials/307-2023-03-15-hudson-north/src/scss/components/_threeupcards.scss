@@ -1,0 +1,55 @@
+.hbc-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+
+  &__outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    // margin-bottom: 50px;
+
+    // @include respond-to(large) {
+    //   margin-bottom: 150px;
+    // }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+
+    picture {
+      img {
+        display: block;
+        width: 100%;
+        margin: 0 0 40px;
+      }
+    }
+
+    a {
+      &.btn {
+        &--default {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    @include respond-to(large) {
+      width: calc(99% / 3);
+      margin-bottom: -50px;
+      margin-right: 0.5%;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .flexible {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,56 @@
+/* -----------------------------------------------
+ * Page section headings
+----------------------------------------------- */
+h1 {
+  @include bayHeading($baySans, 142px, 1);
+  font-weight: bold;
+}
+
+h2 {
+  @include bayHeading($baySans, 66px, 1);
+}
+
+h3 {
+  @include bayHeading($baySans, 54px, 1.1);
+  margin-bottom: 80px;
+}
+
+h4 {
+  @include bayHeading($baySans, 32px, 1);
+  margin-bottom: 40px;
+}
+
+h5 {
+  @include bayHeading($baySans, 22px, 1);
+  margin-bottom: 40px;
+}
+
+p {
+  @include bayHeading($baySans, 11px, 1.5);
+  margin: 40px 0 80px;
+}
+
+span {
+  &.hbc-span {
+    &__heading {
+      @include bayHeading($baySans, 19px, 1);
+    }
+
+    &__line {
+      font-weight: 100;
+      margin: 0 4%;
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}

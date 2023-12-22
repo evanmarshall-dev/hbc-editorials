@@ -1,0 +1,46 @@
+// File: _images.scss
+
+/* -----------------------------------------------
+ * HBC IMAGERY STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-image {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    &--partner {
+      position: absolute;
+      left: 50%;
+      top: -20%;
+      transform: translate(-50%, 20%);
+    }
+
+    &--absolute-one {
+      width: 62%;
+      position: absolute;
+      left: 100%;
+      top: 70%;
+      transform: translate(-85%, -70%);
+      z-index: 1;
+    }
+
+    &--absolute-two {
+      width: 40%;
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translate(-100%, -50%);
+      z-index: 1;
+    }
+
+    &--absolute-three {
+      width: 45%;
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translate(-100%, -50%);
+      z-index: 1;
+    }
+  }
+}

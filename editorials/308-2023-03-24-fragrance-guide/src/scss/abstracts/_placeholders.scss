@@ -1,0 +1,21 @@
+%btn-placeholder {
+  margin: 0 auto 100px;
+  // display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // vertical-align: middle;
+  font-size: 22px;
+  height: 52px;
+  // line-height: 52px;
+  font-family: $baySans;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+%heading-placeholder {
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+}

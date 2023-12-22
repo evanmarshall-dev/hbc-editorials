@@ -1,0 +1,106 @@
+// Social Carousel Section
+// .hbc-social {
+//   text-align: center;
+//   margin: 150px auto 0;
+//   padding-bottom: 3rem;
+//   max-width: 100%;
+
+//   h5 {
+//     margin: 5.4rem 0 4.3rem;
+//   }
+
+//   &__carousel {
+//     max-width: 125rem;
+//     margin: 1rem auto 3rem;
+//   }
+// }
+
+// Regular HBC Carousel
+.hbc-carousel {
+  // max-width: 1200px;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // overflow: hidden;
+  // position: relative;
+
+  &__slides {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    // display: flex;
+    // transition: transform 0.5s ease-in-out;
+
+    &.dragging {
+      cursor: grab;
+      scroll-behavior: auto;
+
+      img {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    // margin-left: 1%;
+    width: 100%;
+
+    // &:first-child {
+    //   margin-left: 0%;
+    // }
+
+    @include respond-to(medium) {
+      width: calc(100% / 4);
+    }
+
+    @include respond-to(large) {
+      width: calc(100% / 5);
+    }
+  }
+
+  &__slide {
+    // flex: 0 0 100%;
+    // padding: 20px;
+    // text-align: center;
+  }
+
+  &__btn {
+    top: 50%;
+    background: $gr-blue;
+    height: 46px;
+    width: 46px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+    &:first-child {
+      display: none;
+      left: -23px;
+    }
+
+    &:last-child {
+      right: -23px;
+    }
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // padding: 10px;
+
+    &--prev {
+      // left: 10px;
+    }
+
+    &--next {
+      // right: 10px;
+    }
+  }
+}

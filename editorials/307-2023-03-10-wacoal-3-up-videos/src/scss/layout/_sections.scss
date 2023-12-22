@@ -1,0 +1,38 @@
+/* -----------------------------------------------
+ * SECTION STYLES
+----------------------------------------------- */
+#dsg-editorial.dsg-editorial {
+  .home-slots {
+    // font-size: 62.5%;
+
+    main {
+      // margin: 0 80px;
+      // width: calc(768px - 80px);
+      // margin: 0 auto;
+      margin: 100px 40px 150px;
+
+      @include respond-to(xlarge) {
+        // width: calc(1520px - 80px);
+      }
+    }
+
+    // ONE COLUMN FLEX SECTION
+    section {
+      &.sec01 {
+        @include bayflex(row, wrap, center, center, 0, 0, 100%, auto, center);
+      }
+    }
+
+    // ONE COLUMN SECTION WITH SMALLER WIDTH
+    section {
+      &.sec02 {
+        width: 100%;
+
+        @include respond-to(xlarge) {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

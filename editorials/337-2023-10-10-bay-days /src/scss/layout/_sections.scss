@@ -1,0 +1,83 @@
+// File: _sections.scss
+
+/* -----------------------------------------------
+ * HBC CONTAINER/WRAPPERS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-wrapper {
+    &--main {
+      background-color: $bd-sand;
+      padding: 4.125rem 2.875rem 0;
+
+      @include respond-to(medium) {
+        padding: 4.375rem 6.25rem 0;
+      }
+
+      &-one,
+      &-two,
+      &-three,
+      &-four,
+      &-five,
+      &-six,
+      &-seven,
+      &-eight {
+        // This clips images that are overflowing the wrapper and positions absolute images relative to the wrapper.
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0 1rem;
+        background-color: $spring-wood;
+
+        @include respond-to(small) {
+          padding: 0 4.5rem;
+        }
+      }
+    }
+
+    &--header {
+      background: $bd-sand;
+      position: inherit;
+      padding: 3.125rem 6.375rem 0;
+
+      @include respond-to(medium) {
+        padding: 3.125rem 12.75rem 0;
+      }
+    }
+
+    &--links {
+      background: $bd-sand;
+      display: flex;
+      flex-direction: column;
+      padding: 3.125rem 4.5rem 0;
+
+      @include respond-to(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3.125rem 13.625rem 0;
+      }
+    }
+
+    &--legal {
+      background: $bd-sand;
+      padding: 3.125rem 0 0;
+    }
+
+    &--footer {
+      background: $bd-red;
+      padding: 5.125rem 3.375rem 3.625rem;
+      text-align: center;
+
+      p {
+        padding-top: 5.125rem;
+      }
+
+      @include respond-to(medium) {
+        padding: 3.125rem 18.125rem 1.875rem;
+
+        p {
+          padding-top: 4.5rem;
+        }
+      }
+    }
+  }
+}

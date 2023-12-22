@@ -1,0 +1,55 @@
+.hbc-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+  &__outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 3.125rem;
+  }
+
+  &__inner {
+    // The calc numerator needs to be 100% minus the number of right margins % on the row.
+    // The denominator is the number of slides you want per row.
+    width: 100%;
+    margin-bottom: 1.25rem;
+    // margin-right: 0.5%;
+
+    // &:nth-child(3),
+    // &:nth-child(6),
+    // &:nth-child(9) {
+    //   margin-right: 0;
+    // }
+
+    // &:last-of-type {
+    //   display: none;
+    // }
+
+    img {
+      margin-bottom: 1.25rem;
+    }
+
+    @include respond-to(medium) {
+      width: calc(98% / 5);
+      margin-right: 0.5%;
+
+      &:nth-child(5) {
+        margin-right: 0;
+      }
+
+      // &:last-of-type {
+      //   display: block;
+      // }
+    }
+  }
+
+  .flexible {
+    flex-grow: 1;
+  }
+}

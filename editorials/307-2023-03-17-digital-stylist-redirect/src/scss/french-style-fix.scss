@@ -1,0 +1,81 @@
+// @author Penn
+// --------------------------------------------------
+
+// french-style-fix.scss
+// --------------------------------------------------
+// All style fixes for French are contained here.
+// Using gulp concat, this whole file should be added to
+// the END of main.scss, overwriting EN styles in the normal
+// manner of cascading style sheets.
+
+#dsg-editorial.dsg-editorial.dsg-fr {
+  // --------------- MOBILE FIRST STYLING
+
+  section {
+    section {
+      &.header__centered {
+        .header__btns {
+          column-gap: 1.5rem;
+          margin: 0 2rem;
+        }
+      }
+    }
+  }
+
+  // --------------- RESPONSIVE STYLING
+
+  // To be used for styling between 768px and 1024px
+  @media only screen and (min-width: 768px) {
+    section {
+      section {
+        &.header__centered {
+          .header__headings {
+            h1 {
+              margin: 0 1.5rem 2rem;
+            }
+
+            h2 {
+              margin: 0 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // To be used for styling above 1024px
+  @media only screen and (min-width: 1024px) {
+    section {
+      section {
+        &.header__centered {
+          .header__headings {
+            h1 {
+              font-size: 2.25rem;
+              margin-bottom: 1.5rem;
+            }
+
+            h2 {
+              font-size: 1.5rem;
+              line-height: 1.5rem;
+              margin-bottom: 2rem;
+            }
+          }
+
+          .header__btns {
+            margin-bottom: 1.5rem;
+
+            .btn {
+              font-size: 1rem;
+            }
+          }
+
+          .header__sub {
+            p {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+} // end .bay-editorial

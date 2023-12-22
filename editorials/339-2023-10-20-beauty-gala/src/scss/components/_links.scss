@@ -1,0 +1,141 @@
+// File: _links.scss
+
+/* -----------------------------------------------
+ * HBC CTA/LINK STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-link {
+    @include font($baySans, 700, normal, 1, uppercase, 1.375rem);
+    text-decoration: none;
+    color: #fff;
+    background-color: $bd-red;
+    padding: 1.25rem 12.5rem;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    // margin-top: 1.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      border: none;
+      color: #fff;
+      background-color: lighten($color: $bd-red, $amount: 5%);
+      // border-color: lighten($color: $hbc-yellow, $amount: 5%);
+    }
+
+    @include respond-to(medium) {
+      padding: 1.25rem 4.375rem;
+      width: calc(100% / 3);
+      margin-right: 2rem;
+      margin-top: inherit;
+
+      &:first-child {
+        margin-top: inherit;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &--alt {
+      @extend .hbc-ed-link;
+      @include font($baySans, 400, normal, 1, uppercase, 1.875rem);
+      background-color: transparent;
+      z-index: 2;
+      color: $bg-blue;
+      border: 0.125rem solid $bg-blue;
+      border-radius: 5.75rem;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        border: 0.125rem solid $bg-blue;
+        color: #fff;
+        background-color: $bg-blue;
+      }
+    }
+
+    &--underline {
+      @include font($baySans, 700, normal, 1, uppercase, 1.375rem);
+      text-decoration: underline;
+      color: #fff;
+      // padding: 1rem 1.563rem;
+      border-radius: 0;
+      border: none;
+      text-align: center;
+      z-index: 2;
+      width: 100%;
+      // padding-top: 2.875rem;
+      display: inline-block;
+
+      // @include respond-to(medium) {
+      //   padding-top: 2.5rem;
+      // }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        border: none;
+        color: #fff;
+      }
+    }
+
+    &--full {
+      @include font($baySans, 400, normal, 1, uppercase, 1.875rem);
+      background-color: transparent;
+      z-index: 2;
+      color: $bg-blue;
+      border: 0.125rem solid $bg-blue;
+      border-radius: 5.75rem;
+      padding: 1.25rem 0;
+      text-decoration: none;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include respond-to(medium) {
+        padding: 1.25rem 0;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        border: 0.125rem solid $bg-blue;
+        color: #fff;
+        background-color: $bg-blue;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &-button {
+    @include font($baySerif, 300, normal, 1, uppercase, null);
+    text-decoration: none;
+    text-underline-offset: 0.25rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}

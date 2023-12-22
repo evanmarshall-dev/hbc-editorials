@@ -1,0 +1,24 @@
+// @author Penn
+// --------------------------------------------------
+
+// nav.scss
+// --------------------------------------------------
+// Sticky Navigation Bar
+
+#dsg-editorial.dsg-editorial {
+  nav {
+    z-index: $z-index-nav;
+    position: absolute;
+    top: $nav-position;
+    width: $nav-width;
+    height: $nav-height;
+    background: $nav-background-color;
+
+    li {
+      display: inline-block;
+    }
+
+    @media only screen and (max-width: $small-breakpoint) {
+    }
+  }
+} // end #dsg-editorial.dsg-editorial

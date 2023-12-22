@@ -1,0 +1,13 @@
+hr {
+  &.hbc-spacer {
+    @include hLine(0, 1px, solid, #ccc, 100%, 15rem 0 10rem);
+
+    &:nth-of-type(1) {
+      margin-bottom: 0;
+    }
+
+    @include respond-to(medium) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+/* -----------------------------------------------
+ * Page section headings
+----------------------------------------------- */
+h1 {
+  @include bayHeading($baySans, 3.75rem, 1);
+  font-weight: bold;
+
+  @include respond-to(small) {
+    font-size: 5.5rem;
+  }
+
+  @include respond-to(medium) {
+    font-size: 6.5rem;
+  }
+}
+
+h2 {
+  @include bayHeading($baySans, 2.75rem, 1);
+  margin-bottom: 1.5rem;
+
+  // @include respond-to(small) {
+  //   font-size: 2.75rem;
+  // }
+
+  // @include respond-to(medium) {
+  //   font-size: 68px;
+  // }
+}
+
+// h2:last-of-type {
+//   font-size: 1.9rem;
+// }
+
+h3 {
+  @include bayHeading($baySans, 1.375rem, 1);
+  margin-bottom: 1.25rem;
+
+  // @include respond-to(small) {
+  //   font-size: 1.5rem;
+  // }
+}
+
+h4 {
+  @include bayHeading($baySans, 1.5rem, 1);
+
+  @include respond-to(small) {
+    font-size: 2.5rem;
+  }
+}
+
+h5 {
+  @include bayHeading($baySans, 0.9rem, 1);
+  margin-bottom: 30px;
+
+  @include respond-to(small) {
+    font-size: 1.25rem;
+  }
+}
+
+h6 {
+  @include bayHeading($baySans, 0.5rem, 1);
+  margin-bottom: 40px;
+
+  @include respond-to(small) {
+    font-size: 1rem;
+  }
+}
+
+p {
+  @include bayHeading($baySans, 0.4rem, 1.5);
+  // margin-top: 40px;
+
+  @include respond-to(small) {
+    font-size: 0.6rem;
+  }
+}
+
+span {
+  &.hbc-span {
+    &__heading {
+      @include bayHeading($baySans, 14px, 1);
+
+      @include respond-to(medium) {
+        font-size: 19px;
+      }
+    }
+
+    &__line {
+      font-weight: 100;
+      // margin: 0 2%;
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}

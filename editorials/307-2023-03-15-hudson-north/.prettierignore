@@ -1,0 +1,17 @@
+.git
+editorials/_server
+editorials/bay/301-2023-01-27-marketplace-about
+editorials/bay/301-2023-02-01-AffirmLandingPage
+editorials/index.html
+editorials/bay/**/build
+editorials/bay/**/dev
+editorials/bay/**/bin
+editorials/bay/**/dist
+editorials/bay/**/src/html/template
+node_modules
+scripts
+src
+gulpfile.js
+package-lock.json
+server.js
+yarn.lock

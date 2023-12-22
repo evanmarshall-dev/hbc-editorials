@@ -1,0 +1,66 @@
+// File: _base.scss
+
+/* -----------------------------------------------
+ * BASE AND RESET STYLES
+----------------------------------------------- */
+// Theme specific highlight color resets.
+// ::selection {
+//   background-color: $hbc-yellow;
+//   color: $hbc-blue;
+// }
+
+// Base page style normalizations.
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+small {
+  font-size: 0.75rem;
+  display: block;
+}
+
+// * SFCC GLOBAL STYLE RESETS.
+.secondary-content {
+  .home-slots {
+    // TODO: Un-comment when copy needs to be added to mobile hero banner, but not tablet and up.
+    // .hero-banner {
+    //   .content-body {
+    //     .content-text {
+    //       display: block;
+
+    //       @include respond-to(medium) {
+    //         display: none;
+    //       }
+    //     }
+    //   }
+    // }
+
+    // TODO: Un-comment when page components need to be full bleed.
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+
+    // TODO: Un-comment to make images within page components responsive.
+    p {
+      margin-bottom: 0;
+      picture {
+        img {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    // TODO: Un-comment when new visual navigation module needs to have a different background color.
+    // #bayCatNav {
+    //   background: #f7f7f7;
+    // }
+  }
+}

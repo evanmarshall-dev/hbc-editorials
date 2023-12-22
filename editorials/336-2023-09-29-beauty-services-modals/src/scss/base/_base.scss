@@ -1,0 +1,50 @@
+// File: _base.scss
+
+/* -----------------------------------------------
+ * BASE AND RESET STYLES
+----------------------------------------------- */
+// Highlight Color
+// ::selection {
+//   background-color: $hbc-yellow;
+//   color: $hbc-blue;
+// }
+
+// Main Base Styles
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Small element styles
+small {
+  font-size: 0.75rem;
+  display: block;
+}
+
+// .secondary-content {
+//   .home-slots {
+//     max-width: 100%;
+//     padding: 0;
+//     margin: 0;
+
+//     @include respond-to(medium) {
+//       .content-body.right,
+//       .content-body.left {
+//         margin: 3rem 2rem;
+//       }
+//     }
+
+//     .slider-heading {
+//       margin-bottom: 0.5rem;
+
+//       @include respond-to(medium) {
+//         margin-bottom: 3rem;
+//       }
+//     }
+//   }
+// }

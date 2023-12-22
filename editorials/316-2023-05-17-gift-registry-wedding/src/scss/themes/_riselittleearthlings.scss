@@ -1,0 +1,515 @@
+/* -----------------------------------------------
+ * EDITORIAL SPECIFIC THEMES
+----------------------------------------------- */
+
+// Theme Variables
+$rle-beige: #f7efe8;
+$rle-green: #4f7973;
+$rle-asterisks: #f6d480;
+$rle-moon: #f8d17b;
+$rle-star: #f6d481;
+$rle-podcast-moon: #f7d07a;
+$rle-podcast-star: #dea946;
+
+// Theme Cards
+.hbc-card {
+  position: relative;
+
+  .flexible {
+    margin: 0 20%;
+
+    @include respond-to(medium) {
+      margin: 0 8%;
+    }
+  }
+
+  &__inner {
+    &--theme {
+      margin-bottom: 100px;
+
+      @include respond-to(medium) {
+        // CHANGING denominator in below calculation will make it a 2 or 3 or nth(#) up card row on large screens
+        width: calc(98% / 4);
+        margin-bottom: 0;
+        padding: 0;
+
+        &:not(:last-child) {
+          margin-right: 0.5%;
+        }
+        // &:last-of-type {
+        //   margin-right: 0;
+        // }
+
+        p {
+          width: calc(100% - 20%);
+        }
+      }
+
+      svg {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+
+      h3,
+      h4,
+      h5,
+      p {
+        color: $rle-green;
+        margin: 0;
+      }
+
+      h5 {
+        margin: 10px 0;
+      }
+    }
+
+    &--theme-two {
+      margin-bottom: 100px;
+
+      @include respond-to(medium) {
+        // CHANGING denominator in below calculation will make it a 2 or 3 or nth(#) up card row on large screens
+        width: calc(98% / 3);
+        margin-bottom: 0;
+        padding: 0;
+
+        &:not(:last-child) {
+          margin-right: 0.5%;
+        }
+        // &:last-of-type {
+        //   margin-right: 0;
+        // }
+
+        p {
+          width: calc(100% - 20%);
+        }
+      }
+
+      svg {
+        margin-bottom: 40px;
+      }
+
+      h3,
+      h4,
+      h5,
+      p {
+        color: $rle-green;
+        margin: 0;
+      }
+
+      h5 {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+// Buttons
+a,
+a:link,
+a:visited {
+  &.btn {
+    &--theme {
+      @include bayLink(0px, 100%, $rle-green, 2px, solid, $rle-green, $white);
+      margin: 0 auto;
+
+      &__podcast {
+        margin: 40px auto 0;
+
+        @include bayLink(
+          0px,
+          calc(100% - 80px),
+          $rle-beige,
+          2px,
+          solid,
+          $rle-beige,
+          $rle-green
+        );
+
+        @include respond-to(medium) {
+          @include width-size(232px);
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          background: darken($color: $rle-beige, $amount: 8%);
+          border: 2px solid darken($color: $rle-beige, $amount: 8%);
+        }
+      }
+
+      &__alt {
+        @include bayLink(
+          0px,
+          calc(100% - 80px),
+          $rle-green,
+          2px,
+          solid,
+          $rle-green,
+          $white
+        );
+        margin: 0 auto 150px;
+
+        @include respond-to(medium) {
+          width: 716px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          background: darken($color: $rle-green, $amount: 8%);
+          border: 2px solid darken($color: $rle-green, $amount: 8%);
+        }
+      }
+
+      @include respond-to(medium) {
+        @include width-size(232px);
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($color: $rle-green, $amount: 8%);
+        border: 2px solid darken($color: $rle-green, $amount: 8%);
+      }
+    }
+  }
+}
+
+// Wrapper and Heading
+section {
+  &.theme {
+    &__wrapper {
+      background: $rle-beige;
+      padding: 150px 40px 0;
+      margin: 150px 0;
+      position: relative;
+      z-index: 0;
+
+      // &:nth-of-type(3) {
+      //   margin: 150px 0 0;
+      // }
+
+      &--dark {
+        background: $rle-green;
+        padding: 150px 0;
+        margin-bottom: 150px;
+        position: relative;
+        z-index: 0;
+
+        p {
+          position: relative;
+        }
+
+        svg {
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  .hbc-header {
+    text-align: center;
+    position: relative;
+
+    .theme {
+      &__heading {
+        color: $rle-green;
+        margin: 0 auto 150px;
+        width: calc(100% - 20%);
+
+        @include respond-to(medium) {
+          width: calc(100% - 45%);
+        }
+
+        &--dark {
+          width: calc(100% - 30%);
+          color: $rle-beige;
+
+          @include respond-to(medium) {
+            width: calc(100% - 55%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// SVG icons
+svg {
+  cursor: pointer;
+}
+
+#asterisks,
+#moon,
+#star,
+#hopper__asterisks--primary,
+#hopper__asterisks--secondary,
+#hopper__star,
+#podcast__star,
+#podcast__moon,
+#podcast__asterisks {
+  position: absolute;
+}
+
+#asterisks {
+  fill: $rle-asterisks;
+  transform: rotate(0);
+  top: 5rem;
+  right: 6rem;
+
+  @include respond-to(medium) {
+    top: 16.875rem;
+    right: 9.688rem;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    animation: wiggleAsterisks 0.5s ease forwards;
+    transform-origin: center;
+  }
+}
+
+#moon {
+  fill: $rle-moon;
+  top: 20rem;
+  left: 3rem;
+  transform: rotate(100deg);
+
+  @include respond-to(medium) {
+    top: 6.25rem;
+    right: 4.688rem;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    animation: wiggleMoon 0.5s ease forwards;
+    transform-origin: center;
+  }
+}
+
+#star {
+  fill: $rle-star;
+  top: 10rem;
+  right: 3rem;
+  transform: rotate(-15deg);
+
+  @include respond-to(medium) {
+    top: 15rem;
+    left: 9.688rem;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    animation: wiggleStar 0.5s ease forwards;
+    transform-origin: center;
+  }
+}
+
+#hopper {
+  &__star {
+    fill: $rle-star;
+    top: 5rem;
+    right: 6rem;
+    transform: rotate(-15deg);
+
+    @include respond-to(medium) {
+      top: 6rem;
+      left: 15rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      animation: wiggleStar 0.5s ease forwards;
+      transform-origin: center;
+    }
+  }
+
+  &__asterisks {
+    &--primary {
+      display: none;
+      visibility: hidden;
+      fill: $rle-asterisks;
+      transform: rotate(0);
+
+      @include respond-to(medium) {
+        display: block;
+        visibility: visible;
+        bottom: 18rem;
+        right: 7rem;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        animation: wiggleAsterisks 0.5s ease forwards;
+        transform-origin: center;
+      }
+    }
+
+    &--secondary {
+      fill: $rle-asterisks;
+      top: 10rem;
+      left: 3rem;
+      transform: rotate(0);
+
+      @include respond-to(medium) {
+        top: 11rem;
+        left: 7rem;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        animation: wiggleAsterisks 0.5s ease forwards;
+        transform-origin: center;
+      }
+    }
+  }
+
+  &__moonie,
+  &__chantelle,
+  &__gogg,
+  &__cosmo,
+  &__catt,
+  &__sunny,
+  &__sydney {
+    transform: translateY(0);
+
+    &:hover,
+    &:active,
+    &:focus {
+      animation: hopHopper 0.5s ease forwards;
+      transform-origin: center;
+    }
+  }
+}
+
+#podcast {
+  &__moon {
+    fill: $rle-podcast-moon;
+    top: 25rem;
+    left: 5rem;
+    transform: rotate(100deg);
+
+    @include respond-to(medium) {
+      top: 15rem;
+      left: 9.688rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      animation: wiggleMoon 0.5s ease forwards;
+      transform-origin: center;
+    }
+  }
+
+  &__star {
+    fill: $rle-podcast-star;
+    top: 3rem;
+    left: 15rem;
+    transform: rotate(-5deg);
+
+    @include respond-to(medium) {
+      top: 6.25rem;
+      right: 15.688rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      animation: podcastWiggleStar 0.5s ease forwards;
+      transform-origin: center;
+    }
+  }
+
+  &__asterisks {
+    fill: $rle-asterisks;
+    bottom: 6rem;
+    right: 5rem;
+    transform: rotate(0);
+
+    @include respond-to(medium) {
+      bottom: 8rem;
+      right: 7rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      animation: wiggleAsterisks 0.5s ease forwards;
+      transform-origin: center;
+    }
+  }
+}
+
+@keyframes wiggleMoon {
+  0% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+
+@keyframes wiggleStar {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes podcastWiggleStar {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes wiggleAsterisks {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes hopHopper {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

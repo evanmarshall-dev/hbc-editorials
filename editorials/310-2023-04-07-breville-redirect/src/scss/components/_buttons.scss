@@ -1,0 +1,95 @@
+/* -----------------------------------------------
+ * ANCHOR BUTTON STYLES
+----------------------------------------------- */
+.buttons {
+  &__wrapper {
+    @include bayflex(
+      column,
+      inherit,
+      center,
+      inherit,
+      0,
+      0,
+      100%,
+      100%,
+      center
+    );
+
+    @include respond-to(medium) {
+      flex-direction: row;
+    }
+  }
+}
+
+a,
+a:link,
+a:visited {
+  &.btn {
+    &--default {
+      @include bayLink(0px, 100%, none, 2px, solid, $black, $black);
+
+      margin-bottom: 10px;
+      // width: 100%;
+
+      @include respond-to(medium) {
+        width: 352px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $black;
+        color: $white;
+      }
+    }
+
+    &--alt {
+      margin: 0;
+
+      @include bayLink(0px, 100%, $black, 2px, solid, $black, $white);
+
+      @include respond-to(medium) {
+        width: 713px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: none;
+        color: $black;
+      }
+    }
+
+    &--theme {
+      margin-bottom: 80px;
+
+      @include bayLink(0px, 100%, $white, 2px, solid, $white, $black);
+
+      @include respond-to(medium) {
+        width: 391px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($color: $white, $amount: 20%);
+        border: 2px solid darken($color: $white, $amount: 20%);
+      }
+    }
+
+    &--top {
+      // margin: 50px 0 0;
+
+      @include bayLink(0px, auto, none, 0px, none, transparent, $white);
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: underline;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: darken($color: $white, $amount: 20%);
+      }
+    }
+  }
+}

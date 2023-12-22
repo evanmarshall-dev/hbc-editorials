@@ -1,0 +1,48 @@
+/* -----------------------------------------------
+ * UTILITY STYLING
+----------------------------------------------- */
+.u-center-text {
+  text-align: center;
+}
+
+.u-left-text {
+  text-align: left;
+  margin-left: 10%;
+
+  @include respond-to(medium) {
+    margin-left: 20%;
+  }
+}
+
+.u-left-right {
+  text-align: right;
+  margin-right: 20%;
+}
+
+.u-margin-bottom-100 {
+  margin-bottom: 10rem;
+}
+
+.u-margin-top-150 {
+  margin-top: 15rem;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.desktop-only {
+  display: none;
+
+  @include respond-to(medium) {
+    display: block;
+  }
+}
+
+.mobile-only {
+  display: block;
+
+  @include respond-to(medium) {
+    display: none;
+  }
+}

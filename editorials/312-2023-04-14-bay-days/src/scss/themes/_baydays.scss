@@ -1,0 +1,23 @@
+/* -----------------------------------------------
+ * EDITORIAL SPECIFIC THEMES
+----------------------------------------------- */
+
+// COLORS
+$bd-orange: #d57856;
+$bd-blue: #2f5988;
+
+// BOTTOM THEMED SECTION
+section {
+  &.hbc {
+    &__wrapper {
+      &--theme {
+        background: $bd-blue;
+        padding: 50px 5%;
+
+        @include respond-to(medium) {
+          padding: 80px 15%;
+        }
+      }
+    }
+  }
+}

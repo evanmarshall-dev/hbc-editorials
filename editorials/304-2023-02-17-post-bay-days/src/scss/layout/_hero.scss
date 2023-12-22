@@ -1,0 +1,44 @@
+/* -----------------------------------------------
+ * HERO STYLES
+----------------------------------------------- */
+#dsg-editorial.dsg-editorial {
+  section {
+    &.hero {
+      background: $bayDaysBeige;
+
+      @include bayflex(
+        row,
+        wrap,
+        center,
+        space-evenly,
+        4rem 2rem !important,
+        0,
+        auto !important,
+        100%,
+        center
+      );
+
+      // @include respond-to(medium) {
+      //   @include height(571px);
+      // }
+
+      h1 {
+        @include bayHeading($baySans, $bayDaysGreen, 56px, 53px, 400, 0, block);
+
+        @include respond-to(medium) {
+          @include font-size(143px);
+          @include line-height(134px);
+        }
+      }
+
+      h2 {
+        @include bayHeading($baySans, $black, 31px, 29px, 400, 0, block);
+
+        @include respond-to(medium) {
+          @include font-size(78px);
+          @include line-height(73px);
+        }
+      }
+    }
+  }
+}

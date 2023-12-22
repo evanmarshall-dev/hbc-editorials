@@ -1,0 +1,28 @@
+// File: widgets.scss
+
+/* -----------------------------------------------
+ * WIDGET STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-widget {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 2rem;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 20%;
+      }
+
+      h4 {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

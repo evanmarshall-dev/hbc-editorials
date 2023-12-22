@@ -1,0 +1,65 @@
+/* -----------------------------------------------
+ * EDITORIAL SPECIFIC THEMES
+----------------------------------------------- */
+
+// COLORS
+$dStylistGrey: #f2f2f2;
+
+// Cards
+.hbc-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &--theme {
+    background: $dStylistGrey;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 2rem;
+
+      @include respond-to(medium) {
+        width: calc(99% / 3);
+        margin: 0;
+
+        &:not(:last-child) {
+          margin-right: 0.5%;
+        }
+      }
+    }
+  }
+
+  &__widget {
+    padding: 1rem 0;
+    border-top: 0.75rem solid $white;
+
+    svg,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    svg {
+      margin-right: 4rem;
+    }
+
+    span {
+      font-size: 22px;
+      line-height: 22px;
+      font-family: $baySans;
+    }
+  }
+}
+
+.flexible {
+  flex-grow: 1;
+}

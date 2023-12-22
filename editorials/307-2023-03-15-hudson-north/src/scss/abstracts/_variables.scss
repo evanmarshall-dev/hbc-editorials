@@ -1,0 +1,40 @@
+/* -----------------------------------------------
+ * VARIABLES
+----------------------------------------------- */
+
+// Colors
+$bayGreen: #246d4b;
+$bayRed: #a81a39;
+$bayYellow: #eab129;
+$bayBlue: #0a284a;
+
+$black: #000000;
+$white: #ffffff;
+
+// Fonts
+@import url("https://use.typekit.net/pdw1vaj.css");
+
+$baySerif: "ivypresto-display", serif;
+$baySans: "proxima-nova", sans-serif;
+
+// Borders
+$borderDefault: 2px solid $black;
+
+// Grids
+// Breakpoint Map
+// How to call the style from map/mixin.
+// @include respond-to(small) { ... }
+$breakpoints: (
+  "small": (
+    min-width: 576px,
+  ),
+  "medium": (
+    min-width: 768px,
+  ),
+  "large": (
+    min-width: 1200px,
+  ),
+  "xlarge": (
+    min-width: 1520px,
+  ),
+);

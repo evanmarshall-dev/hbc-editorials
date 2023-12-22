@@ -1,0 +1,55 @@
+/* -----------------------------------------------
+ * WIDGET STYLES
+----------------------------------------------- */
+.hbc-widget-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+  .hbc-cta {
+    text-decoration: none;
+    color: $gr-text;
+  }
+
+  svg {
+    &.hbc-icon {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  &__outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__inner {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    @include respond-to(medium) {
+      width: calc(99% / 3);
+      margin-right: 0.5%;
+
+      &:nth-child(3),
+      &:nth-child(6) {
+        margin-right: 0;
+      }
+
+      // &:last-of-type {
+      //   display: block;
+      // }
+    }
+  }
+
+  .flexible {
+    flex-grow: 1;
+  }
+}

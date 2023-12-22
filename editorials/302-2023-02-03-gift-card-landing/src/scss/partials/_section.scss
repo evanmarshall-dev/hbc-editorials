@@ -1,0 +1,179 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+.home-slots,
+#maincontent {
+  padding-top: 0 !important;
+}
+
+#dsg-editorial.dsg-editorial {
+  margin-top: 0 !important;
+
+  // --------------- MOBILE FIRST STYLING
+
+  section {
+    &.sec01 {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      row-gap: 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    section {
+      &.header__centered {
+        row-gap: 1.5rem;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .header__headings {
+          display: block;
+          width: 100%;
+
+          h1 {
+            font-size: 3.25rem;
+            margin-bottom: 1.5rem;
+          }
+
+          h2 {
+            font-size: 1.9rem;
+            line-height: 2rem;
+          }
+        }
+
+        .header__btns {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          column-gap: 1.5rem;
+          row-gap: 1.5rem;
+          margin: 0 2rem;
+
+          .btn {
+            border: 0;
+            border-radius: 0.25rem;
+            font-family: inherit;
+            background-color: transparent;
+            border: 1px solid #000;
+            color: #000;
+            font-size: 100%;
+            line-height: 1.2;
+            white-space: nowrap;
+            text-decoration: none;
+            padding: 1.25rem 1.5rem;
+            margin: 0.25rem;
+            cursor: pointer;
+            margin: 0;
+            overflow: visible;
+            text-transform: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+              color: #fff;
+              background-color: #000;
+              transition: transform 0.25s ease;
+            }
+          }
+        }
+
+        .header__sub {
+          display: block;
+          width: 100%;
+
+          p {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  section.sec__05 {
+    margin: 0 auto;
+    text-align: center;
+
+    a.learn {
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+      border-bottom: 1px solid #000;
+      font-size: 18px;
+    }
+  }
+
+  // --------------- RESPONSIVE STYLING
+
+  // To be used for styling between 768px and 1023px
+  @media only screen and (min-width: 768px) {
+    section {
+      section {
+        &.header__centered {
+          .header__headings {
+            h1 {
+              margin: 0 1.5rem 2rem;
+            }
+
+            h2 {
+              margin: 0 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // To be used for styling above 1023px
+  @media only screen and (min-width: $tablet-breakpoint) {
+    section {
+      &.sec01 {
+        display: block;
+        position: relative;
+      }
+
+      section {
+        &.header__centered {
+          width: 45%;
+          position: absolute;
+          display: block;
+          top: 50%;
+          left: 70%;
+          transform: translate(-50%, -50%);
+
+          .header__headings {
+            h1 {
+              font-size: 2.25rem;
+              margin-bottom: 1.5rem;
+            }
+
+            h2 {
+              font-size: 1.5rem;
+              line-height: 1.5rem;
+              margin-bottom: 2rem;
+            }
+          }
+
+          .header__btns {
+            column-gap: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
+
+          .header__sub {
+            p {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+} // end #dsg-editorial.dsg-editorial

@@ -1,0 +1,100 @@
+.hbc-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+  &__outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  &__inner {
+    display: none;
+
+    @include respond-to(medium) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    picture {
+      img {
+        display: block;
+        width: 100%;
+        margin: 0 0 40px;
+      }
+    }
+
+    a {
+      &.btn {
+        &--default {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    @include respond-to(medium) {
+      // CHANGING denominator in below calculation will make it a 2 or 3 or nth(#) up card row on large screens
+      width: calc(50% / 2);
+      margin-bottom: 0;
+
+      &:not(:last-child) {
+        margin-right: 0.5%;
+      }
+
+      &:nth-child(2) {
+        width: 49%;
+      }
+    }
+
+    &--three {
+      display: block;
+      // CHANGING denominator in below calculation will make it a 2 or 3 or nth(#) up card row on large screens
+      width: calc(99% / 3);
+      margin-bottom: 0;
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 0.5%;
+      }
+
+      @include respond-to(medium) {
+        display: none;
+        // visibility: hidden;
+      }
+    }
+
+    &--four {
+      display: none;
+      // visibility: hidden;
+
+      @include respond-to(medium) {
+        display: block;
+        // CHANGING denominator in below calculation will make it a 2 or 3 or nth(#) up card row on large screens
+        width: calc(98.5% / 4);
+        margin-bottom: 0;
+
+        img {
+          margin-bottom: 20px;
+        }
+
+        &:not(:last-child) {
+          margin-right: 0.5%;
+        }
+      }
+    }
+  }
+
+  .flexible {
+    flex-grow: 1;
+  }
+}

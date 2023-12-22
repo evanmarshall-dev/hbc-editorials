@@ -1,0 +1,65 @@
+// File: _sections.scss
+
+/* -----------------------------------------------
+ * HBC CONTAINER/WRAPPERS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-wrapper {
+    &--main {
+      // background-color: $spring-wood;
+      // padding: 0 4.5rem;
+
+      &-one,
+      &-two,
+      &-three,
+      &-four,
+      &-five,
+      &-six,
+      &-seven,
+      &-eight {
+        // This clips images that are overflowing the wrapper and positions absolute images relative to the wrapper.
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0 1rem;
+        background-color: $spring-wood;
+
+        @include respond-to(small) {
+          padding: 0 4.5rem;
+        }
+      }
+    }
+
+    &--section {
+      margin: 0 0 5rem;
+
+      &-one {
+        margin-bottom: 0;
+      }
+
+      &-two {
+        margin: 0 0 5rem;
+
+        @include respond-to(large) {
+          margin: 5rem 0;
+        }
+      }
+
+      &-three {
+        margin-bottom: 0;
+      }
+
+      &-four {
+        margin: 5rem 0;
+      }
+
+      &-five {
+        margin-bottom: 0;
+      }
+
+      &-six {
+        margin: 5rem 0;
+      }
+    }
+  }
+}

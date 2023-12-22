@@ -1,0 +1,62 @@
+.hbc-modal {
+  &__container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    @include center(both);
+    background-color: white;
+    padding: 3rem;
+    max-width: 100%;
+    z-index: 300;
+    box-shadow: 0 5px 26px -8px rgba(0, 0, 0, 0.3);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  &__close-button {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1rem;
+    background: $bayRed;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 400ms ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: darken($color: $bayRed, $amount: 8%);
+    }
+  }
+}
+
+.hbc-video {
+  &__container {
+    position: relative;
+    width: 475px;
+    padding-bottom: 100%;
+    margin: 0 auto;
+
+    video {
+      position: absolute;
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}

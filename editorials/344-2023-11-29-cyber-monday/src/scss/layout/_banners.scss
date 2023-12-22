@@ -1,0 +1,61 @@
+// File: _banners.scss
+
+/* -----------------------------------------------
+ * HBC BANNERS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-banner {
+    &--full {
+      background-color: $wm-gray;
+      padding: 1.75rem 0;
+      text-align: center;
+      padding: 1rem;
+
+      // @include flex(column, wrap, center, null);
+
+      &-alt {
+        background-color: $wm-beige;
+        margin-bottom: 0rem;
+      }
+    }
+
+    @include flex(column, null, null, null);
+
+    width: 100%;
+
+    &__wrapper {
+      &--outer {
+        @include flex(row, wrap, null, null);
+
+        width: 100%;
+        border-radius: 6rem;
+      }
+
+      &--inner {
+        @include flex(row, null, center, center);
+
+        width: 100%;
+        padding: 5rem 2rem;
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        @include respond-to(large) {
+          // Change width depending on how many columns of content you want in the banner.
+          // width: calc(50% - 10rem);
+          width: 50%;
+          padding: 5rem;
+
+          &:nth-child(2) {
+            display: block;
+          }
+
+          svg g#b {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

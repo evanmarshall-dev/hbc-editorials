@@ -1,0 +1,30 @@
+/* -----------------------------------------------
+ * Page section headings
+----------------------------------------------- */
+h2 {
+  @include bayHeading($baySans, $black, 30px, 36px, 0);
+
+  @include respond-to(large) {
+    font-size: 5rem;
+  }
+}
+
+h3 {
+  @include bayHeading($baySans, $black, 25px, 36px, 0);
+
+  @include respond-to(large) {
+    font-size: 3rem;
+  }
+}
+
+h4 {
+  @include bayHeading($baySans, $black, 24px, 38px, 0);
+}
+
+h5 {
+  @include bayHeading($baySans, $black, 22px, 28px, 0);
+}
+
+p {
+  @include bayHeading($baySans, $black, 16px, 22px, 0);
+}

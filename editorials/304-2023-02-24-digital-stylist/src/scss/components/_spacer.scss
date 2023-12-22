@@ -1,0 +1,3 @@
+hr {
+  @include hLine(0, 1px, solid, $black, 100%, 5rem 0);
+}

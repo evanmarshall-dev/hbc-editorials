@@ -1,0 +1,19 @@
+// File: _flexboxes.scss
+
+/* -----------------------------------------------
+ * HBC FLEXBOX STYLES
+----------------------------------------------- */
+
+.hbc-ed {
+  &-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__item {
+      align-self: center;
+      width: 30%;
+      height: 30%;
+    }
+  }
+}

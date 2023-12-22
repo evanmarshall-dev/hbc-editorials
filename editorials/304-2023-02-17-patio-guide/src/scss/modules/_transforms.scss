@@ -1,0 +1,26 @@
+// @author Evan Marshall
+// --------------------------------------------------
+// transforms.scss
+// --------------------------------------------------
+// mixins involving css transforms
+// translating, flipping, etc.
+
+@mixin flip-h() {
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+@mixin flip-v() {
+  transform: scaleY(-1);
+  filter: FlipV;
+}
+
+@mixin translateXY {
+  transform: translate(-50%, -50%);
+}
+
+// rotate element on a specified axis
+@mixin rotate($degrees, $pos-y, $pos-x) {
+  transform-origin: $pos-y $pos-x;
+  transform: rotate($degrees);
+}

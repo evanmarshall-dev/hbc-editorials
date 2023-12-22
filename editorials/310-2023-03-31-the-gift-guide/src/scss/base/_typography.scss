@@ -1,0 +1,39 @@
+/* -----------------------------------------------
+ * Page section headings
+----------------------------------------------- */
+h1 {
+  @include bayHeading($baySans, 70px, 84px);
+}
+
+h2 {
+  @include bayHeading($baySans, 50px, 55px);
+}
+
+h3 {
+  @include bayHeading($baySans, 22px, 1);
+  margin: 0;
+}
+
+h4 {
+  @include bayHeading($baySans, 30px, 28px);
+}
+
+h5 {
+  @include bayHeading($baySans, 22px, 28px);
+}
+
+p {
+  @include bayHeading($baySans, 16px, 1);
+  margin: 0;
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}

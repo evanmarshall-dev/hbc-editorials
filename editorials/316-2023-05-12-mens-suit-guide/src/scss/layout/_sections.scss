@@ -1,0 +1,122 @@
+/* -----------------------------------------------
+ * SECTION STYLES
+----------------------------------------------- */
+#dsg-editorial.dsg-editorial {
+  main {
+    color: $black;
+
+    .hbc {
+      &__wrapper {
+        // background: $bd-orange;
+        padding: 4rem 0;
+
+        @include respond-to(medium) {
+          padding: 4rem 1%;
+        }
+
+        &--theme {
+          background: $bayBeige;
+          color: $black;
+          padding: 3.75rem 5%;
+
+          // @include respond-to(medium) {
+          //   padding: 80px 15%;
+          // }
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    // margin: 0 80px;
+    // width: calc(768px - 80px);
+    // margin: 0 auto;
+    // margin: 20px 40px 0;
+  }
+
+  // ONE COLUMN FLEX SECTION
+  section {
+    &.sec01 {
+      @include bayflex(
+        row,
+        wrap,
+        center,
+        space-between,
+        0,
+        0,
+        100%,
+        auto,
+        center
+      );
+
+      .hbc-header {
+        margin-bottom: 25px;
+        font-weight: bold;
+
+        &__icon {
+          width: 1.5rem;
+          height: 1.5rem;
+
+          @include respond-to(medium) {
+            width: 46px;
+            height: 46px;
+          }
+        }
+      }
+    }
+  }
+
+  // ONE COLUMN SECTION WITH SMALLER WIDTH
+  section {
+    &.sec02 {
+      width: 80%;
+      margin: 0 auto;
+
+      @include respond-to(medium) {
+      }
+    }
+  }
+
+  // ONE COLUMN SECTION ABSOLUTE POSITIONED ABOVE IMAGE
+  section {
+    &.sec03 {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      // h4 {
+      //   position: absolute;
+      //   top: 5%;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+
+      //   @include respond-to(medium) {
+      //     position: relative;
+      //     top: 50%;
+      //     left: 50%;
+      //     transform: translate(-50%, -50%);
+      //   }
+      // }
+
+      // .hbc-hero__head {
+      //   width: 95%;
+      //   margin: 0 auto;
+      //   position: absolute;
+      //   bottom: 5%;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+
+      //   @include respond-to(medium) {
+      //     position: relative;
+      //     top: 10%;
+      //     left: 50%;
+      //     transform: translate(-50%, -10%);
+      //   }
+      // }
+    }
+  }
+}

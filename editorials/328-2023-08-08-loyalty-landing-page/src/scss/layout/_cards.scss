@@ -1,0 +1,55 @@
+// File: _cards.scss
+
+/* -----------------------------------------------
+ * HBC CARDS/#-UP-ROWS STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-card {
+    @include flex(column, null, center, null);
+
+    text-align: center;
+    width: 100%;
+
+    &__wrapper {
+      &--outer {
+        @include flex(row, wrap, null, null);
+
+        width: 100%;
+        margin: 5rem 0 0;
+
+        @include respond-to(large) {
+          margin: 5rem 0;
+        }
+      }
+
+      &--inner {
+        @include flex(row, null, null, null);
+
+        // Change width value to a calculation up to 100% if you want to add more cards to the row.
+        box-sizing: border-box;
+        width: 100%;
+        border: 0.125rem solid $hbc-yellow;
+        border-radius: 4.25rem;
+        padding: 4rem 2rem;
+        position: relative;
+        margin-bottom: 4rem;
+
+        @include respond-to(large) {
+          width: calc(94% / 3);
+          padding: 5rem 2rem;
+          margin-right: 3%;
+          margin-bottom: 0;
+
+          // Add based on last card in each row
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &__icon {
+      margin: 0 0 2rem 0;
+    }
+  }
+}
