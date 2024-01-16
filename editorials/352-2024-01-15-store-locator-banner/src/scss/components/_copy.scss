@@ -17,31 +17,24 @@
       }
 
       &--secondary {
-        @include font($baySans, 400, null, 1, null, 2.25rem);
-        color: $hbc-black;
-        margin: 0;
-
-        @include respond-to(medium) {
-          font-size: 3rem;
-        }
+        @include font("Neue Montreal bold", 400, null, 1, null, 32px);
+        margin: 0 0 4px;
       }
 
       &--tertiary {
-        @include font($baySans, 400, null, 1, null, 1.875rem);
-        color: #fff;
+        @include font("Neue Montreal", 400, null, 24px, null, 16px);
         margin: 0;
       }
 
       &--quaternary {
-        @include font($baySans, 400, null, 1, null, 1.5rem);
-        margin: 0;
-        color: $wm-charcoal;
+        @include font("Neue Montreal medium", 400, null, 1, null, 14px);
+        margin: 0 0 4px;
       }
 
       &--quinary {
         @include font(null, null, null, 1, null, 1.875rem);
         margin-top: 2rem;
-        margin-bottom: 0;
+        margin: 0;
       }
     }
 
