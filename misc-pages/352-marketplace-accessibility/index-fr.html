@@ -60,6 +60,7 @@
   #dsg-editorial.dsg-editorial s,
   #dsg-editorial.dsg-editorial samp,
   #dsg-editorial.dsg-editorial section,
+  #dsg-editorial.dsg-editorial header,
   #dsg-editorial.dsg-editorial small,
   #dsg-editorial.dsg-editorial span,
   #dsg-editorial.dsg-editorial strike,
@@ -137,6 +138,10 @@
   #dsg-editorial.dsg-editorial a {
     text-decoration: none;
   }
+
+  #dsg-editorial.dsg-editorial a:focus {
+    outline: 2px solid #007bff;
+  }
   #dsg-editorial.dsg-editorial img {
     width: 100%;
     height: auto;
@@ -147,7 +152,7 @@
   #dsg-editorial.dsg-editorial picture img {
     display: block;
   }
-  #dsg-editorial.dsg-editorial section.sec__header {
+  #dsg-editorial.dsg-editorial header.sec__header {
     width: 100%;
     height: auto;
     margin-bottom: 0;
@@ -164,7 +169,8 @@
   #dsg-editorial.dsg-editorial nav li {
     display: inline-block;
   }
-  #dsg-editorial.dsg-editorial section {
+  #dsg-editorial.dsg-editorial section,
+  #dsg-editorial.dsg-editorial header {
     text-align: center;
   }
   #dsg-editorial.dsg-editorial section.sec__three {
@@ -313,6 +319,10 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  #dsg-editorial.dsg-editorial .cta:focus {
+    outline: 2px solid #007bff;
   }
   #dsg-editorial.dsg-editorial .cta span {
     display: inline-block;
@@ -742,25 +752,25 @@
   #dsg-editorial.dsg-editorial .caps {
     text-transform: uppercase;
   }
-  #dsg-editorial.dsg-editorial section.sec__header {
+  #dsg-editorial.dsg-editorial header.sec__header {
     background-color: #fff;
     border-bottom: 1px solid #848484;
   }
-  #dsg-editorial.dsg-editorial section.sec__header .marketLogo {
+  #dsg-editorial.dsg-editorial header.sec__header .marketLogo {
     margin: 30px;
   }
-  #dsg-editorial.dsg-editorial section.sec__header h1 {
+  #dsg-editorial.dsg-editorial header.sec__header h1 {
     font-size: 74px;
     margin: 0 0 25px;
   }
-  #dsg-editorial.dsg-editorial section.sec__header h4 {
+  #dsg-editorial.dsg-editorial header.sec__header h4 {
     font-size: 30px;
   }
-  #dsg-editorial.dsg-editorial section.sec__header .HBCColors {
+  #dsg-editorial.dsg-editorial header.sec__header .HBCColors {
     margin-top: 5%;
     margin-bottom: -1px;
   }
-  #dsg-editorial.dsg-editorial section.sec__header p {
+  #dsg-editorial.dsg-editorial header.sec__header p {
     font-size: 22px;
     margin-bottom: 30px;
   }
@@ -777,6 +787,10 @@
     max-height: 400px;
     height: 25vw;
   }
+
+  #dsg-editorial.dsg-editorial section.section-two a:focus {
+    outline: 2px solid #007bff;
+  }
   #dsg-editorial.dsg-editorial section.section-two a span {
     font-size: 40px;
     margin-top: 23%;
@@ -784,24 +798,29 @@
   #dsg-editorial.dsg-editorial section.section-two a.cta:hover {
     background-color: #000;
   }
+
+  #dsd-editorial.dsg-editorial section.section-two a.cta:focus {
+    outline: 2px solid #007bff;
+  }
   #dsg-editorial.dsg-editorial section.section-two a.cta:hover span {
     color: #fff;
   }
-  #dsg-editorial.dsg-editorial section {
+  #dsg-editorial.dsg-editorial section,
+  #dsg-editorial.dsg-editorial header {
     margin-top: 20px;
   }
   @media (max-width: 950px) {
     #dsg-editorial.dsg-editorial {
       margin-top: 0 !important;
     }
-    #dsg-editorial.dsg-editorial section.sec__header h1 {
+    #dsg-editorial.dsg-editorial header.sec__header h1 {
       font-size: 11vw;
       margin: 10px;
     }
-    #dsg-editorial.dsg-editorial section.sec__header h4 {
+    #dsg-editorial.dsg-editorial header.sec__header h4 {
       font-size: 5vw;
     }
-    #dsg-editorial.dsg-editorial section.sec__header p {
+    #dsg-editorial.dsg-editorial header.sec__header p {
       font-size: 5vw;
       line-height: 6.5vw;
       margin: 0 5% 5% 5%;
@@ -813,6 +832,9 @@
       height: 50vw;
       margin: 5%;
     }
+    #dsg-editorial.dsg-editorial section.section-two a:focus {
+      outline: 2px solid #007bff;
+    }
     #dsg-editorial.dsg-editorial section.section-two a span {
       margin-top: 26%;
       font-size: 6vw;
@@ -822,7 +844,7 @@
     font-size: 2vw;
   }
   @media (max-width: 950px) {
-    #dsg-editorial.dsg-editorial.dsg-fr section.sec__header h1 {
+    #dsg-editorial.dsg-editorial.dsg-fr header.sec__header h1 {
       font-size: 12vw;
     }
     #dsg-editorial.dsg-editorial.dsg-fr section.section-two a span {
@@ -839,14 +861,21 @@
 <!-- <link rel="stylesheet" href="https://use.typekit.net/sfz0foe.css"> -->
 
 <div id="dsg-editorial" class="dsg-editorial dsg-fr">
-  <section class="sec__header">
+  <header class="sec__header">
     <div class="marketLogo">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="54.586"
         height="72.599"
         viewBox="0 0 54.586 72.599"
+        role="img"
+        aria-labelledby="title desc"
       >
+        <title id="title">Shopping bag icon</title>
+        <desc id="desc">
+          An image of a shopping bag with a heart label on the outside of the
+          bag.
+        </desc>
         <path
           id="Path_1"
           data-name="Path 1"
@@ -892,7 +921,13 @@
         width="97"
         height="20"
         viewBox="0 0 97 20"
+        role="img"
+        aria-labelledby="title2 desc2"
       >
+        <title id="title2">The Hudson's Bay Stripes icon</title>
+        <desc id="desc2">
+          An image the four Hudson's Bay stripes in green, red, yellow and blue.
+        </desc>
         <g
           id="Group_169"
           data-name="Group 169"
@@ -933,23 +968,26 @@
         </g>
       </svg>
     </div>
-  </section>
+  </header>
+  <main>
+    <section class="sec__three section-two">
+      <a
+        aria-label="À propos du Marché: Link to the Hudson's Bay Marketplace About page."
+        href="$url('Search-Show','cgid','marketplace-about')$?sre=LANDINGPAGE_MARKETPLACE_ABOUT"
+        class="cta"
+      >
+        <span>À propos du Marché</span>
+      </a>
 
-  <section class="sec__three section-two">
-    <a
-      href="$url('Search-Show','cgid','marketplace-about')$?sre=LANDINGPAGE_MARKETPLACE_ABOUT"
-      class="cta"
-    >
-      <span>À propos du Marché</span>
-    </a>
-
-    <a
-      href="$url('Search-Show','cgid','marketplace-seller')$?sre=LANDINGPAGE_MARKETPLACE_SELLER"
-      class="cta"
-    >
-      <span>Devenir vendeur</span>
-    </a>
-  </section>
+      <a
+        aria-label="Devenir vendeur: Link to the Hudson's Bay Marketplace page for Trusted Brand Partners."
+        href="$url('Search-Show','cgid','marketplace-seller')$?sre=LANDINGPAGE_MARKETPLACE_SELLER"
+        class="cta"
+      >
+        <span>Devenir vendeur</span>
+      </a>
+    </section>
+  </main>
 </div>
 
 <script>
