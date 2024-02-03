@@ -3,17 +3,7 @@
 ----------------------------------------------- */
 .buttons {
   &__wrapper {
-    @include bayflex(
-      column,
-      initial,
-      initial,
-      space-around,
-      0,
-      0,
-      auto,
-      auto,
-      center
-    );
+    @include bayflex(column, initial, initial, space-around, 0, 0, auto, auto, center);
 
     @include respond-to(medium) {
       flex-direction: row;
@@ -29,15 +19,7 @@
         &--primary {
           margin: 1rem 0;
 
-          @include bayLink(
-            2.5px,
-            100%,
-            $bayDaysGreen,
-            2px,
-            solid,
-            $bayDaysGreen,
-            $white
-          );
+          @include bayLink(2.5px, 100%, $bayDaysGreen, 2px, solid, $bayDaysGreen, $white);
 
           @include respond-to(medium) {
             font-size: 1.75rem !important;

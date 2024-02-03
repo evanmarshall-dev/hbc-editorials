@@ -66,17 +66,7 @@ $breakpoints: (
 /* -----------------------------------------------
  * SECTION MIXINS
 ----------------------------------------------- */
-@mixin bayflex(
-  $flexDirect,
-  $flexWrap,
-  $alignItems,
-  $justContent,
-  $fPadding,
-  $fMargin,
-  $fHeight,
-  $fWidth,
-  $textAlign
-) {
+@mixin bayflex($flexDirect, $flexWrap, $alignItems, $justContent, $fPadding, $fMargin, $fHeight, $fWidth, $textAlign) {
   display: flex;
   flex-direction: $flexDirect;
   flex-wrap: $flexWrap;
@@ -139,15 +129,7 @@ $breakpoints: (
 /* -----------------------------------------------
  * FONT MIXINS
 ----------------------------------------------- */
-@mixin bayHeading(
-  $fontFam,
-  $fontColor,
-  $fontSize,
-  $lineHeight,
-  $fontWeight,
-  $fMargin,
-  $fDisplay
-) {
+@mixin bayHeading($fontFam, $fontColor, $fontSize, $lineHeight, $fontWeight, $fMargin, $fDisplay) {
   font-family: $fontFam;
   color: $fontColor;
   @include font-size($fontSize);
@@ -160,16 +142,7 @@ $breakpoints: (
 /* -----------------------------------------------
  * HORIZONTAL RULE MIXINS
 ----------------------------------------------- */
-@mixin hLine(
-  $bordRad,
-  $bordWidth,
-  $bordStyle,
-  $bordColor,
-  $hWidth,
-  $lMargin,
-  $rMargin,
-  $bMargin
-) {
+@mixin hLine($bordRad, $bordWidth, $bordStyle, $bordColor, $hWidth, $lMargin, $rMargin, $bMargin) {
   border-radius: $bordRad;
   border-width: $bordWidth;
   border-style: $bordStyle;
@@ -241,12 +214,7 @@ $breakpoints: (
     background: -webkit-linear-gradient(left, $start-color, $end-color);
     background: linear-gradient(to right, $start-color, $end-color);
   } @else {
-    background: -webkit-radial-gradient(
-      center,
-      ellipse cover,
-      $start-color,
-      $end-color
-    );
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
     background: radial-gradient(ellipse at center, $start-color, $end-color);
   }
 }
@@ -258,15 +226,7 @@ $breakpoints: (
 /* -----------------------------------------------
  * BUTTON MIXINS
 ----------------------------------------------- */
-@mixin bayLink(
-  $bordRad,
-  $bWidth,
-  $bBack,
-  $bordWidth,
-  $bordStyle,
-  $bordCol,
-  $bCol
-) {
+@mixin bayLink($bordRad, $bWidth, $bBack, $bordWidth, $bordStyle, $bordCol, $bCol) {
   @extend %btn-placeholder;
   @include transition(all, 0.25s, ease-in-out, 0);
   @include border-radius($bordRad);

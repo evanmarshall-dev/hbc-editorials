@@ -7,15 +7,8 @@ export default function injectAssets(srcPath, destPath) {
   const jsFilePath = "js/app.js";
   return gulp
     .src(srcPath)
-    .pipe(
-      injectString.after(
-        "</title>",
-        `\n<link rel="stylesheet" href="${cssFilePath}">`,
-      ),
-    )
-    .pipe(
-      injectString.before("</body>", `<script src="${jsFilePath}"></script>\n`),
-    )
+    .pipe(injectString.after("</title>", `\n<link rel="stylesheet" href="${cssFilePath}">`))
+    .pipe(injectString.before("</body>", `<script src="${jsFilePath}"></script>\n`))
     .pipe(gulp.dest(destPath))
     .pipe(browserSync.stream());
 }

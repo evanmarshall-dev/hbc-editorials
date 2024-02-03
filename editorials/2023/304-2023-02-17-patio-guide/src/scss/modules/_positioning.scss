@@ -33,14 +33,7 @@
 }
 
 // Flex positioning for 3 Up Cards
-@mixin threeUpFlex(
-  $direction,
-  $twrap,
-  $tcontent,
-  $talign,
-  $tmargin,
-  $tpadding
-) {
+@mixin threeUpFlex($direction, $twrap, $tcontent, $talign, $tmargin, $tpadding) {
   display: flex;
   flex-direction: $direction;
   flex-wrap: $twrap;

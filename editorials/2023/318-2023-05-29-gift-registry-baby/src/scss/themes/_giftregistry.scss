@@ -23,16 +23,7 @@ $gr-visnav: #f7f9fb;
     }
 
     @include respond-to(large) {
-      @include bayflex(
-        row,
-        nowrap,
-        center,
-        space-between,
-        3rem 2%,
-        0,
-        inherit,
-        inherit
-      );
+      @include bayflex(row, nowrap, center, space-between, 3rem 2%, 0, inherit, inherit);
 
       .flex__item {
         &:nth-child(3) {

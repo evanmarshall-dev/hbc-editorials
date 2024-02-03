@@ -18,7 +18,7 @@ export function devHtml() {
       fileInclude({
         prefix: "@@",
         basepath: "src/templates",
-      }),
+      })
     )
     .pipe(htmlMin({ collapseWhitespace: true }))
     .pipe(gulp.dest(paths.dev.main));

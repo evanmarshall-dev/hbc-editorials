@@ -21,9 +21,6 @@ export default function browserSyncFr() {
 
   gulp.watch(paths.src.scripts, devScriptsFr);
   gulp.watch(paths.src.styles, devStylesFr);
-  gulp.watch(
-    [paths.src.html, paths.src.templates],
-    gulp.series(devHtmlFr, injectAssetsFr),
-  );
+  gulp.watch([paths.src.html, paths.src.templates], gulp.series(devHtmlFr, injectAssetsFr));
   gulp.watch(paths.dev.mainfr).on("change", syncfr.reload);
 }

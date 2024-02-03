@@ -13,13 +13,7 @@
   font-style: normal;
 }
 
-@mixin FontBuilder(
-  $size: 14px,
-  $weight: 400,
-  $tracking: 100,
-  $lineHeight: 1,
-  $style: normal
-) {
+@mixin FontBuilder($size: 14px, $weight: 400, $tracking: 100, $lineHeight: 1, $style: normal) {
   font-size: $size;
   font-weight: $weight;
   font-style: $style;
@@ -34,26 +28,14 @@
  */
 
 //BaskervillURW
-@mixin FontBaskerville(
-  $size: 14px,
-  $weight: 400,
-  $tracking: 100,
-  $lineHeight: 1,
-  $style: normal
-) {
+@mixin FontBaskerville($size: 14px, $weight: 400, $tracking: 100, $lineHeight: 1, $style: normal) {
   @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
 
   //font-family: $baskerville;
 }
 
 //Sans Serif
-@mixin FontSans(
-  $size: 14px,
-  $weight: 400,
-  $tracking: 100,
-  $lineHeight: 1,
-  $style: normal
-) {
+@mixin FontSans($size: 14px, $weight: 400, $tracking: 100, $lineHeight: 1, $style: normal) {
   @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
 
   //Proxima Nova Black
@@ -94,13 +76,7 @@
 }
 
 //Sans Serif
-@mixin FontSerif(
-  $size: 14px,
-  $weight: 400,
-  $tracking: 100,
-  $lineHeight: 1,
-  $style: normal
-) {
+@mixin FontSerif($size: 14px, $weight: 400, $tracking: 100, $lineHeight: 1, $style: normal) {
   @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
 
   // @if $weight == 700{

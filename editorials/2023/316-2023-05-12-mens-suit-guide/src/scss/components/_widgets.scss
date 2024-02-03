@@ -2,17 +2,7 @@
  * WIDGET STYLES
 ----------------------------------------------- */
 .hbc-widget-card {
-  @include bayflex(
-    column,
-    inherit,
-    center,
-    inherit,
-    0,
-    0,
-    100%,
-    inherit,
-    center
-  );
+  @include bayflex(column, inherit, center, inherit, 0, 0, 100%, inherit, center);
 
   svg {
     &.hbc-icon {

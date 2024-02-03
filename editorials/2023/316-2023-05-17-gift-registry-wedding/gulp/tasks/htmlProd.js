@@ -22,7 +22,7 @@ export default function prodHtml() {
       fileInclude({
         prefix: "@@",
         basepath: "src/templates/english",
-      }),
+      })
     )
     .pipe(htmlMin({ collapseWhitespace: true }))
     .pipe(gulp.dest(paths.dist.main));

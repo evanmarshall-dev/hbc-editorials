@@ -73,15 +73,7 @@
 /* -----------------------------------------------
  * BACKGROUND IMAGE MIXINS
 ----------------------------------------------- */
-@mixin backImage(
-  $bgColor,
-  $pageDate,
-  $imgTitle,
-  $screenType,
-  $bgSize,
-  $imgWidth,
-  $imgHeight
-) {
+@mixin backImage($bgColor, $pageDate, $imgTitle, $screenType, $bgSize, $imgWidth, $imgHeight) {
   background-color: $bgColor;
   background-image: url("https://image.s5a.com/is/image/TheBay/" + $pageDate + "_" + $imgTitle + "_" + $screenType + "?scl=1&qlt=100&fmt=webp");
   background-size: $bgSize;
@@ -94,16 +86,7 @@
 /* -----------------------------------------------
  * SECTION MIXINS
 ----------------------------------------------- */
-@mixin bayflex(
-  $flexDirect,
-  $flexWrap,
-  $alignItems,
-  $justContent,
-  $fPadding,
-  $fMargin,
-  $fWidth,
-  $textAlign
-) {
+@mixin bayflex($flexDirect, $flexWrap, $alignItems, $justContent, $fPadding, $fMargin, $fWidth, $textAlign) {
   display: flex;
   flex-direction: $flexDirect;
   flex-wrap: $flexWrap;
@@ -200,12 +183,7 @@
     background: -webkit-linear-gradient(left, $start-color, $end-color);
     background: linear-gradient(to right, $start-color, $end-color);
   } @else {
-    background: -webkit-radial-gradient(
-      center,
-      ellipse cover,
-      $start-color,
-      $end-color
-    );
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
     background: radial-gradient(ellipse at center, $start-color, $end-color);
   }
 }
@@ -217,15 +195,7 @@
 /* -----------------------------------------------
  * BUTTON MIXINS
 ----------------------------------------------- */
-@mixin bayLink(
-  $bordRad,
-  $bWidth,
-  $bBack,
-  $bordWidth,
-  $bordStyle,
-  $bordCol,
-  $bCol
-) {
+@mixin bayLink($bordRad, $bWidth, $bBack, $bordWidth, $bordStyle, $bordCol, $bCol) {
   @extend %btn-placeholder;
   @include transition(all, 0.25s, ease-in-out, 0);
   border-radius: $bordRad;

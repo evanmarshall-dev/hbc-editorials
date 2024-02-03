@@ -18,7 +18,7 @@ export default function optImages() {
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }, { cleanupIDs: false }],
         use: [pngquant()],
-      }),
+      })
     )
     .pipe(gulp.dest(paths.dev.assets));
 }

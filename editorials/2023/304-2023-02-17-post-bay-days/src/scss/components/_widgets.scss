@@ -3,44 +3,14 @@
 ----------------------------------------------- */
 .widgets {
   &__wrapper {
-    @include bayflex(
-      column,
-      wrap,
-      center,
-      space-around,
-      0,
-      0 0 5rem,
-      auto,
-      auto,
-      center
-    );
+    @include bayflex(column, wrap, center, space-around, 0, 0 0 5rem, auto, auto, center);
 
     @include respond-to(medium) {
-      @include bayflex(
-        row,
-        initial,
-        center,
-        space-around,
-        0,
-        0 0 5rem,
-        auto,
-        auto,
-        center
-      );
+      @include bayflex(row, initial, center, space-around, 0, 0 0 5rem, auto, auto, center);
     }
 
     .widget {
-      @include bayflex(
-        column,
-        wrap,
-        center,
-        space-around,
-        0,
-        0,
-        auto,
-        auto,
-        center
-      );
+      @include bayflex(column, wrap, center, space-around, 0, 0, auto, auto, center);
 
       width: 100%;
     }

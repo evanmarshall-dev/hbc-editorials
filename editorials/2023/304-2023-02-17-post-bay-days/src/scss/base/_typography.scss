@@ -2,49 +2,17 @@
  * Page section headings
 ----------------------------------------------- */
 h3 {
-  @include bayHeading(
-    $baySans,
-    $black,
-    30px,
-    36px,
-    400,
-    0 5% 5rem,
-    inline-block
-  );
+  @include bayHeading($baySans, $black, 30px, 36px, 400, 0 5% 5rem, inline-block);
 }
 
 h4 {
-  @include bayHeading(
-    $baySans,
-    $black,
-    24px,
-    38px,
-    400,
-    0 5% 5rem,
-    inline-block
-  );
+  @include bayHeading($baySans, $black, 24px, 38px, 400, 0 5% 5rem, inline-block);
 }
 
 h5 {
-  @include bayHeading(
-    $baySans,
-    $black,
-    13px,
-    16px,
-    400,
-    0 5% 5rem,
-    inline-block
-  );
+  @include bayHeading($baySans, $black, 13px, 16px, 400, 0 5% 5rem, inline-block);
 }
 
 p {
-  @include bayHeading(
-    $baySans,
-    $black,
-    21px,
-    25px,
-    400,
-    0 5% 5rem,
-    inline-block
-  );
+  @include bayHeading($baySans, $black, 21px, 25px, 400, 0 5% 5rem, inline-block);
 }

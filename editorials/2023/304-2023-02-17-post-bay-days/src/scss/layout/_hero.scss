@@ -6,17 +6,7 @@
     &.hero {
       background: $bayDaysBeige;
 
-      @include bayflex(
-        row,
-        wrap,
-        center,
-        space-evenly,
-        4rem 2rem !important,
-        0,
-        auto !important,
-        100%,
-        center
-      );
+      @include bayflex(row, wrap, center, space-evenly, 4rem 2rem !important, 0, auto !important, 100%, center);
 
       // @include respond-to(medium) {
       //   @include height(571px);

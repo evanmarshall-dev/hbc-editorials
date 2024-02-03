@@ -4,7 +4,7 @@
     "es2021": true
   },
   "extends": ["eslint:recommended", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["import", "prettier"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -16,23 +16,7 @@
   },
   "rules": {
     "prettier/prettier": "error",
-    "no-console": 1,
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true,
-        "optionalDependencies": false,
-        "peerDependencies": false,
-        "extraneousDependencies": true
-      }
-    ],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never", // Disallow .js extensions
-        "mjs": "never" // Disallow .mjs extensions
-      }
-    ]
+    "no-console": "off",
+    "import/no-extraneous-dependencies": ["error"]
   }
 }

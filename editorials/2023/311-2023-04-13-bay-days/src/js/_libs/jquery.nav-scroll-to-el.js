@@ -4,7 +4,7 @@
  * Author: Joseph Luzquinos
  */
 
-(function ($, window, document, undefined) {
+(function ($, window) {
   // Plugin Name and Defaults
   var pluginName = "navScrollToEl",
     defaults = {
@@ -36,11 +36,7 @@
       var _self = this;
 
       // Initial Nav position if page is loaded in the middle of the page
-      if (
-        $(window).scrollTop() -
-          $(_self.options.containerSelector).position().top >
-        $(".nav-anchor-1").offset().top
-      ) {
+      if ($(window).scrollTop() - $(_self.options.containerSelector).position().top > $(".nav-anchor-1").offset().top) {
         $(_self.element).addClass("fixed");
         $("#triggerNav").height(_self.options.fillerHeight);
       }
@@ -49,18 +45,12 @@
       $(window).on("scroll", function () {
         var thePosition = $(this).scrollTop();
 
-        if (
-          thePosition - $(_self.options.containerSelector).position().top >
-          $(_self.element).position().top
-        ) {
+        if (thePosition - $(_self.options.containerSelector).position().top > $(_self.element).position().top) {
           $(_self.element).addClass("fixed");
           $("#triggerNav").height(_self.options.fillerHeight);
         }
 
-        if (
-          thePosition - $(_self.options.containerSelector).position().top <
-          $("#triggerNav").position().top
-        ) {
+        if (thePosition - $(_self.options.containerSelector).position().top < $("#triggerNav").position().top) {
           $(_self.element).removeClass("fixed");
           $("#triggerNav").height(0);
         }
@@ -74,49 +64,31 @@
       thePosition = thePosition + 1; //Position fix
 
       // Unselect All if scrolled on top
-      if (
-        thePosition + this.options.removeFromTop <
-        $(".nav-anchor-1").offset().top
-      ) {
+      if (thePosition + this.options.removeFromTop < $(".nav-anchor-1").offset().top) {
         $(this.element).find("li a").removeClass("active");
       }
 
-      if (
-        thePosition + this.options.removeFromTop >
-        $(".nav-anchor-1").offset().top
-      ) {
+      if (thePosition + this.options.removeFromTop > $(".nav-anchor-1").offset().top) {
         $(this.element).find("li a").removeClass("active");
         $(".nav-item-1").addClass("active");
       }
 
-      if (
-        thePosition + this.options.removeFromTop >
-        $(".nav-anchor-2").offset().top
-      ) {
+      if (thePosition + this.options.removeFromTop > $(".nav-anchor-2").offset().top) {
         $(this.element).find("li a").removeClass("active");
         $(".nav-item-2").addClass("active");
       }
 
-      if (
-        thePosition + this.options.removeFromTop >
-        $(".nav-anchor-3").offset().top
-      ) {
+      if (thePosition + this.options.removeFromTop > $(".nav-anchor-3").offset().top) {
         $(this.element).find("li a").removeClass("active");
         $(".nav-item-3").addClass("active");
       }
 
-      if (
-        thePosition + this.options.removeFromTop >
-        $(".nav-anchor-4").offset().top
-      ) {
+      if (thePosition + this.options.removeFromTop > $(".nav-anchor-4").offset().top) {
         $(this.element).find("li a").removeClass("active");
         $(".nav-item-4").addClass("active");
       }
 
-      if (
-        thePosition + this.options.removeFromTop >
-        $(".nav-anchor-5").offset().top
-      ) {
+      if (thePosition + this.options.removeFromTop > $(".nav-anchor-5").offset().top) {
         $(this.element).find("li a").removeClass("active");
         $(".nav-item-5").addClass("active");
       }
@@ -127,10 +99,9 @@
       $(".nav-item-1").on("click", function () {
         $("html, body").animate(
           {
-            scrollTop:
-              $(".nav-anchor-1").offset().top - _self.options.removeFromTop,
+            scrollTop: $(".nav-anchor-1").offset().top - _self.options.removeFromTop,
           },
-          _self.options.speed,
+          _self.options.speed
         );
         return false;
       });
@@ -138,10 +109,9 @@
       $(".nav-item-2").on("click", function () {
         $("html, body").animate(
           {
-            scrollTop:
-              $(".nav-anchor-2").offset().top - _self.options.removeFromTop,
+            scrollTop: $(".nav-anchor-2").offset().top - _self.options.removeFromTop,
           },
-          _self.options.speed,
+          _self.options.speed
         );
         return false;
       });
@@ -149,10 +119,9 @@
       $(".nav-item-3").on("click", function () {
         $("html, body").animate(
           {
-            scrollTop:
-              $(".nav-anchor-3").offset().top - _self.options.removeFromTop,
+            scrollTop: $(".nav-anchor-3").offset().top - _self.options.removeFromTop,
           },
-          _self.options.speed,
+          _self.options.speed
         );
         return false;
       });
@@ -160,10 +129,9 @@
       $(".nav-item-4").on("click", function () {
         $("html, body").animate(
           {
-            scrollTop:
-              $(".nav-anchor-4").offset().top - _self.options.removeFromTop,
+            scrollTop: $(".nav-anchor-4").offset().top - _self.options.removeFromTop,
           },
-          _self.options.speed,
+          _self.options.speed
         );
         return false;
       });
@@ -171,10 +139,9 @@
       $(".nav-item-5").on("click", function () {
         $("html, body").animate(
           {
-            scrollTop:
-              $(".nav-anchor-5").offset().top - _self.options.removeFromTop,
+            scrollTop: $(".nav-anchor-5").offset().top - _self.options.removeFromTop,
           },
-          _self.options.speed,
+          _self.options.speed
         );
         return false;
       });
@@ -189,4 +156,4 @@
       }
     });
   };
-})(jQuery, window, document);
+})();

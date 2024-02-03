@@ -21,9 +21,6 @@ export default function browserSync() {
 
   gulp.watch(paths.src.scripts, devScripts);
   gulp.watch(paths.src.styles, devStyles);
-  gulp.watch(
-    [paths.src.html, paths.src.templates],
-    gulp.series(devHtml, injectAssets),
-  );
+  gulp.watch([paths.src.html, paths.src.templates], gulp.series(devHtml, injectAssets));
   gulp.watch(paths.dev.main).on("change", sync.reload);
 }

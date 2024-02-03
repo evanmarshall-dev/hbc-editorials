@@ -50,15 +50,7 @@
 /* -----------------------------------------------
  * BACKGROUND IMAGE MIXINS
 ----------------------------------------------- */
-@mixin bgImage(
-  $bgColor,
-  $bgPageDate,
-  $bgImgTitle,
-  $bgScreenType,
-  $bgSize,
-  $bgImgWidth,
-  $bgImgHeight
-) {
+@mixin bgImage($bgColor, $bgPageDate, $bgImgTitle, $bgScreenType, $bgSize, $bgImgWidth, $bgImgHeight) {
   background-color: $bgColor;
   background-image: url("https://image.s5a.com/is/image/TheBay/" + $bgPageDate + "_" + $bgImgTitle + "_" + $bgScreenType + "?scl=1&qlt=100&fmt=webp");
   background-size: $bgSize;
@@ -72,12 +64,7 @@
 /* -----------------------------------------------
  * FLEXBOX MIXINS
 ----------------------------------------------- */
-@mixin flex(
-  $fDirection: null,
-  $fWrap: null,
-  $fAlignItems: null,
-  $fJustContent: null
-) {
+@mixin flex($fDirection: null, $fWrap: null, $fAlignItems: null, $fJustContent: null) {
   display: flex;
   flex-direction: $fDirection;
   flex-wrap: $fWrap;
@@ -88,14 +75,7 @@
 /* -----------------------------------------------
  * FONT MIXINS
 ----------------------------------------------- */
-@mixin font(
-  $fFamily: null,
-  $fWeight: null,
-  $fStyle: null,
-  $flHeight: null,
-  $tTransform: null,
-  $fSize: null
-) {
+@mixin font($fFamily: null, $fWeight: null, $fStyle: null, $flHeight: null, $tTransform: null, $fSize: null) {
   font-family: $fFamily;
   font-weight: $fWeight;
   font-style: $fStyle;

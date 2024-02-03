@@ -5,34 +5,14 @@
   &__wrapper {
     min-width: 36.8rem;
 
-    @include bayflex(
-      row,
-      wrap,
-      center,
-      inherit,
-      0,
-      0 auto 16rem,
-      36.8rem,
-      auto,
-      center
-    );
+    @include bayflex(row, wrap, center, inherit, 0, 0 auto 16rem, 36.8rem, auto, center);
 
     @include respond-to(large) {
       max-width: 85.4rem;
     }
 
     .widget {
-      @include bayflex(
-        column,
-        nowrap,
-        center,
-        space-evenly,
-        3rem 0,
-        0,
-        100%,
-        auto,
-        inherit
-      );
+      @include bayflex(column, nowrap, center, space-evenly, 3rem 0, 0, 100%, auto, inherit);
 
       @include respond-to(large) {
         max-width: calc(100% / 2);

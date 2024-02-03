@@ -32,16 +32,12 @@ export const paths = {
 // GULP CLEAN/DELETE TASK.
 // Deletes the dev and prod directories.
 export const clean = async () => {
-  const deletedDirectoryPaths = await deleteAsync([
-    paths.dev,
-    paths.prod,
-    `!${paths.dev}/fonts`,
-  ]);
+  const deletedDirectoryPaths = await deleteAsync([paths.dev, paths.prod, `!${paths.dev}/fonts`]);
   console.log("Deleted directories:\n", deletedDirectoryPaths.join("\n"));
 };
 
 // * DEVELOPMENT: Define command-line options to specify the template to use
-const options = minimist(process.argv.slice(2), {
+const options = minimist((window.process || {}).argv.slice(2), {
   string: "template",
   default: { template: "default.html" },
 });
@@ -130,17 +126,7 @@ export const inlineAssetsFr = (done) => {
 };
 
 // ? PRODUCTION: Run the clean, compileSass, concatAndMinifyJs, and inlineAssets tasks in series.
-export const build = series(
-  clean,
-  compileSass,
-  concatAndMinifyJs,
-  inlineAssets,
-);
+export const build = series(clean, compileSass, concatAndMinifyJs, inlineAssets);
 
 // ? PRODUCTION: Run the clean, compileSass, concatAndMinifyJs, and inlineAssets tasks in series. This is for the French version.
-export const buildFr = series(
-  clean,
-  compileSass,
-  concatAndMinifyJs,
-  inlineAssetsFr,
-);
+export const buildFr = series(clean, compileSass, concatAndMinifyJs, inlineAssetsFr);

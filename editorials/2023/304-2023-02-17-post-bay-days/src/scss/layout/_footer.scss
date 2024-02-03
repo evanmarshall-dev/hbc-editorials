@@ -12,29 +12,10 @@
         color: $bayDaysGreen;
       }
 
-      @include bayflex(
-        column,
-        wrap,
-        initial,
-        space-evenly,
-        8rem 0 0,
-        8rem 0 0,
-        auto,
-        100%,
-        center
-      );
+      @include bayflex(column, wrap, initial, space-evenly, 8rem 0 0, 8rem 0 0, auto, 100%, center);
 
       hr {
-        @include hLine(
-          0,
-          0.015rem,
-          solid,
-          $bayDaysGreen,
-          80%,
-          auto,
-          auto,
-          5rem
-        );
+        @include hLine(0, 0.015rem, solid, $bayDaysGreen, 80%, auto, auto, 5rem);
       }
     }
 

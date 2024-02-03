@@ -3,17 +3,7 @@
 ----------------------------------------------- */
 .buttons {
   &__wrapper {
-    @include bayflex(
-      column,
-      inherit,
-      center,
-      inherit,
-      0,
-      0,
-      100%,
-      100%,
-      center
-    );
+    @include bayflex(column, inherit, center, inherit, 0, 0, 100%, 100%, center);
 
     @include respond-to(large) {
       flex-direction: row;

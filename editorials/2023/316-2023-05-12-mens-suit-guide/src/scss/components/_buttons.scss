@@ -3,17 +3,7 @@
 ----------------------------------------------- */
 .buttons {
   &__wrapper {
-    @include bayflex(
-      row,
-      wrap,
-      center,
-      space-between,
-      0,
-      0,
-      100%,
-      100%,
-      center
-    );
+    @include bayflex(row, wrap, center, space-between, 0, 0, 100%, 100%, center);
 
     @include respond-to(medium) {
       flex-direction: row;

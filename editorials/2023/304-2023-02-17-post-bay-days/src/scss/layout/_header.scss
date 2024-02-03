@@ -4,17 +4,7 @@
 #dsg-editorial.dsg-editorial {
   header {
     &.header {
-      @include bayflex(
-        column,
-        wrap,
-        initial,
-        space-evenly,
-        0,
-        8rem 0,
-        auto,
-        100%,
-        center
-      );
+      @include bayflex(column, wrap, initial, space-evenly, 0, 8rem 0, auto, 100%, center);
 
       &--helper {
         text-transform: uppercase;

@@ -32,11 +32,7 @@ const sass = gulpSass(dartSass);
 
 // Clean dev and prod directory.
 export const clean = async () => {
-  const deletedDirectoryPaths = await deleteAsync([
-    `${paths.dev}/**`,
-    `${paths.prod}/**`,
-    `!${paths.dev}/fonts`,
-  ]);
+  const deletedDirectoryPaths = await deleteAsync([`${paths.dev}/**`, `${paths.prod}/**`, `!${paths.dev}/fonts`]);
   console.log("Deleted directories:\n", deletedDirectoryPaths.join("\n"));
 };
 
@@ -79,15 +75,8 @@ export const html = () => {
   const jsFilePath = "js/app.js";
   return gulp
     .src(paths.src.html)
-    .pipe(
-      injectString.after(
-        "</title>",
-        `\n<link rel="stylesheet" href="${cssFilePath}">`,
-      ),
-    )
-    .pipe(
-      injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`),
-    )
+    .pipe(injectString.after("</title>", `\n<link rel="stylesheet" href="${cssFilePath}">`))
+    .pipe(injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`))
     .pipe(gulp.dest(paths.dev))
     .pipe(browserSync.stream());
 };
@@ -98,15 +87,8 @@ export const htmlFr = () => {
   const jsFilePath = "js/app.js";
   return gulp
     .src(paths.src.htmlfr)
-    .pipe(
-      injectString.after(
-        "</title>",
-        `\n<link rel="stylesheet" href="${cssFilePath}">`,
-      ),
-    )
-    .pipe(
-      injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`),
-    )
+    .pipe(injectString.after("</title>", `\n<link rel="stylesheet" href="${cssFilePath}">`))
+    .pipe(injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`))
     .pipe(gulp.dest(paths.dev))
     .pipe(browserSync.stream()); // Reload server and inject HTML changes.
 };
@@ -165,31 +147,13 @@ export const watchDev = () => {
 };
 
 // Build task for English files.
-export const build = gulp.series(
-  clean,
-  gulp.parallel(styles, minifyScriptsProd, html),
-  inlineProd,
-);
+export const build = gulp.series(clean, gulp.parallel(styles, minifyScriptsProd, html), inlineProd);
 
 // Build task for French files.
-export const buildFr = gulp.series(
-  clean,
-  gulp.parallel(styles, minifyScriptsProd, htmlFr),
-  inlineFrProd,
-);
+export const buildFr = gulp.series(clean, gulp.parallel(styles, minifyScriptsProd, htmlFr), inlineFrProd);
 
 // Development task for French files.
-export const devFr = gulp.series(
-  clean,
-  gulp.parallel(styles, scriptsDev, htmlFr),
-  serveDev,
-  watchDev,
-);
+export const devFr = gulp.series(clean, gulp.parallel(styles, scriptsDev, htmlFr), serveDev, watchDev);
 
 // Default task (Development task for English files).
-export default gulp.series(
-  clean,
-  gulp.parallel(styles, scriptsDev, html),
-  serveDev,
-  watchDev,
-);
+export default gulp.series(clean, gulp.parallel(styles, scriptsDev, html), serveDev, watchDev);

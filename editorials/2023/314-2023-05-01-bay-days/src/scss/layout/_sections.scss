@@ -39,17 +39,7 @@
   // ONE COLUMN FLEX SECTION
   section {
     &.sec01 {
-      @include bayflex(
-        row,
-        wrap,
-        center,
-        space-between,
-        0,
-        0,
-        100%,
-        auto,
-        center
-      );
+      @include bayflex(row, wrap, center, space-between, 0, 0, 100%, auto, center);
 
       .hbc-header {
         margin-bottom: 25px;

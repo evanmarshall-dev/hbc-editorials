@@ -3,17 +3,7 @@
 ----------------------------------------------- */
 .buttons {
   &__wrapper {
-    @include bayflex(
-      column,
-      inherit,
-      center,
-      inherit,
-      0,
-      0,
-      100%,
-      100%,
-      center
-    );
+    @include bayflex(column, inherit, center, inherit, 0, 0, 100%, 100%, center);
 
     @include respond-to(large) {
       flex-direction: row;
@@ -44,15 +34,7 @@ a:visited {
     }
 
     &--alt {
-      @include bayLink(
-        0px,
-        calc(100% - 40px),
-        $black,
-        2px,
-        solid,
-        $black,
-        $white
-      );
+      @include bayLink(0px, calc(100% - 40px), $black, 2px, solid, $black, $white);
 
       @include respond-to(large) {
         width: 713px;

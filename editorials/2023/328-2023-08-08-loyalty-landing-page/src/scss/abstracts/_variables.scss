@@ -26,7 +26,5 @@ $breakpoints: (
   "small": (/* Mobile Styles (576px or 36em - 767px). */ min-width: 36em),
   "medium": (/* Tablet Styles (768px or 48em - 1199px). */ min-width: 48em),
   "large": (/* Desktop Styles (1200 or 75em - 1439px). */ min-width: 75em),
-  "xlarge": (
-    /* Large Desktop Styles (1440px or 90em and Up). */ min-width: 90em
-  )
+  "xlarge": (/* Large Desktop Styles (1440px or 90em and Up). */ min-width: 90em)
 );

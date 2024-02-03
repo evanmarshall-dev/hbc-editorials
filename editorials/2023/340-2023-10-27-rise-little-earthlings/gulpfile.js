@@ -53,7 +53,7 @@ export const devFrench = gulp.series(
   gulp.parallel(devScriptsFr, devStylesFr, devHtmlFr),
   injectAssetsFr,
   // prodHtml,
-  browserSyncFr,
+  browserSyncFr
 );
 
 // Exported Default Tasks
@@ -62,5 +62,5 @@ export default gulp.series(
   gulp.parallel(devScripts, devStyles, devHtml),
   injectAssets,
   // prodHtml,
-  browserSync,
+  browserSync
 );

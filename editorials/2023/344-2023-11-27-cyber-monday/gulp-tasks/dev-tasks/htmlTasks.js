@@ -13,15 +13,8 @@ const injectAssets = (srcPath, destPath) => {
 
   src(srcPath)
     .pipe(rename("index.html"))
-    .pipe(
-      injectString.after(
-        "</title>",
-        `\n<link rel="stylesheet" href="${cssFilePath}">`,
-      ),
-    )
-    .pipe(
-      injectString.before("</body>", `<script src="${jsFilePath}"></script>\n`),
-    )
+    .pipe(injectString.after("</title>", `\n<link rel="stylesheet" href="${cssFilePath}">`))
+    .pipe(injectString.before("</body>", `<script src="${jsFilePath}"></script>\n`))
     .pipe(dest(destPath))
     .pipe(browserSync.stream());
 };

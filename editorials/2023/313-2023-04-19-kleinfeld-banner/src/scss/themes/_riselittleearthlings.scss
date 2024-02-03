@@ -116,15 +116,7 @@ a:visited {
       &__podcast {
         margin: 40px auto 0;
 
-        @include bayLink(
-          0px,
-          calc(100% - 80px),
-          $rle-beige,
-          2px,
-          solid,
-          $rle-beige,
-          $rle-green
-        );
+        @include bayLink(0px, calc(100% - 80px), $rle-beige, 2px, solid, $rle-beige, $rle-green);
 
         @include respond-to(medium) {
           @include width-size(232px);
@@ -139,15 +131,7 @@ a:visited {
       }
 
       &__alt {
-        @include bayLink(
-          0px,
-          calc(100% - 80px),
-          $rle-green,
-          2px,
-          solid,
-          $rle-green,
-          $white
-        );
+        @include bayLink(0px, calc(100% - 80px), $rle-green, 2px, solid, $rle-green, $white);
         margin: 0 auto 150px;
 
         @include respond-to(medium) {

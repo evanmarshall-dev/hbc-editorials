@@ -7,9 +7,7 @@
 class BackToTop {
   constructor(selector = "") {
     if (selector == "") {
-      window.console.log(
-        "Error: Enter selector: new BackToTop(selector, speed)",
-      );
+      window.console.log("Error: Enter selector: new BackToTop(selector, speed)");
       return false;
     }
     this.w = window;

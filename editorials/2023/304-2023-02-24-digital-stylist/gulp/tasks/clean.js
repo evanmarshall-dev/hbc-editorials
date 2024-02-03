@@ -8,10 +8,7 @@ import { paths } from "../../gulpfile.js";
 
 async function clean() {
   // const deletedFilePaths = await deleteAsync(paths.dist.images);
-  const deletedDirectoryPaths = await deleteAsync([
-    paths.dev.main,
-    paths.dist.main,
-  ]);
+  const deletedDirectoryPaths = await deleteAsync([paths.dev.main, paths.dist.main]);
 
   // console.log("Deleted files:\n", deletedFilePaths.join("\n"));
   // console.log("\n\n");

@@ -30,11 +30,7 @@ export const paths = {
 // GULP CLEAN/DELETE TASK.
 // Deletes the dev and prod directories.
 export const clean = async () => {
-  const deletedDirectoryPaths = await deleteAsync([
-    paths.dev,
-    paths.prod,
-    `!${paths.dev}/fonts`,
-  ]);
+  const deletedDirectoryPaths = await deleteAsync([paths.dev, paths.prod, `!${paths.dev}/fonts`]);
   console.log("Deleted directories:\n", deletedDirectoryPaths.join("\n"));
 };
 
@@ -71,15 +67,8 @@ export const html = (done) => {
   const jsFilePath = "js/app.js";
 
   src(paths.src.html)
-    .pipe(
-      injectString.after(
-        "</title>",
-        `\n<link rel="stylesheet" href="${cssFilePath}">`,
-      ),
-    )
-    .pipe(
-      injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`),
-    )
+    .pipe(injectString.after("</title>", `\n<link rel="stylesheet" href="${cssFilePath}">`))
+    .pipe(injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`))
     .pipe(dest(paths.dev))
     .pipe(browserSync.stream());
 
@@ -91,15 +80,8 @@ export const htmlFr = (done) => {
   const jsFilePath = "js/app.js";
 
   src(paths.src.htmlfr)
-    .pipe(
-      injectString.after(
-        "</title>",
-        `\n<link rel="stylesheet" href="${cssFilePath}">`,
-      ),
-    )
-    .pipe(
-      injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`),
-    )
+    .pipe(injectString.after("</title>", `\n<link rel="stylesheet" href="${cssFilePath}">`))
+    .pipe(injectString.before("</body>", `\n<script src="${jsFilePath}"></script>`))
     .pipe(dest(paths.dev))
     .pipe(browserSync.stream());
 
@@ -113,12 +95,7 @@ export const watchDev = () => {
   watch(paths.src.htmlfr, htmlFr);
 };
 
-export const devFr = series(
-  clean,
-  parallel(styles, scripts, htmlFr),
-  serve,
-  watchDev,
-);
+export const devFr = series(clean, parallel(styles, scripts, htmlFr), serve, watchDev);
 
 export default series(clean, parallel(styles, scripts, html), serve, watchDev);
 
@@ -161,7 +138,4 @@ export const inlineFrProd = () => {
 
 export const build = series(parallel(styles, compileScripts, html), inlineProd);
 
-export const buildFr = series(
-  parallel(styles, compileScripts, htmlFr),
-  inlineFrProd,
-);
+export const buildFr = series(parallel(styles, compileScripts, htmlFr), inlineFrProd);
