@@ -3,7 +3,8 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["airbnb-base", "eslint:recommended", "prettier"],
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -14,7 +15,7 @@
     }
   },
   "rules": {
-    "semi": "error",
+    "prettier/prettier": "error",
     "no-console": 1,
     "import/no-extraneous-dependencies": [
       "error",
