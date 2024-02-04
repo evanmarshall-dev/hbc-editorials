@@ -4,21 +4,21 @@
 
 // htmlDevFr.js
 
-import gulp from "gulp";
-import fileInclude from "gulp-file-include";
-import inject from "gulp-inject";
-import htmlMin from "gulp-htmlmin";
+import gulp from 'gulp';
+import fileInclude from 'gulp-file-include';
+import inject from 'gulp-inject';
+import htmlMin from 'gulp-htmlmin';
 
-import { paths } from "../../gulpfile.js";
+import { paths } from '../../gulpfile.js';
 
 export function devHtmlFr() {
   return gulp
     .src(paths.src.htmlfr)
     .pipe(
       fileInclude({
-        prefix: "@@",
-        basepath: "src/templates/french",
-      })
+        prefix: '@@',
+        basepath: 'src/templates/french',
+      }),
     )
     .pipe(htmlMin({ collapseWhitespace: true }))
     .pipe(gulp.dest(paths.dev.mainfr));
@@ -30,7 +30,7 @@ export function injectAssetsFr() {
 
   return gulp
     .src(`${paths.dev.mainfr}/*.html`)
-    .pipe(inject(css, { ignorePath: "dev/french", addRootSlash: true }))
-    .pipe(inject(js, { ignorePath: "dev/french", addRootSlash: true }))
+    .pipe(inject(css, { ignorePath: 'dev/french', addRootSlash: true }))
+    .pipe(inject(js, { ignorePath: 'dev/french', addRootSlash: true }))
     .pipe(gulp.dest(paths.dev.mainfr));
 }

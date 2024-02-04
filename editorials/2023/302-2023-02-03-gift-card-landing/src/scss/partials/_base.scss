@@ -22,8 +22,8 @@ $tablet-breakpoint: 1024px;
 $stage-height: auto;
 
 // Font Family - Bay
-$serif: "adobe-caslon-pro", Times, serif;
-$sans: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+$serif: 'adobe-caslon-pro', Times, serif;
+$sans: 'proxima-nova', 'Gill Sans MT', 'Gill Sans', 'Corbel', sans-serif;
 
 // Font Family - L&T
 // $serif: "Lust", Times, serif;
@@ -86,4 +86,4 @@ body {
 // Modules
 // --------------------------------------------------
 
-@import "modules/all";
+@import 'modules/all';

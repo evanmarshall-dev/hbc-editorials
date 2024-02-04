@@ -1,6 +1,6 @@
 // import BackToTop from "./components/BackToTop";
-//import ResponsiveImage from './components/ResponsiveImage';
-//import Router from './components/Router';
+// import ResponsiveImage from './components/ResponsiveImage';
+// import Router from './components/Router';
 
 // class App {
 //   constructor() {
@@ -9,7 +9,7 @@
 //   }
 
 // init() {
-//Back to Top
+// Back to Top
 // new BackToTop(".test-back-to-top");
 
 // Router
@@ -22,10 +22,10 @@
 //     }
 // });
 
-//HBC Carousel
-//$('#hbc-carousel').hbcCarousel();
+// HBC Carousel
+// $('#hbc-carousel').hbcCarousel();
 // }
 // }
 
-//Start App
+// Start App
 // const MyApp = new App();

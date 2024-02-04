@@ -3,18 +3,18 @@
  * the active state and expand/collapse the corresponding panels.
  */
 
-const acc = document.getElementsByClassName("hbc-ed-accordion__button");
+const acc = document.getElementsByClassName('hbc-ed-accordion__button');
 // let i;
 
 acc.forEach((accItem) => {
-  accItem.addEventListener("click", (event) => {
+  accItem.addEventListener('click', (event) => {
     event.stopPropagation();
-    this.classList.toggle("hbc-ed-accordion__button--active");
+    this.classList.toggle('hbc-ed-accordion__button--active');
     const panel = this.nextElementSibling;
-    const expanded = this.getAttribute("aria-expanded") === "true";
+    const expanded = this.getAttribute('aria-expanded') === 'true';
 
-    this.setAttribute("aria-expanded", !expanded);
-    panel.setAttribute("aria-hidden", expanded);
+    this.setAttribute('aria-expanded', !expanded);
+    panel.setAttribute('aria-hidden', expanded);
 
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -24,8 +24,8 @@ acc.forEach((accItem) => {
     }
   });
 
-  accItem.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
+  accItem.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       this.click();
     }

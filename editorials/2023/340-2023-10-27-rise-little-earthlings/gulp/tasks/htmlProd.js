@@ -4,20 +4,20 @@
 
 // htmlProd.js
 
-import gulp from "gulp";
-import fileInclude from "gulp-file-include";
-import htmlMin from "gulp-htmlmin";
+import gulp from 'gulp';
+import fileInclude from 'gulp-file-include';
+import htmlMin from 'gulp-htmlmin';
 
-import { paths } from "../../gulpfile.js";
+import { paths } from '../../gulpfile.js';
 
 export default function prodHtml() {
   return gulp
-    .src(["src/templates/english/hero.html", "src/templates/english/main.html"])
+    .src(['src/templates/english/hero.html', 'src/templates/english/main.html'])
     .pipe(
       fileInclude({
-        prefix: "@@",
-        basepath: "src/templates/english",
-      })
+        prefix: '@@',
+        basepath: 'src/templates/english',
+      }),
     )
     .pipe(htmlMin({ collapseWhitespace: true }))
     .pipe(gulp.dest(paths.dist.main));

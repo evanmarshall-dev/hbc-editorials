@@ -6,44 +6,44 @@
 
 // Imports coming from default exports do not use curly braces.
 // Imports coming from tasks with multiple exports require curly braces.
-import gulp from "gulp";
-import browserSync from "./gulp/tasks/syncDev.js";
-import browserSyncFr from "./gulp/tasks/syncDevFr.js";
-import devScripts from "./gulp/tasks/scriptsDev.js";
-import devScriptsFr from "./gulp/tasks/scriptsDevFr.js";
-import devStyles from "./gulp/tasks/stylesDev.js";
-import devStylesFr from "./gulp/tasks/stylesDevFr.js";
-import { devHtml, injectAssets } from "./gulp/tasks/htmlDev.js";
-import { devHtmlFr, injectAssetsFr } from "./gulp/tasks/htmlDevFr.js";
+import gulp from 'gulp';
+import browserSync from './gulp/tasks/syncDev.js';
+import browserSyncFr from './gulp/tasks/syncDevFr.js';
+import devScripts from './gulp/tasks/scriptsDev.js';
+import devScriptsFr from './gulp/tasks/scriptsDevFr.js';
+import devStyles from './gulp/tasks/stylesDev.js';
+import devStylesFr from './gulp/tasks/stylesDevFr.js';
+import { devHtml, injectAssets } from './gulp/tasks/htmlDev.js';
+import { devHtmlFr, injectAssetsFr } from './gulp/tasks/htmlDevFr.js';
 // import optImages from "./gulp/tasks/images.js";
 // import imagesWebP from './gulp/tasks/imagesWebP.js';
-import clean from "./gulp/tasks/clean.js";
-import prodHtml from "./gulp/tasks/htmlProd.js";
+import clean from './gulp/tasks/clean.js';
+import prodHtml from './gulp/tasks/htmlProd.js';
 
 export const paths = {
   src: {
-    main: "src",
-    html: "src/html/**/*.html",
-    assets: "src/assets/**/*",
-    scripts: "src/js/*.js",
-    styles: "src/scss/**/*.scss",
-    htmlen: "src/html/english/index.html",
-    htmlfr: "src/html/french/index.html",
-    templates: "src/templates/**/*.html",
+    main: 'src',
+    html: 'src/html/**/*.html',
+    assets: 'src/assets/**/*',
+    scripts: 'src/js/*.js',
+    styles: 'src/scss/**/*.scss',
+    htmlen: 'src/html/english/index.html',
+    htmlfr: 'src/html/french/index.html',
+    templates: 'src/templates/**/*.html',
   },
   dev: {
-    main: "dev",
-    mainfr: "dev/french",
-    assets: "dev/assets",
-    scripts: "dev/js",
-    scriptsfr: "dev/french/js",
-    styles: "dev/css",
-    stylesfr: "dev/french/css",
-    htmlen: "dev/index.html",
-    htmlfr: "dev/index-fr.html",
+    main: 'dev',
+    mainfr: 'dev/french',
+    assets: 'dev/assets',
+    scripts: 'dev/js',
+    scriptsfr: 'dev/french/js',
+    styles: 'dev/css',
+    stylesfr: 'dev/french/css',
+    htmlen: 'dev/index.html',
+    htmlfr: 'dev/index-fr.html',
   },
   dist: {
-    main: "dist",
+    main: 'dist',
   },
 };
 
@@ -56,7 +56,7 @@ export const devFrench = gulp.series(
   gulp.parallel(devScriptsFr, devStylesFr, devHtmlFr),
   injectAssetsFr,
   // prodHtml,
-  browserSyncFr
+  browserSyncFr,
 );
 
 // Exported Default Tasks
@@ -65,5 +65,5 @@ export default gulp.series(
   gulp.parallel(devScripts, devStyles, devHtml),
   injectAssets,
   // prodHtml,
-  browserSync
+  browserSync,
 );

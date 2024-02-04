@@ -25,9 +25,9 @@ $large-breakpoint: 1024px;
 $stage-height: auto;
 
 // Font Family - Bay
-$serif: "ivypresto-display", serif;
+$serif: 'ivypresto-display', serif;
 // $sans: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
-$sans: "NeueMontreal-Regular", "Helvetica", sans-serif;
+$sans: 'NeueMontreal-Regular', 'Helvetica', sans-serif;
 
 // Font weights
 $regular: 400;
@@ -83,4 +83,4 @@ body {
 // Modules
 // --------------------------------------------------
 
-@import "modules/all";
+@import 'modules/all';

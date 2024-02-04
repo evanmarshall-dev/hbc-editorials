@@ -28,21 +28,21 @@ $bd-sand: rgb(247, 247, 247);
 $bf-green: #b5cf5a;
 
 // Fonts
-@import url("https://use.typekit.net/pdw1vaj.css");
+@import url('https://use.typekit.net/pdw1vaj.css');
 
-$baySerif: "ivypresto-display", serif;
-$baySans: "proxima-nova", sans-serif;
+$baySerif: 'ivypresto-display', serif;
+$baySans: 'proxima-nova', sans-serif;
 // $baySans: "Helvetica Neue", sans-serif;
 
 // Breakpoints
 // How to use in styles: @include respond-to(medium) { ... }
 $breakpoints: (
   // Mobile first styles from 0px to 320px
-  "xxsmall": (/* Tiny Mobile Styles (321px or 20.0625em - 375px). */ min-width: 20.0625em),
-  "xsmall": (/* Extra Small Mobile Styles (376px or 23.5em - 425px). */ min-width: 23.5em),
-  "small": (/* Small Mobile Styles (426px or 26.625em - 768px). */ min-width: 26.625em),
-  "medium": (/* Medium or Tablet Styles (769px or 48.0625em - 1024px). */ min-width: 48.0625em),
-  "large": (/* Large Desktop Styles (1025px or 64.0625em - 1440px). */ min-width: 64.0625em),
-  "xlarge": (/* Large Desktop Styles (1441px or 90.0625em - 2560px). */ min-width: 90.0625em),
-  "xxlarge": (/* Huge or 4K Desktop Styles (2561px or 160.0625em and Up). */ min-width: 160.0625em)
+  'xxsmall': (/* Tiny Mobile Styles (321px or 20.0625em - 375px). */ min-width: 20.0625em),
+  'xsmall': (/* Extra Small Mobile Styles (376px or 23.5em - 425px). */ min-width: 23.5em),
+  'small': (/* Small Mobile Styles (426px or 26.625em - 768px). */ min-width: 26.625em),
+  'medium': (/* Medium or Tablet Styles (769px or 48.0625em - 1024px). */ min-width: 48.0625em),
+  'large': (/* Large Desktop Styles (1025px or 64.0625em - 1440px). */ min-width: 64.0625em),
+  'xlarge': (/* Large Desktop Styles (1441px or 90.0625em - 2560px). */ min-width: 90.0625em),
+  'xxlarge': (/* Huge or 4K Desktop Styles (2561px or 160.0625em and Up). */ min-width: 160.0625em)
 );

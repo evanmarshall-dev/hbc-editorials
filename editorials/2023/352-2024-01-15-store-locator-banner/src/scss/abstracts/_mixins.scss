@@ -23,17 +23,17 @@
 ----------------------------------------------- */
 @mixin center($position) {
   position: absolute;
-  @if $position == "vertical" {
+  @if $position == 'vertical' {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  } @else if $position == "horizontal" {
+  } @else if $position == 'horizontal' {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translate(-50%);
-  } @else if $position == "both" {
+  } @else if $position == 'both' {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -50,9 +50,17 @@
 /* -----------------------------------------------
  * BACKGROUND IMAGE MIXINS
 ----------------------------------------------- */
-@mixin bgImage($bgColor, $bgPageDate, $bgImgTitle, $bgScreenType, $bgSize, $bgImgWidth, $bgImgHeight) {
+@mixin bgImage(
+  $bgColor,
+  $bgPageDate,
+  $bgImgTitle,
+  $bgScreenType,
+  $bgSize,
+  $bgImgWidth,
+  $bgImgHeight
+) {
   background-color: $bgColor;
-  background-image: url("https://image.s5a.com/is/image/TheBay/" + $bgPageDate + "_" + $bgImgTitle + "_" + $bgScreenType + "?scl=1&qlt=100&fmt=webp");
+  background-image: url('https://image.s5a.com/is/image/TheBay/' + $bgPageDate + '_' + $bgImgTitle + '_' + $bgScreenType + '?scl=1&qlt=100&fmt=webp');
   background-size: $bgSize;
   background-repeat: no-repeat;
   background-position: center;
@@ -75,7 +83,14 @@
 /* -----------------------------------------------
  * FONT MIXINS
 ----------------------------------------------- */
-@mixin font($fFamily: null, $fWeight: null, $fStyle: null, $flHeight: null, $tTransform: null, $fSize: null) {
+@mixin font(
+  $fFamily: null,
+  $fWeight: null,
+  $fStyle: null,
+  $flHeight: null,
+  $tTransform: null,
+  $fSize: null
+) {
   font-family: $fFamily;
   font-weight: $fWeight;
   font-style: $fStyle;

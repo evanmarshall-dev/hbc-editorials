@@ -15,9 +15,9 @@
 
       @include backImage(
         $white,
-        "315_050523",
-        "EDITORIAL_LANDING-PAGE_MENS_SUIT_FIT_GUIDE-HERO",
-        "MOBILE",
+        '315_050523',
+        'EDITORIAL_LANDING-PAGE_MENS_SUIT_FIT_GUIDE-HERO',
+        'MOBILE',
         contain,
         768,
         768
@@ -26,9 +26,9 @@
       @include respond-to(medium) {
         @include backImage(
           $white,
-          "315_050523",
-          "EDITORIAL_LANDING-PAGE_MENS_SUIT_FIT_GUIDE-HERO",
-          "TABLET",
+          '315_050523',
+          'EDITORIAL_LANDING-PAGE_MENS_SUIT_FIT_GUIDE-HERO',
+          'TABLET',
           contain,
           2048,
           812
@@ -38,9 +38,9 @@
       @include respond-to(medium) {
         @include backImage(
           $white,
-          "315_050523",
-          "EDITORIAL_LANDING-PAGE_MENS_SUIT_FIT_GUIDE-HERO",
-          "DESKTOP",
+          '315_050523',
+          'EDITORIAL_LANDING-PAGE_MENS_SUIT_FIT_GUIDE-HERO',
+          'DESKTOP',
           contain,
           1142,
           2880

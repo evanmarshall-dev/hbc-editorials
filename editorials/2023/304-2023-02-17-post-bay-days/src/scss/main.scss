@@ -4,35 +4,35 @@
  * One file to BRING them all.
  * And in a Sass-way MERGE them.
  --------------------------------------------- */
-@import "vendors/normalize";
+@import 'vendors/normalize';
 
-@import "abstracts/variables";
-@import "abstracts/placeholders";
-@import "abstracts/functions";
-@import "abstracts/mixins";
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
 
-@import "themes/admin";
-@import "themes/theme";
+@import 'themes/admin';
+@import 'themes/theme';
 
-@import "base/shameful";
-@import "base/base";
-@import "base/utilities";
-@import "base/animations";
-@import "base/typography";
+@import 'base/shameful';
+@import 'base/base';
+@import 'base/utilities';
+@import 'base/animations';
+@import 'base/typography';
 
-@import "components/buttons";
-@import "components/carousel";
-@import "components/dropdown";
-@import "components/widgets";
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/dropdown';
+@import 'components/widgets';
 
-@import "layout/footer";
-@import "layout/forms";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/hero";
-@import "layout/navigation";
-@import "layout/sidebar";
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/navigation';
+@import 'layout/sidebar';
 
-@import "pages/about";
-@import "pages/contact";
-@import "pages/home";
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/home';

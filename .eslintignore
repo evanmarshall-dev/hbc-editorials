@@ -1,4 +1,9 @@
 .git
+build
+dev
+dist
+prod
+bin
 **/build
 **/dev
 **/dist
@@ -10,8 +15,9 @@
 **/src/templates/footer.html
 **/src/*.html
 node_modules
-**/node_modules
 package-lock.json
 **/package-lock.json
 yarn.lock
 **/yarn.lock
+package.json
+.eslintrc.json

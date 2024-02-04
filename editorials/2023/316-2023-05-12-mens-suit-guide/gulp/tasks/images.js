@@ -4,11 +4,11 @@
 
 // images.js
 
-import gulp from "gulp";
-import imagemin from "gulp-imagemin";
-import pngquant from "imagemin-pngquant";
+import gulp from 'gulp';
+import imagemin from 'gulp-imagemin';
+import pngquant from 'imagemin-pngquant';
 
-import { paths } from "../../gulpfile.js";
+import { paths } from '../../gulpfile.js';
 
 export default function optImages() {
   return gulp
@@ -18,7 +18,7 @@ export default function optImages() {
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }, { cleanupIDs: false }],
         use: [pngquant()],
-      })
+      }),
     )
     .pipe(gulp.dest(paths.dev.assets));
 }

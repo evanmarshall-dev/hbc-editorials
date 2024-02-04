@@ -4,21 +4,21 @@
 
 // html.js
 
-import gulp from "gulp";
-import fileInclude from "gulp-file-include";
-import inject from "gulp-inject";
-import htmlMin from "gulp-htmlmin";
+import gulp from 'gulp';
+import fileInclude from 'gulp-file-include';
+import inject from 'gulp-inject';
+import htmlMin from 'gulp-htmlmin';
 
-import { paths } from "../../gulpfile.js";
+import { paths } from '../../gulpfile.js';
 
 export function devHtml() {
   return gulp
     .src(paths.src.htmlen)
     .pipe(
       fileInclude({
-        prefix: "@@",
-        basepath: "src/templates",
-      })
+        prefix: '@@',
+        basepath: 'src/templates',
+      }),
     )
     .pipe(htmlMin({ collapseWhitespace: true }))
     .pipe(gulp.dest(paths.dev.main));
@@ -30,7 +30,7 @@ export function injectAssets() {
 
   return gulp
     .src(`${paths.dev.main}/*.html`)
-    .pipe(inject(css, { ignorePath: "dev", addRootSlash: false }))
-    .pipe(inject(js, { ignorePath: "dev", addRootSlash: false }))
+    .pipe(inject(css, { ignorePath: 'dev', addRootSlash: false }))
+    .pipe(inject(js, { ignorePath: 'dev', addRootSlash: false }))
     .pipe(gulp.dest(paths.dev.main));
 }

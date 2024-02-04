@@ -5,8 +5,8 @@
 
 // clean.js
 
-import { deleteAsync } from "del";
-import { paths } from "../../gulpfile.js";
+import { deleteAsync } from 'del';
+import { paths } from '../../gulpfile.js';
 
 async function clean() {
   // const deletedFilePaths = await deleteAsync(paths.dist.images);
@@ -14,7 +14,7 @@ async function clean() {
 
   // console.log("Deleted files:\n", deletedFilePaths.join("\n"));
   // console.log("\n\n");
-  console.log("Deleted directories:\n", deletedDirectoryPaths.join("\n"));
+  console.log('Deleted directories:\n', deletedDirectoryPaths.join('\n'));
 }
 
 export default clean;

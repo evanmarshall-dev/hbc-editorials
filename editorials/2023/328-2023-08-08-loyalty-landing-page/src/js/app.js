@@ -1,1 +1,1 @@
-console.log("THIS IS A TEST APP.JS FILE");
+console.log('THIS IS A TEST APP.JS FILE');

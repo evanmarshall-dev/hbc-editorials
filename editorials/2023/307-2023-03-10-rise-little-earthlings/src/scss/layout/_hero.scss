@@ -14,20 +14,36 @@
         margin-bottom: 0;
         background-color: $rle-beige;
 
-        @include backImage($rle-beige, "306_031023", "EVERGREEN_RLE-HERO", "MOBILE", contain, 1536, 1536);
+        @include backImage(
+          $rle-beige,
+          '306_031023',
+          'EVERGREEN_RLE-HERO',
+          'MOBILE',
+          contain,
+          1536,
+          1536
+        );
 
         @include respond-to(medium) {
-          @include backImage($rle-beige, "306_031023", "EVERGREEN_RLE-HERO", "TABLET", contain, 812, 2048);
+          @include backImage(
+            $rle-beige,
+            '306_031023',
+            'EVERGREEN_RLE-HERO',
+            'TABLET',
+            contain,
+            812,
+            2048
+          );
         }
 
         @include respond-to(large) {
           @include backImage(
             $rle-beige,
-            "306_031023",
-            "EVERGREEN_RLE-HERO",
+            '306_031023',
+            'EVERGREEN_RLE-HERO',
             // "DESKTOP_Rev1",
             // Comment out below when using English
-            "DESKTOP_FR",
+            'DESKTOP_FR',
             contain,
             1142,
             2880

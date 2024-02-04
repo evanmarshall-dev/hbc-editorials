@@ -1,13 +1,17 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-cycle */
+
 // syncDev.js
 
-import gulp from "gulp";
-import sync from "browser-sync";
+import gulp from 'gulp';
+import sync from 'browser-sync';
 
-import devScripts from "../tasks/scriptsDev.js";
-import devStyles from "../tasks/stylesDev.js";
-import { devHtml, injectAssets } from "../tasks/htmlDev.js";
+import devScripts from './scriptsDev.js';
+import devStyles from './stylesDev.js';
+import { devHtml, injectAssets } from './htmlDev.js';
 
-import { paths } from "../../gulpfile.js";
+import { paths } from '../../gulpfile.js';
 
 export default function browserSync() {
   sync.init({
@@ -15,12 +19,12 @@ export default function browserSync() {
       baseDir: paths.dev.main,
     },
     port: 8888,
-    open: "local",
-    browser: "google chrome",
+    open: 'local',
+    browser: 'google chrome',
   });
 
   gulp.watch(paths.src.scripts, devScripts);
   gulp.watch(paths.src.styles, devStyles);
   gulp.watch([paths.src.html, paths.src.templates], gulp.series(devHtml, injectAssets));
-  gulp.watch(paths.dev.main).on("change", sync.reload);
+  gulp.watch(paths.dev.main).on('change', sync.reload);
 }
