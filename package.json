@@ -12,7 +12,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,json}": "yarn lint:eslint",
-    "*.{js,jsx,html,scss,css,md}": "yarn lint:prettier"
+    "*.{js,jsx,json,html,scss,css,md}": "yarn lint:prettier"
   },
   "repository": "git@dgit:evanmarshall-dev/hbc-editorials.git",
   "author": "evanmarshall-dev <me@evanmarshall.dev>",
