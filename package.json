@@ -6,7 +6,14 @@
   "scripts": {
     "lint": "yarn lint:eslint && yarn lint:prettier",
     "lint:eslint": "eslint --fix .",
-    "lint:prettier": "prettier --write ."
+    "lint:prettier": "prettier --write .",
+    "postinstall": "husky",
+    "prepare": "husky install",
+    "test": "yarn lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json}": "yarn lint:eslint",
+    "*.{js,jsx,html,scss,css,md}": "yarn lint:prettier"
   },
   "repository": "git@dgit:evanmarshall-dev/hbc-editorials.git",
   "author": "evanmarshall-dev <me@evanmarshall.dev>",
@@ -17,6 +24,8 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
   }
 }
