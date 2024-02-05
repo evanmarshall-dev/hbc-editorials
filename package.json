@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "yarn lint:eslint && yarn lint:prettier",
-    "lint:eslint": "eslint --fix .",
-    "lint:prettier": "prettier --write .",
+    "lint:eslint": "eslint --quiet --fix .",
+    "lint:prettier": "prettier --write . --ignore-unknown",
     "postinstall": "husky",
     "test": "yarn lint-staged"
   },
