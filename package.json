@@ -11,8 +11,13 @@
     "test": "yarn lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json}": "yarn lint:eslint",
-    "*.{js,jsx,json,html,scss,css,md}": "yarn lint:prettier"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --quiet --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{json,html,css,scss}": [
+      "prettier --write --ignore-unknown"
+    ]
   },
   "repository": "git@dgit:evanmarshall-dev/hbc-editorials.git",
   "author": "evanmarshall-dev <me@evanmarshall.dev>",
