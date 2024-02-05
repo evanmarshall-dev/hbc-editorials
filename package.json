@@ -8,7 +8,6 @@
     "lint:eslint": "eslint --fix .",
     "lint:prettier": "prettier --write .",
     "postinstall": "husky",
-    "prepare": "husky install",
     "test": "yarn lint-staged"
   },
   "lint-staged": {
