@@ -23,13 +23,10 @@
     "dist",
     "dev",
     "prod",
-    ".eslintrc.json",
-    ".prettierrc.json",
     ".vscode/*",
     ".git/*",
     ".husky/*",
     "yarn.lock",
-    "package-lock.json",
-    "package.json"
+    "package-lock.json"
   ]
 }
