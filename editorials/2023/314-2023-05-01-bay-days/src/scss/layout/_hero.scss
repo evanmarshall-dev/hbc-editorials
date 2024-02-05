@@ -15,9 +15,9 @@
 
       @include backImage(
         $bd-orange,
-        '314_050123',
-        'LANDING-PAGE-BAYDAYS_HERO',
-        'MOBILE',
+        "314_050123",
+        "LANDING-PAGE-BAYDAYS_HERO",
+        "MOBILE",
         contain,
         883,
         768
@@ -38,9 +38,9 @@
       @include respond-to(medium) {
         @include backImage(
           $bd-orange,
-          '314_050123',
-          'LANDING-PAGE-BAYDAYS_HERO',
-          'DESKTOP',
+          "314_050123",
+          "LANDING-PAGE-BAYDAYS_HERO",
+          "DESKTOP",
           contain,
           1132,
           2882

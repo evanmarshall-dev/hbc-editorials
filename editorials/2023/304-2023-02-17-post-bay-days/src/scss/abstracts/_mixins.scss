@@ -3,13 +3,13 @@
 ----------------------------------------------- */
 // NEEDS TO BE IN PIXELS
 $breakpoints: (
-  'small': (
+  "small": (
     min-width: 768px,
   ),
-  'medium': (
+  "medium": (
     min-width: 992px,
   ),
-  'large': (
+  "large": (
     min-width: 1200px,
   ),
 );
@@ -40,17 +40,17 @@ $breakpoints: (
 @mixin bayOverlay($position) {
   position: absolute;
 
-  @if $position == 'vertical' {
+  @if $position == "vertical" {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  } @else if $position == 'horizontal' {
+  } @else if $position == "horizontal" {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translate(-50%);
-  } @else if $position == 'both' {
+  } @else if $position == "both" {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -217,10 +217,10 @@ $breakpoints: (
 @mixin background-gradient($start-color, $end-color, $orientation) {
   background: $start-color;
 
-  @if $orientation == 'vertical' {
+  @if $orientation == "vertical" {
     background: -webkit-linear-gradient(top, $start-color, $end-color);
     background: linear-gradient(to bottom, $start-color, $end-color);
-  } @else if $orientation == 'horizontal' {
+  } @else if $orientation == "horizontal" {
     background: -webkit-linear-gradient(left, $start-color, $end-color);
     background: linear-gradient(to right, $start-color, $end-color);
   } @else {

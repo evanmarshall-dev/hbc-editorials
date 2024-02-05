@@ -37,27 +37,27 @@
 
   @if $weight == 900 {
     //Proxima Nova Black
-    font-family: 'proxima-nova', 'Gill Sans MT', 'Gill Sans', 'Corbel', sans-serif;
+    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
     font-weight: 900;
   } @else if $weight == 800 {
     //Proxima Nova Extrabold
 
-    font-family: 'proxima-nova', 'Gill Sans MT', 'Gill Sans', 'Corbel', sans-serif;
+    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
     font-weight: 800;
   } @else if $weight == 700 {
     //Proxima Nova Bold
 
-    font-family: 'proxima-nova-bold', 'Gill Sans MT', 'Gill Sans', 'Corbel', sans-serif;
+    font-family: "proxima-nova-bold", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
     font-weight: 700;
   } @else if $weight == 600 {
     // Proxima Nova Semibold
 
-    font-family: 'proxima-nova-semibold', 'Gill Sans MT', 'Gill Sans', 'Corbel', sans-serif;
+    font-family: "proxima-nova-semibold", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
     font-weight: 600;
   } @else {
     // Proxima Nova Regular
 
-    font-family: 'proxima-nova', 'Gill Sans MT', 'Gill Sans', 'Corbel', sans-serif;
+    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
     font-weight: 400;
   }
 }

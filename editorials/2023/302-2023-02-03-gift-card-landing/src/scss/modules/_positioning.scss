@@ -12,7 +12,7 @@
 // http://stackoverflow.com/questions/211383/which-method-of-clearfix-is-best
 @mixin clearfix {
   &:after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
   }

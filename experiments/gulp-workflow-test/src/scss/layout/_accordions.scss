@@ -45,14 +45,14 @@
       }
 
       &:after {
-        content: '\002B';
+        content: "\002B";
         color: $spring-wood;
         font-weight: bold;
         float: right;
       }
 
       &--active:after {
-        content: '\2212';
+        content: "\2212";
         color: $hbc-blue;
         font-weight: bold;
         float: right;

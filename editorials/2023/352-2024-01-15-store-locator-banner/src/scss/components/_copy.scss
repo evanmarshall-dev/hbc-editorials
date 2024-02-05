@@ -17,17 +17,17 @@
       }
 
       &--secondary {
-        @include font('Neue Montreal bold', 400, null, 1, null, 32px);
+        @include font("Neue Montreal bold", 400, null, 1, null, 32px);
         margin: 0 0 4px;
       }
 
       &--tertiary {
-        @include font('Neue Montreal', 400, null, 24px, null, 16px);
+        @include font("Neue Montreal", 400, null, 24px, null, 16px);
         margin: 0;
       }
 
       &--quaternary {
-        @include font('Neue Montreal medium', 400, null, 1, null, 14px);
+        @include font("Neue Montreal medium", 400, null, 1, null, 14px);
         margin: 0 0 4px;
       }
 

@@ -14,13 +14,13 @@
 // * more semantic
 
 // CSS Reset
-@import 'partials/reset';
+@import "partials/reset";
 
 // Modules and Global Variables
-@import 'partials/base';
+@import "partials/base";
 
 // Editorial-specific Variables
-@import 'partials/variables';
+@import "partials/variables";
 
 // Single Page App
 // @import 'partials/single-page';
@@ -29,7 +29,7 @@
 // @import "partials/responsive";
 //@import 'partials/header';
 //@import 'partials/nav';
-@import 'partials/section';
+@import "partials/section";
 // @import "partials/footer";
 
 // HBC Carousel

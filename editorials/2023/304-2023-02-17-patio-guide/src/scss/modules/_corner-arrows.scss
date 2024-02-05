@@ -30,7 +30,7 @@
   $corner-thickness: 10px;
   background: $color;
 
-  @if $slope == 'positive' {
+  @if $slope == "positive" {
     &:nth-child(1) {
       top: 0;
       left: $container-width - $corner-length;
@@ -60,7 +60,7 @@
     }
   }
 
-  @if $slope == 'negative' {
+  @if $slope == "negative" {
     &:nth-child(1) {
       top: 0;
       left: 0;

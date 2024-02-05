@@ -1,0 +1,16 @@
+{
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "singleAttributePerLine": true,
+  "overrides": [
+    {
+      "files": ["*.html", "*.css", "*.scss", "*.sass", "*.less"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}

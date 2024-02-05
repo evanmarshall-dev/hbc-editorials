@@ -4,9 +4,9 @@
   "description": "A collection of Hudson's Bay editorials, landing pages, misc. page updates and experimental projects.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .js,.json",
-    "lint:fix": "eslint . --ext .js,.json --fix",
-    "format": "prettier . --write --ignore-unknown"
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:eslint": "eslint --fix .",
+    "lint:prettier": "prettier --write ."
   },
   "repository": "git@dgit:evanmarshall-dev/hbc-editorials.git",
   "author": "evanmarshall-dev <me@evanmarshall.dev>",

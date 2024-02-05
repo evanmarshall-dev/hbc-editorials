@@ -15,9 +15,9 @@
 
       @include backImage(
         $bd-orange,
-        '311_041023',
-        'LANDING-PAGE_MOP_BAY-DAYS_HERO',
-        'MOBILE',
+        "311_041023",
+        "LANDING-PAGE_MOP_BAY-DAYS_HERO",
+        "MOBILE",
         contain,
         1744,
         1536
@@ -38,9 +38,9 @@
       @include respond-to(medium) {
         @include backImage(
           $bd-orange,
-          '311_041023',
-          'LANDING-PAGE_MOP_BAY-DAYS_HERO',
-          'DESKTOP',
+          "311_041023",
+          "LANDING-PAGE_MOP_BAY-DAYS_HERO",
+          "DESKTOP",
           contain,
           1132,
           2882

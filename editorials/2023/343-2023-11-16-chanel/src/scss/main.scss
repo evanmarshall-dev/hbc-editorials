@@ -7,10 +7,10 @@
  * And in a Sass-way MERGE them.
  --------------------------------------------- */
 
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-@import 'base/sfcc-resets';
+@import "base/sfcc-resets";
 // @import "base/utilities";
 
 // @import "components/images";
@@ -20,7 +20,7 @@
 // @import "components/modals";
 // @import "components/widgets";
 
-@import 'layout/sections';
+@import "layout/sections";
 // @import "layout/cards";
 // @import "layout/heros";
 // @import "layout/footers";

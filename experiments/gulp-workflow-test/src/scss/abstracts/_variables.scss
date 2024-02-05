@@ -29,18 +29,18 @@ $bg-blue: #00274c;
 $bg-beige: #f8f8f2;
 
 // Fonts
-@import url('https://use.typekit.net/pdw1vaj.css');
+@import url("https://use.typekit.net/pdw1vaj.css");
 
-$baySerif: 'ivypresto-display', serif;
-$baySans: 'proxima-nova', sans-serif;
+$baySerif: "ivypresto-display", serif;
+$baySans: "proxima-nova", sans-serif;
 // $baySans: "Helvetica Neue", sans-serif;
 
 // Breakpoints
 // How to use in styles: @include respond-to(medium) { ... }
 $breakpoints: (
   // from 0px to 575px
-  'small': (/* Mobile Styles (576px or 36em - 767px). */ min-width: 36em),
-  'medium': (/* Tablet Styles (768px or 48em - 1199px). */ min-width: 48em),
-  'large': (/* Desktop Styles (1200 or 75em - 1439px). */ min-width: 75em),
-  'xlarge': (/* Large Desktop Styles (1440px or 90em and Up). */ min-width: 90em)
+  "small": (/* Mobile Styles (576px or 36em - 767px). */ min-width: 36em),
+  "medium": (/* Tablet Styles (768px or 48em - 1199px). */ min-width: 48em),
+  "large": (/* Desktop Styles (1200 or 75em - 1439px). */ min-width: 75em),
+  "xlarge": (/* Large Desktop Styles (1440px or 90em and Up). */ min-width: 90em)
 );
