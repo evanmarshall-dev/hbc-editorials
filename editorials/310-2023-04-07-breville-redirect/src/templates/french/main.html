@@ -1,0 +1,30 @@
+<!-- START OF MAIN HEADER SECTION -->
+<section class="sec01">
+  <div class="hbc-header__wrapper">
+    <h3>
+      <time>Redirection dans <strong id="dsg-seconds">4</strong> secondes</time>.
+    </h3>
+    <h4>Dirigez-vous directement vers Breville ?</h4>
+    <section class="buttons__wrapper">
+      <a
+        class="btn--default"
+        href="https://www.eventbrite.ca/o/breville-canada-62761435113#collections?lang=fr-CA"
+        >CLIQUEZ ICI</a
+      >
+    </section>
+  </div>
+</section>
+<!-- END OF MAIN HEADER SECTION -->
+
+<script>
+  !(function (e, n, t) {
+    n.addEventListener("DOMContentLoaded", function (t) {
+      var o = "https://www.eventbrite.ca/o/breville-canada-62761435113#collections?lang=fr-CA",
+        a = n.getElementById("dsg-seconds"),
+        d = a.innerHTML,
+        s = setInterval(function () {
+          (d = --d), (a.textContent = d), d <= 0 && (clearInterval(s), (e.location.href = o));
+        }, 1e3);
+    });
+  })(window, document);
+</script>

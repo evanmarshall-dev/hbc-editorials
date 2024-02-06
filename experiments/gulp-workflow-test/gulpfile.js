@@ -1,16 +1,16 @@
 /* eslint-disable import/extensions */
 
 // IMPORT NPM PACKAGES, GULP PLUGINS, AND MODULES.
-import browserSync from 'browser-sync';
-import { deleteAsync } from 'del';
-import pkg from 'gulp';
-import minimist from 'minimist';
-import concatStyles from './gulp-tasks/dev-tasks/cssTasks.js';
-import concatScripts from './gulp-tasks/dev-tasks/jsTasks.js';
-import injectAssets from './gulp-tasks/dev-tasks/htmlTasks.js';
-import stylesProd from './gulp-tasks/prod-tasks/cssTasks.js';
-import scriptsProd from './gulp-tasks/prod-tasks/jsTasks.js';
-import htmlProd from './gulp-tasks/prod-tasks/htmlTasks.js';
+import browserSync from "browser-sync";
+import { deleteAsync } from "del";
+import pkg from "gulp";
+import minimist from "minimist";
+import concatStyles from "./gulp-tasks/dev-tasks/cssTasks.js";
+import concatScripts from "./gulp-tasks/dev-tasks/jsTasks.js";
+import injectAssets from "./gulp-tasks/dev-tasks/htmlTasks.js";
+import stylesProd from "./gulp-tasks/prod-tasks/cssTasks.js";
+import scriptsProd from "./gulp-tasks/prod-tasks/jsTasks.js";
+import htmlProd from "./gulp-tasks/prod-tasks/htmlTasks.js";
 
 // PULL IN GULP METHODS AND ASSIGN TO VARIABLES.
 const { series, watch } = pkg;
@@ -18,28 +18,28 @@ const { series, watch } = pkg;
 // DEFINE PROJECT PATHS.
 export const paths = {
   src: {
-    sass: 'src/scss/**/*.scss',
-    html: 'src/html/EN/index.html',
-    htmlfr: 'src/html/FR/index.html',
-    template: 'src/templates/EN/**/*',
-    templatefr: 'src/templates/FR/**/*',
-    js: 'src/js/**/*.js',
+    sass: "src/scss/**/*.scss",
+    html: "src/html/EN/index.html",
+    htmlfr: "src/html/FR/index.html",
+    template: "src/templates/EN/**/*",
+    templatefr: "src/templates/FR/**/*",
+    js: "src/js/**/*.js",
   },
-  dev: 'dev',
-  prod: 'prod',
+  dev: "dev",
+  prod: "prod",
 };
 
 // GULP CLEAN/DELETE TASK.
 // Deletes the dev and prod directories.
 export const clean = async () => {
   const deletedDirectoryPaths = await deleteAsync([paths.dev, paths.prod, `!${paths.dev}/fonts`]);
-  console.log('Deleted directories:\n', deletedDirectoryPaths.join('\n'));
+  console.log("Deleted directories:\n", deletedDirectoryPaths.join("\n"));
 };
 
 // * DEVELOPMENT: Define command-line options to specify the template to use
 const options = minimist((window.process || {}).argv.slice(2), {
-  string: 'template',
-  default: { template: 'default.html' },
+  string: "template",
+  default: { template: "default.html" },
 });
 
 // * DEVELOPMENT: GULP SERVE TASK.
@@ -50,8 +50,8 @@ export const serve = (done) => {
       baseDir: paths.dev,
     },
     port: 8888,
-    open: 'local',
-    browser: 'google chrome',
+    open: "local",
+    browser: "google chrome",
     // browser: "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe",
   });
   done();
@@ -100,7 +100,7 @@ export const compileSass = async () => {
   try {
     await stylesProd(paths.src.sass, `${paths.prod}/css`);
   } catch (error) {
-    console.error('Production: Sass compilation error:', error);
+    console.error("Production: Sass compilation error:", error);
   }
 };
 
@@ -109,7 +109,7 @@ export const concatAndMinifyJs = async () => {
   try {
     await scriptsProd(paths.src.js, `${paths.prod}/js`);
   } catch (error) {
-    console.error('Production: JS concatenation error:', error);
+    console.error("Production: JS concatenation error:", error);
   }
 };
 
