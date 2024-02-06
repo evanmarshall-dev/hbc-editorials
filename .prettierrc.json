@@ -3,8 +3,10 @@
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
-  "singleQuote": true,
+  "arrowParens": "always",
+  "proseWrap": "preserve",
   "singleAttributePerLine": true,
+  "singleQuote": true,
   "overrides": [
     {
       "files": ["*.html", "*.css", "*.scss", "*.sass", "*.less"],
