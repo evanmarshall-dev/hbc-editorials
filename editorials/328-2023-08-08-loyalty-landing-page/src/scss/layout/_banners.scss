@@ -8,6 +8,7 @@
     &--full {
       background-color: $hbc-blue;
       padding: 1.25rem 0;
+      z-index: 0;
 
       @include flex(row, nowrap, center, center);
     }
