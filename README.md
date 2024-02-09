@@ -1,6 +1,6 @@
 # The Hudson's Bay Developer's Repo
 
-![The classic Hudson's Bay Compoany logo and crest](https://canadaalive.files.wordpress.com/2014/06/hbc-hubsons-bay-company-logo-11.jpg)
+![The classic Hudson's Bay Company logo and crest](https://canadaalive.files.wordpress.com/2014/06/hbc-hubsons-bay-company-logo-11.jpg)
 
 ## This repo is a collection of The Hudson's Bay editorial content, experiments, re-usable snippets, and other miscellaneous code
 
@@ -9,7 +9,7 @@
 ![Contributors](https://img.shields.io/badge/CONTRIBUTORS-1-purple)
 ![Forks](https://img.shields.io/badge/FORKS-0-blue)
 ![Stars](https://img.shields.io/badge/STARS-0-green)
-![Licence](https://img.shields.io/badge/LICENSE-MIT-brown)
+![License](https://img.shields.io/badge/LICENSE-MIT-brown)
 ![Issues](https://img.shields.io/badge/ISSUES-0-yellow)
 ![npm](https://img.shields.io/badge/yarn-v.1.22.19-red)
 
@@ -58,5 +58,3 @@ The guides can be found within each directory within the content-cards folder ho
 <!-- TODO: Update once repo is created and first project is pushed to repo. -->
 
 | 1 | [HBC Editorials Repo](https://github.com/evanmarshall-dev/hbc-editorials) | [Evan Marshall](https://github.com/evanmarshall-dev) |
-
-<!-- | 2     | [DigitalClock](https://github.com/larymak/Python-project-Scripts/tree/main/TIME%20SCRIPTS/DigitalClock)        | [Logan Ozdyck](https://github.com/ozdyck3) | -->
