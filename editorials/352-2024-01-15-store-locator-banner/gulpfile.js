@@ -37,7 +37,7 @@ export const clean = async () => {
 };
 
 // * DEVELOPMENT: Define command-line options to specify the template to use
-const options = minimist((window.process || {}).argv.slice(2), {
+const options = minimist(process.argv.slice(2), {
   string: "template",
   default: { template: "default.html" },
 });
@@ -51,8 +51,8 @@ export const serve = (done) => {
     },
     port: 8888,
     open: "local",
-    // browser: "google chrome",
-    browser: "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe",
+    browser: "google chrome",
+    // browser: "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe",
   });
   done();
 };
