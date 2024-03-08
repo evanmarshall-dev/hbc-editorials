@@ -2,13 +2,16 @@
   "name": "hbc-editorials",
   "version": "2.0.0",
   "private": true,
+  "type": "module",
   "description": "A collection of landing page editorials, sections, page elements, and tests for The Hudson's Bay.",
   "main": "index.js",
   "repository": "git@dgit:evanmarshall-dev/hbc-editorials.git",
   "author": "evanmarshall-dev <me@evanmarshall.dev>",
   "devDependencies": {
     "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
@@ -19,7 +22,9 @@
   },
   "lint-staged": {
     "*.{html,scss,sass,css,js,jsx,ts,tsx}": [
-      "prettier --write",
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 ."
     ]
   }

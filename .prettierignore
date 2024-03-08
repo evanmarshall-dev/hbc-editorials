@@ -4,6 +4,7 @@
 !.prettierrc.json
 !.eslintrc.json
 !src/**/*
-!src/**/*
-!gulpfile.js
-!gulp-tasks/**/*.js
+!**/**/src/**/*
+# TODO: Figure out how to incorporate ES6 modules and ESLint.
+# !gulpfile.js
+# !gulp-tasks/**/*.js
