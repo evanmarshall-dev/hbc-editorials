@@ -1,0 +1,610 @@
+// File: _base.scss
+
+/* -----------------------------------------------
+ * PAGE STYLES
+----------------------------------------------- */
+.secondary-content .home-slots {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  padding: 0;
+  overflow-x: initial;
+}
+
+h1.hbc-h1,
+h2.hbc-h2,
+h3.hbc-h3,
+h4.hbc-h4,
+h5.hbc-h5,
+h6.hbc-h6,
+p,
+address,
+hr,
+section#british-columbia hr.theBay-stores,
+section#alberta hr.theBay-stores,
+section#saskatchewan hr.theBay-stores,
+section#manitoba hr.theBay-stores,
+section#ontario hr.theBay-stores,
+section#quebec hr.theBay-stores,
+section#nova-scotia hr.theBay-stores,
+section#pop-ups hr.theBay-stores,
+section#british-columbia-pop-ups hr.theBay-stores.special,
+section#alberta-pop-ups hr.theBay-stores.special,
+section#saskatchewan-pop-ups hr.theBay-stores.special,
+section#ontario-pop-ups hr.theBay-stores.special,
+section#quebec-pop-ups hr.theBay-stores.special {
+  margin: 0;
+}
+
+.theBay-hero-container {
+  padding: 25px 40px 40px 40px;
+}
+
+nav.theBay-stores-nav {
+  padding: 0 40px 20px 0;
+}
+
+section#british-columbia {
+  padding: 80px 40px 6px 40px;
+}
+
+.theBay-stores-province,
+.theBay-stores-province.special {
+  padding: 80px 40px 6px 40px;
+}
+
+.theBay-stores-container .theBay-desktop-only {
+  display: block;
+}
+
+.theBay-stores-container .theBay-mobile-only {
+  display: block;
+}
+
+.theBay-stores-container hr.theBay-stores {
+  width: 100%;
+  height: 2px;
+  background: #d8d8d8;
+  margin-top: 40px;
+}
+
+.theBay-stores-container .theBay-stores-divider hr.theBay-stores {
+  width: 100%;
+  height: 1px;
+  background: #d8d8d8;
+  margin-top: 40px;
+}
+
+.theBay-stores-container hr.theBay-stores.special {
+  background: #d32027;
+}
+
+div.theBay-province {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0px 5px;
+  margin: -16px 0 0 2.2%;
+  position: absolute;
+}
+
+section.theBay-single-store-container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 80px 0 80px;
+}
+
+section.theBay-single-store-container:last-child {
+  padding-bottom: 80px;
+}
+.theBay-stores-hours {
+  width: 30%;
+  padding: 0 40px;
+}
+address.theBay-stores-info {
+  width: 35%;
+  padding: 0 40px 0 0;
+  font-style: normal;
+}
+.theBay-stores-directions {
+  width: 35%;
+  padding: 0 0 0 40px;
+}
+.theBay-stores-map iframe {
+  width: 100%;
+  height: 222px;
+}
+.theBay-stores-container h1.hbc-h1 {
+  font-family: 'Neue Montreal';
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+.theBay-stores-container h2.hbc-h2 {
+  font-family: 'Neue Montreal bold';
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #222222;
+  text-transform: capitalize;
+  text-align: left;
+}
+.theBay-stores-container h2.hbc-h2.special {
+  color: #d32027;
+}
+.theBay-stores-container h3.hbc-h3 {
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  line-height: 1;
+  color: #d32027;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 5px 0;
+}
+.theBay-stores-container h4.hbc-h4 {
+  font-family: 'Neue Montreal medium';
+  font-weight: 700;
+  line-height: 24.3px;
+  color: #222222;
+  text-align: left;
+  letter-spacing: 1px;
+  padding-bottom: 0.5rem;
+}
+.theBay-stores-container h5.hbc-h5 {
+  font-family: 'Neue Montreal medium';
+  font-weight: 200;
+  line-height: 21.6px;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 3px;
+  margin: 0 0 0.5rem 0;
+}
+
+.theBay-stores-container h6.hbc-h6 {
+  font-family: 'Neue Montreal medium';
+  font-weight: 700;
+  line-height: 24.3px;
+  color: #222222;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.theBay-stores-container h5.hbc-h5.holiday-hours {
+  margin: 20px 0 20px 0;
+}
+.theBay-stores-container p.theBay-opening {
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  line-height: 1;
+  color: #d32027;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+.theBay-stores-container p.theBay-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #404040;
+  text-align: left;
+}
+
+.theBay-stores-container div.theBay-address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #404040;
+  text-align: left;
+}
+
+.theBay-stores-container .theBay-stores-listing-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #404040;
+  text-align: left;
+}
+.theBay-stores-container .theBay-stores-cta-a-link {
+  display: flex;
+  align-items: center;
+  padding: 16px 30px;
+  background: #f7f7f7;
+  color: #222222;
+  border-radius: 2px;
+}
+.theBay-stores-container .theBay-stores-cta-a-link.pop-ups {
+  background: #f7f7f7;
+}
+.theBay-stores-container .theBay-stores-cta-a-link span {
+  font-style: normal;
+  font-family: Neue Montreal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-transform: capitalize;
+}
+.theBay-stores-container .theBay-stores-cta-custom-a-link {
+  display: flex;
+  padding: 0;
+}
+.theBay-stores-container .theBay-stores-cta-custom-a-link span {
+  font-family: Neue Montreal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24.3%;
+  color: #222222;
+  text-transform: capitalize;
+}
+.theBay-stores-container a.theBay-stores-cta-a-link:hover {
+  text-decoration-color: #fff;
+  text-decoration-thickness: 1px;
+  background: #f2f2f2;
+}
+.theBay-stores-container a.theBay-stores-cta-custom-a-link:hover {
+  text-decoration-color: #222222;
+  text-decoration-thickness: 1px;
+}
+.theBay-stores-container .theBay-stores-cta-custom-link:hover {
+  background: #f2f2f2;
+}
+.theBay-stores-container .theBay-stores-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+.theBay-hero-headings {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px 40px 40px 40px;
+}
+.theBay-hero-headings .theBay-hero-pre-heading {
+  width: 100%;
+}
+.theBay-hero-headings .theBay-hero-heading {
+  width: 100%;
+}
+.theBay-hero-headings .theBay-hero-sub-heading {
+  width: 100%;
+}
+.theBay-stores-container .theBay-hero-headings .theBay-hero-pre-heading h1 {
+  margin: auto;
+  margin-bottom: 4px;
+  font-family: 'Neue Montreal medium';
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #00274c;
+}
+.theBay-stores-container .theBay-hero-headings .theBay-hero-heading h1 {
+  margin: auto;
+  margin-bottom: 0.5rem;
+  font-family: 'Neue Montreal bold';
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #222222;
+}
+.theBay-stores-container .theBay-hero-headings .theBay-hero-sub-heading h1 {
+  margin: auto;
+  font-family: Neue Montreal;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #404040;
+}
+.theBay-stores-cta-custom-link {
+  margin-top: 16px;
+  display: flex;
+  height: 48px;
+  padding: 16px 24px 16px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 2px;
+  background: #f7f7f7;
+}
+p.theBay-address.telephone,
+div.theBay-address.zellers-location {
+  padding: 1.5rem 0 0 0;
+}
+
+.hbc-util {
+  &__font {
+    &--normal {
+      font-weight: 400;
+    }
+  }
+
+  &__pl {
+    &--half {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+section.theBay-stores-divider {
+  padding: 0 80px;
+}
+.theBay-stores-listing.holiday {
+  padding: 20px 0 0 0;
+}
+/* theBay STORES NAV OVERFLOW */
+.theBay-stores-container .theBay-stores-nav {
+  overflow: auto;
+  width: fit-content;
+  margin: auto;
+  max-width: 100%;
+}
+nav.theBay-stores-nav {
+  padding-right: 0;
+}
+.theBay-stores-cta-button {
+  margin-right: 20px;
+}
+.theBay-stores-cta-button:last-child {
+  margin-right: 0;
+}
+span.theBay-time {
+  white-space: nowrap;
+  padding-left: 10px;
+}
+/* MOBILE */
+@media (max-width: 767px) {
+  .theBay-stores-container .theBay-desktop-only {
+    display: none !important;
+  }
+  .theBay-hero-container {
+    padding: 20px;
+  }
+  nav.theBay-stores-nav {
+    padding: 0 0 20px 20px;
+  }
+  section.theBay-single-store-container {
+    flex-direction: column;
+    padding: 40px 40px 0 40px;
+  }
+  section.theBay-single-store-container:last-child {
+    padding-bottom: 40px;
+  }
+  .theBay-stores-container hr.theBay-stores {
+    margin-top: 40px;
+  }
+  .theBay-stores-hours {
+    padding: 0;
+  }
+  .theBay-stores-directions {
+    padding: 0;
+  }
+  address.theBay-stores-info {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  .theBay-stores-hours {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  .theBay-stores-directions {
+    width: 100%;
+    padding: 0;
+  }
+  .theBay-stores-map iframe {
+    width: 100%;
+    height: 222px;
+  }
+  section#british-columbia {
+    padding: 28px 20px 6px 20px;
+  }
+  .theBay-stores-province,
+  .theBay-stores-province.special {
+    padding: 40px 20px 6px 20px;
+  }
+  div.theBay-province {
+    margin: -15px 0 0 4.25%;
+  }
+
+  .theBay-stores-container .theBay-hero-headings .theBay-hero-heading h1 {
+    font-size: 32px;
+  }
+  .theBay-stores-container h2.hbc-h2 {
+    font-size: 18px;
+  }
+  .theBay-stores-container h3.hbc-h3 {
+    font-size: 1.5rem;
+  }
+  .theBay-stores-container h4.hbc-h4 {
+    font-size: 18px;
+  }
+  .theBay-stores-container h5.hbc-h5 {
+    font-size: 16px;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .theBay-stores-container h6.hbc-h6 {
+    font-size: 18px;
+  }
+
+  .theBay-stores-container p.theBay-opening {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+  .theBay-stores-container p.theBay-address {
+    font-size: 16px;
+  }
+  .theBay-stores-container .theBay-stores-listing-row {
+    font-size: 16px;
+  }
+  .theBay-stores-container .theBay-stores-cta-a-link {
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 2px;
+  }
+  .theBay-stores-container .theBay-stores-cta-a-link span,
+  .theBay-stores-container .theBay-stores-cta-custom-a-link span {
+    font-size: 16px;
+  }
+  .theBay-stores-container .theBay-stores-nav {
+    margin: 0 0 0 0;
+  }
+  .theBay-stores-cta-button {
+    margin-right: 12px;
+  }
+  .theBay-stores-cta-button:last-child {
+    margin-right: 20px !important;
+  }
+  section.theBay-stores-divider {
+    padding: 0 40px;
+  }
+  p.theBay-address.telephone {
+    padding: 1.5rem 0 0 0;
+  }
+  .theBay-stores-listing.holiday {
+    padding: 10px 0 0 0;
+  }
+  .theBay-hero-headings {
+    margin: 40px 20px 24px 20px;
+  }
+  .theBay-stores-cta-custom-link {
+    margin-top: 20px;
+  }
+}
+/* IN BETWEEN DESKTOP & MOBILE */
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+  .theBay-hero-container {
+    padding: 1.738vw 2.78vw 2.78vw 2.78vw;
+  }
+  nav.theBay-stores-nav {
+    padding: 0 2.78vw 20px 2.78vw;
+  }
+  section#british-columbia {
+    padding: 5.57vw 2.78vw 0 2.78vw;
+  }
+  .theBay-stores-province {
+    padding: 5.56vw 2.78vw 0 2.78vw;
+  }
+  section.theBay-single-store-container {
+    padding: 5.56vw 5.56vw 0 5.56vw;
+  }
+  section.theBay-single-store-container:last-child {
+    padding-bottom: 5.56vw;
+  }
+  .theBay-stores-container hr.theBay-stores {
+    margin-top: 5.56vw;
+  }
+  .theBay-stores-hours {
+    padding: 0 2.78vw;
+  }
+  .theBay-stores-directions {
+    padding: 0 0 0 2.78vw;
+  }
+  address.theBay-stores-info {
+    padding: 0 2.78vw 0 0;
+  }
+  div.theBay-province {
+    margin: -15.5px 0 0 1.4%;
+  }
+  .theBay-stores-container h1.hbc-h1 {
+    font-size: 6.39vw;
+  }
+  .theBay-stores-container h2.hbc-h2 {
+    font-size: 18px;
+  }
+  .theBay-stores-container h3.hbc-h3 {
+    font-size: 2.502vw;
+  }
+  .theBay-stores-container h4.hbc-h4 {
+    font-size: 18px;
+  }
+  .theBay-stores-container h5.hbc-h5 {
+    font-size: 16px;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .theBay-stores-container h6.hbc-h6 {
+    font-size: 18px;
+  }
+
+  .theBay-stores-container p.theBay-opening {
+    font-size: 17px;
+    margin: 0 0 1.39vw 0;
+  }
+  .theBay-stores-container p.theBay-address {
+    font-size: 16px;
+  }
+  .theBay-stores-container .theBay-stores-listing-row {
+    font-size: 16px;
+  }
+  .theBay-stores-container .theBay-stores-cta-a-link {
+    padding: 16px 30px;
+    border-radius: 2px;
+  }
+  .theBay-stores-container .theBay-stores-cta-a-link span {
+    font-size: 17px;
+  }
+  p.theBay-address.telephone {
+    padding: 1.5rem 0 0 0;
+  }
+  .theBay-stores-map iframe {
+    height: 222px;
+  }
+}
+/* DESKTOP FONTS */
+@media (min-width: 1440px) {
+  .theBay-stores-container .theBay-stores-cta-a-link span,
+  .theBay-stores-container .theBay-stores-cta-custom-a-link span {
+    font-size: 16px;
+  }
+  .theBay-stores-container h1.hbc-h1 {
+    font-size: 92px;
+  }
+  .theBay-stores-container h2.hbc-h2 {
+    font-size: 18px;
+  }
+  .theBay-stores-container h3.hbc-h3 {
+    font-size: 36px;
+  }
+  .theBay-stores-container h4.hbc-h4 {
+    font-size: 18px;
+  }
+  .theBay-stores-container h5.hbc-h5 {
+    font-size: 16px;
+  }
+
+  .theBay-stores-container h6.hbc-h6 {
+    font-size: 18px;
+  }
+
+  .theBay-stores-container p.theBay-opening {
+    font-size: 18px;
+  }
+  .theBay-stores-container p.theBay-address {
+    font-size: 16px;
+  }
+  .theBay-stores-container .theBay-stores-listing-row {
+    font-size: 16px;
+  }
+}
+/* DESKTOP */
+@media (min-width: 768px) {
+  .theBay-stores-container .theBay-mobile-only {
+    display: none !important;
+  }
+}
+img.NavigateTo-arrow {
+  height: 16px;
+  width: 16px;
+}
