@@ -59,3 +59,9 @@
     }
   }
 }
+
+.hbc-flyer {
+  &__wrapper {
+    background-color: $fly-bg;
+  }
+}
