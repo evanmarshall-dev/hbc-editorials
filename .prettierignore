@@ -5,6 +5,7 @@
 !.eslintrc.json
 !src/**/*
 !**/**/src/**/*
+!misc-pages/**/*.html
 # TODO: Figure out how to incorporate ES6 modules and ESLint.
 # !gulpfile.js
 # !gulp-tasks/**/*.js
