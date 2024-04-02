@@ -1,0 +1,29 @@
+<style type="text/css">
+  #s7ecatalog_div.s7ecatalogviewer {
+    width: 90%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+</style>
+<script
+  type="text/javascript"
+  language="javascript"
+  src="https://s7d9.scene7.com/s7viewers/html5/js/eCatalogViewer.js"
+></script>
+
+<div id="s7ecatalog_div"></div>
+<script type="text/javascript">
+  var s7ecatalog_div = new s7viewers.eCatalogViewer({
+    containerId: 's7ecatalog_div',
+    params: {
+      asset: 'TheBay/412_THEBAY_SPRING BAY DAYS_EN',
+      serverurl: 'https://s7d9.scene7.com/is/image/',
+      contenturl: 'https://s7d9.scene7.com/skins/',
+      config: 'Scene7SharedAssets/Universal_HTML5_eCatalog',
+      emailurl: 'https://s7d9.scene7.com/s7/emailFriend',
+      config2: 'companypreset',
+    },
+  }).init();
+</script>

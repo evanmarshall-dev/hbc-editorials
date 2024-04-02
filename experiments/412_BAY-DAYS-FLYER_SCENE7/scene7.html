@@ -7,13 +7,15 @@
     <script
       type="text/javascript"
       language="javascript"
-      src="http://s7d9.scene7.com/s7viewers/html5/js/eCatalogViewer.js"
+      src="https://s7d9.scene7.com/s7viewers/html5/js/eCatalogViewer.js"
     ></script>
 
     <style type="text/css">
       .holder {
         width: 100%;
         height: auto;
+        display: block;
+        text-align: center;
       }
 
       /* #s7ecatalog_div.s7ecatalogviewer {
@@ -33,12 +35,12 @@
       var s7ecatalog_div = new s7viewers.eCatalogViewer({
         containerId: 's7ecatalog_div',
         params: {
-          asset: 'TheBay/412_041624_SPRING_BAY-DAYS_FLYER_EN_ECATALOG',
+          asset: 'TheBay/412_THEBAY_SPRING BAY DAYS_EN',
           serverurl: 'https://s7d9.scene7.com/is/image/',
           contenturl: 'https://s7d9.scene7.com/skins/',
-          // config: 'Scene7SharedAssets/Universal_HTML5_eCatalog',
-          // emailurl: 'https://s7d9.scene7.com/s7/emailFriend',
-          // config2: 'companypreset',
+          config: 'Scene7SharedAssets/Universal_HTML5_eCatalog',
+          emailurl: 'https://s7d9.scene7.com/s7/emailFriend',
+          config2: 'companypreset',
         },
       }).init();
     </script>
