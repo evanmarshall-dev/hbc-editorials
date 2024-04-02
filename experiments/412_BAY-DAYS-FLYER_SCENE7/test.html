@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="text/javascript"
+      src="https://s7d1.scene7.com/s7viewers/html5/js/eCatalogViewer.js"
+    ></script>
+
+    <style type="text/css">
+      .holder {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="holder">
+      <div id="s7viewer" style="position: relative"></div>
+    </div>
+
+    <script type="text/javascript">
+      var eCatalogViewer = new s7viewers.eCatalogViewer({
+        containerId: 's7viewer',
+        params: {
+          asset: 'Viewers/Pluralist',
+          serverurl: 'https://s7d1.scene7.com/is/image/',
+        },
+      }).init();
+    </script>
+  </body>
+</html>

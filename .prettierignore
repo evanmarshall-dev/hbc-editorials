@@ -6,6 +6,7 @@
 !src/**/*
 !**/**/src/**/*
 !misc-pages/**/*.html
+!experiments/412_BAY-DAYS-FLYER_SCENE7/*
 # TODO: Figure out how to incorporate ES6 modules and ESLint.
 # !gulpfile.js
 # !gulp-tasks/**/*.js
