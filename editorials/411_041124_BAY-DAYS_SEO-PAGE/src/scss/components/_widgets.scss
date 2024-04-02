@@ -1,0 +1,47 @@
+/* -----------------------------------------------
+ * WIDGET STYLES
+----------------------------------------------- */
+.hbc-widget-card {
+  @include bayflex(
+    column,
+    inherit,
+    center,
+    inherit,
+    0,
+    0,
+    100%,
+    inherit,
+    center
+  );
+
+  svg {
+    &.hbc-icon {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  h4 {
+    margin-bottom: 2.5rem;
+  }
+
+  &__outer {
+    @include bayflex(row, wrap, inherit, inherit, 0, 0, 100%, inherit, inherit);
+  }
+
+  &__inner {
+    width: 100%;
+
+    @include respond-to(medium) {
+      margin-right: 0.5%;
+      width: calc(98.5% / 4);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .flexible {
+    flex-grow: 1;
+  }
+}

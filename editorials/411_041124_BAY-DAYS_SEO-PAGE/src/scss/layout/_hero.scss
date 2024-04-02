@@ -1,0 +1,51 @@
+/* -----------------------------------------------
+ * HERO STYLES
+----------------------------------------------- */
+#dsg-editorial.dsg-editorial {
+  .hbc-hero {
+    max-width: 2000px;
+    position: relative;
+    // margin-bottom: 100px;
+
+    &__bg {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0;
+      background-color: $bd-orange;
+
+      @include backImage(
+        $bd-orange,
+        '314_050123',
+        'LANDING-PAGE-BAYDAYS_HERO',
+        'MOBILE',
+        contain,
+        883,
+        768
+      );
+
+      // @include respond-to(medium) {
+      //   @include backImage(
+      //     $rle-beige,
+      //     "306_031023",
+      //     "EVERGREEN_RLE-HERO",
+      //     "TABLET",
+      //     contain,
+      //     812,
+      //     2048
+      //   );
+      // }
+
+      @include respond-to(medium) {
+        @include backImage(
+          $bd-orange,
+          '314_050123',
+          'LANDING-PAGE-BAYDAYS_HERO',
+          'DESKTOP',
+          contain,
+          1132,
+          2882
+        );
+      }
+    }
+  }
+}
