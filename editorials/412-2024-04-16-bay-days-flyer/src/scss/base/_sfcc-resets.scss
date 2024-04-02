@@ -62,5 +62,20 @@ small {
     // #bayCatNav {
     //   background: #f7f7f7;
     // }
+
+    main {
+      font-family: $fly-sans;
+      font-weight: 400;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $fly-sans-bold;
+      font-weight: 700;
+    }
   }
 }

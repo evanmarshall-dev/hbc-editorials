@@ -65,13 +65,19 @@
 .hbc-flyer {
   &__wrapper {
     background-color: $fly-bg;
+    // TODO: Remove font-family and font-weight for production.
+    font-family: $fly-sans;
+    font-weight: 400;
   }
 
   &__row-items {
+    &--logo {
+      grid-area: logo;
+    }
+
     &--header {
       grid-area: header;
     }
-
     &--one {
       grid-area: one;
     }
@@ -87,9 +93,6 @@
     &--five {
       grid-area: five;
     }
-    &--six {
-      grid-area: six;
-    }
 
     &--footer {
       grid-area: footer;
@@ -102,13 +105,13 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
+        'logo logo logo logo'
         'header header header header'
         'one one one one'
         'two two two two'
         'three three three three'
         'four four four four'
         'five five five five'
-        'six six six six'
         'footer footer footer footer';
       // grid-template:
       //   [row1] 'header header header header' 1fr
