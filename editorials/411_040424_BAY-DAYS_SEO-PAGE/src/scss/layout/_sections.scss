@@ -1,0 +1,13 @@
+// File: _sections.scss
+
+/* -----------------------------------------------
+ * HBC CONTAINER/WRAPPERS STYLES
+----------------------------------------------- */
+.ed {
+  &-wrapper {
+    &--main {
+      background-color: $bd-sand;
+      padding: 2rem 3rem;
+    }
+  }
+}
