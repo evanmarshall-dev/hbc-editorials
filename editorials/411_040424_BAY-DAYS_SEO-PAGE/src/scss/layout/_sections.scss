@@ -7,7 +7,17 @@
   &-wrapper {
     &--main {
       background-color: $bd-sand;
-      padding: 2rem 3rem;
+      padding: 10rem 15rem 0;
+    }
+  }
+
+  &-container {
+    &--header {
+      padding: 0 0 2rem;
+    }
+
+    &--links {
+      padding: 2rem 0 0;
     }
   }
 }

@@ -24,12 +24,12 @@
     }
 
     &--sans {
-      font-family: $hbc-sans;
+      font-family: $hbc-sans-default;
     }
 
-    &--serif {
-      font-family: $hbc-serif;
-    }
+    // &--serif {
+    //   font-family: $hbc-serif;
+    // }
 
     &--uppercase {
       text-transform: uppercase;
@@ -156,7 +156,7 @@
     }
 
     &--t-white {
-      color: #ffffff;
+      color: $hbc-white;
     }
 
     &--t-beige {
@@ -192,7 +192,7 @@
     }
 
     &--bg-white {
-      background-color: #ffffff;
+      background-color: $hbc-white;
     }
 
     &--bg-clear {
