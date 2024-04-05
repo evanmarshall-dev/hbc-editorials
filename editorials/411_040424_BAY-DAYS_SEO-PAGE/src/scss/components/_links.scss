@@ -7,7 +7,7 @@
   &-link {
     &--regular {
       cursor: pointer;
-      // width: 100%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,19 +26,21 @@
         background-color: darken($color: $bd-red, $amount: 5%);
       }
 
-      // @include respond-to(medium) {
-      //   width: calc(100% / 3);
-      //   margin-right: 2rem;
-      //   margin-top: inherit;
+      &:last-child {
+        margin-top: 1.25rem;
+      }
 
-      //   &:first-child {
-      //     margin-top: inherit;
-      //   }
+      @include respond-to(medium) {
+        width: calc(96% / 2);
 
-      //   &:last-child {
-      //     margin-right: 0;
-      //   }
-      // }
+        // &:first-child {
+        //   margin-top: inherit;
+        // }
+
+        &:last-child {
+          margin-top: 0;
+        }
+      }
     }
 
     &--underline {

@@ -7,17 +7,33 @@
   &-wrapper {
     &--main {
       background-color: $bd-sand;
-      padding: 10rem 15rem 0;
+      padding: 4.875rem 3rem 0;
+
+      // @include respond-to(small) {
+      //   padding: 4.875rem 8.438rem 0;
+      // }
+
+      @include respond-to(medium) {
+        padding: 4.625rem 10.5rem 0;
+      }
     }
   }
 
   &-container {
     &--header {
-      padding: 0 0 2rem;
+      z-index: 0;
     }
 
     &--links {
-      padding: 2rem 0 0;
+      padding: 2.875rem 0 5rem;
+      display: block;
+
+      @include respond-to(medium) {
+        padding: 3.625rem 0 5.75rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 }
