@@ -35,5 +35,18 @@
         justify-content: space-between;
       }
     }
+
+    &--cards {
+      padding: 7.25rem 0 9.125rem;
+      display: block;
+
+      @include respond-to(medium) {
+        padding: 3.375rem 0 7.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 4.25rem 0.5rem;
+      }
+    }
   }
 }

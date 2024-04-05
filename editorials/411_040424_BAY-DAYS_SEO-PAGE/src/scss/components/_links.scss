@@ -45,12 +45,12 @@
 
     &--underline {
       cursor: pointer;
-      text-decoration: underline;
+      text-decoration: none;
 
       &:hover,
       &:active,
       &:focus {
-        text-decoration: none;
+        text-decoration: underline;
         color: darken($color: $bd-red, $amount: 5%);
       }
     }
