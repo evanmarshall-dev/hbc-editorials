@@ -54,6 +54,14 @@
         color: darken($color: $bd-red, $amount: 5%);
       }
     }
+
+    &--full {
+      @extend .ed-link--regular;
+
+      @include respond-to(medium) {
+        width: 100%;
+      }
+    }
   }
 
   // &-button {
