@@ -29,6 +29,14 @@
       }
     }
 
+    &--h4 {
+      font-family: $hbc-sans-default;
+      font-weight: 400;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0;
+    }
+
     &--link {
       font-family: $hbc-sans-default;
       font-weight: bold;

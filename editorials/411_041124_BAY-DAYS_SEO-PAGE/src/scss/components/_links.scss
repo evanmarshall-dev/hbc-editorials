@@ -6,25 +6,18 @@
 .ed {
   &-link {
     &--regular {
-      cursor: pointer;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0.3rem 0;
-      text-decoration: none;
-      border: none;
-      text-align: center;
-      transition: background-color 0.3s ease;
-
-      &:hover,
-      &:active,
-      &:focus {
-        text-decoration: none;
-        border: none;
-        color: #fff;
-        background-color: darken($color: $bd-red, $amount: 5%);
-      }
+      @include link(
+        100%,
+        0.3rem 0,
+        null,
+        none,
+        none,
+        background-color 0.3s ease,
+        none,
+        none,
+        $hbc-white,
+        darken($color: $bd-red, $amount: 5%)
+      );
 
       &:last-child {
         margin-top: 1.25rem;
@@ -56,11 +49,18 @@
     }
 
     &--full {
-      @extend .ed-link--regular;
-
-      @include respond-to(medium) {
-        width: 100%;
-      }
+      @include link(
+        100%,
+        0.3rem 0,
+        null,
+        none,
+        none,
+        background-color 0.3s ease,
+        none,
+        none,
+        $hbc-white,
+        darken($color: $bd-red, $amount: 5%)
+      );
     }
   }
 

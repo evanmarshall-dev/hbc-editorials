@@ -120,22 +120,32 @@
  * LINK MIXINS
 ----------------------------------------------- */
 @mixin link(
-  $lColor: null,
-  $lbgColor: null,
+  $lWidth: null,
   $lPadding: null,
   $lbRadius: null,
+  $lBorder: null,
   $lTextDeco: null,
+  $lTransition: null,
   $lHoverTextDeco: null,
-  $lHoverColor: null
+  $lHoverBorder: null,
+  $lHoverColor: null,
+  $lHoverBG: null
 ) {
-  color: $lColor;
-  background-color: $lbgColor;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $lWidth;
   padding: $lPadding;
   border-radius: $lbRadius;
+  border: $lBorder;
   text-decoration: $lTextDeco;
-  cursor: pointer;
-  &:hover {
+  transition: $lTransition;
+
+  #{$a-tags-hover} {
     text-decoration: $lHoverTextDeco;
+    border: $lHoverBorder;
     color: $lHoverColor;
+    background-color: $lHoverBG;
   }
 }

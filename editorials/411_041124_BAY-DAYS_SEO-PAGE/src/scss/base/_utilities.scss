@@ -34,6 +34,11 @@
     &--uppercase {
       text-transform: uppercase;
     }
+
+    &--superscript {
+      vertical-align: super;
+      font-size: 50%;
+    }
   }
 
   // Display Utilities
