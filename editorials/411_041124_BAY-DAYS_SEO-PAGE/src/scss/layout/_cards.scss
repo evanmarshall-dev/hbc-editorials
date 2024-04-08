@@ -5,7 +5,26 @@
 ----------------------------------------------- */
 .ed {
   &-card {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__last {
+      grid-column: 2 / span 2;
+    }
+
+    svg {
+      width: 100%;
+    }
+
+    h5 {
+      margin: 2.5rem 0 4rem;
+
+      @include respond-to(medium) {
+        margin: 2.5rem 0 0;
+      }
+    }
 
     &__image {
       max-width: 100%;
@@ -17,7 +36,7 @@
     &__link {
       cursor: pointer;
       text-decoration: none;
-      margin: 5.625rem 0 6.75rem;
+      margin: 2.625rem 0 6.75rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -31,6 +50,32 @@
 
       @include respond-to(medium) {
         margin: 2.5rem 0 0;
+      }
+    }
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: $bd-red;
+
+      #{$a-tags-hover} {
+        opacity: 0.85;
+      }
+
+      p {
+        color: $hbc-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
       }
     }
   }

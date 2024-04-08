@@ -4,10 +4,10 @@
  * BASE AND RESET STYLES
 ----------------------------------------------- */
 // Theme specific highlight color resets.
-// ::selection {
-//   background-color: $hbc-yellow;
-//   color: $hbc-blue;
-// }
+::selection {
+  background-color: $bd-red;
+  color: $hbc-white;
+}
 
 // * SFCC GLOBAL STYLE RESETS.
 .cat-landing {

@@ -7,7 +7,7 @@ const scrollToTop = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const backToTopButton = document.getElementById('theBay-btt');
+  const backToTopButton = document.getElementsByClassName('ed-button--btt')[0];
 
   // Function to toggle the visibility of the button based on scroll position
   const toggleBackToTopButton = () => {
