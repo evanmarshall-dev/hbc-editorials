@@ -1,0 +1,332 @@
+// File: _utilities.scss
+
+/* -----------------------------------------------
+ * HBC UTILITY CLASSES
+----------------------------------------------- */
+
+.ed {
+  // Font Utilities
+  &-util {
+    &--italic {
+      font-style: italic;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+
+    &--normal {
+      font-weight: 400;
+    }
+
+    &--light {
+      font-weight: 200;
+    }
+
+    &--sans {
+      font-family: $hbc-sans-default;
+    }
+
+    // &--serif {
+    //   font-family: $hbc-serif;
+    // }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+
+    &--superscript {
+      vertical-align: super;
+      font-size: 50%;
+    }
+  }
+
+  // Display Utilities
+  &-util {
+    &--d-desktop {
+      display: none;
+
+      @include respond-to(medium) {
+        display: block;
+      }
+    }
+
+    &--d-mobile {
+      display: block;
+
+      @include respond-to(medium) {
+        display: none;
+      }
+    }
+  }
+
+  // Width Utilities
+  &-util {
+    &--w-full {
+      width: 100%;
+    }
+
+    &--w-half {
+      width: 50%;
+    }
+
+    &--w-third {
+      width: 33.333333%;
+    }
+
+    &--w-quarter {
+      width: 25%;
+    }
+
+    &--w-fifth {
+      width: 20%;
+    }
+
+    &--w-sixth {
+      width: 16.666667%;
+    }
+
+    &--w-seventh {
+      width: 14.285714%;
+    }
+
+    &--w-eighth {
+      width: 12.5%;
+    }
+
+    &--w-ninth {
+      width: 11.111111%;
+    }
+
+    &--w-tenth {
+      width: 10%;
+    }
+
+    &--w-eleventh {
+      width: 9.090909%;
+    }
+
+    &--w-twelfth {
+      width: 8.333333%;
+    }
+  }
+
+  // Border Utilities
+  &-util {
+    &--b-all {
+      border: 0.125rem solid $hbc-yellow;
+    }
+
+    &--b-fat {
+      border: 1.875rem solid rgba(255, 255, 255, 1);
+    }
+
+    &--b-top {
+      border-top: 0.125rem solid $hbc-yellow;
+    }
+
+    &--b-bottom {
+      border-bottom: 0.125rem solid $hbc-yellow;
+    }
+
+    &--b-left {
+      border-left: 0.125rem solid $hbc-yellow;
+    }
+
+    &--b-right {
+      border-right: 0.125rem solid $hbc-yellow;
+    }
+  }
+
+  // Color Utilities
+  &-util {
+    &--t-green {
+      color: $hbc-green;
+    }
+
+    &--t-red {
+      color: $hbc-red;
+    }
+
+    &--t-yellow {
+      color: $hbc-yellow;
+    }
+
+    &--t-blue {
+      color: $hbc-blue;
+    }
+
+    &--t-black {
+      color: $hbc-black;
+    }
+
+    &--t-white {
+      color: $hbc-white;
+    }
+
+    &--t-beige {
+      color: $spring-wood;
+    }
+
+    &--t-bay-days-red {
+      color: $bd-red;
+    }
+
+    &--t-bay-days-sand {
+      color: $bd-sand;
+    }
+
+    &--bg-green {
+      background-color: $hbc-green;
+    }
+
+    &--bg-red {
+      color: $hbc-red;
+    }
+
+    &--bg-yellow {
+      background-color: $hbc-yellow;
+    }
+
+    &--bg-blue {
+      background-color: $hbc-blue;
+    }
+
+    &--bg-black {
+      background-color: $hbc-black;
+    }
+
+    &--bg-white {
+      background-color: $hbc-white;
+    }
+
+    &--bg-clear {
+      background-color: transparent;
+    }
+
+    &--bg-beige {
+      background-color: $spring-wood;
+    }
+
+    &--bg-bay-days-red {
+      background-color: $bd-red;
+    }
+
+    &--bg-bay-days-sand {
+      background-color: $bd-sand;
+    }
+  }
+
+  // Flex Utilities
+  &-util {
+    &--flexible {
+      flex-grow: 1;
+    }
+  }
+}
+
+// Spacing Utilities
+$spaceAmounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, auto);
+
+@each $space in $spaceAmounts {
+  @if $space==auto {
+    .ed-util-m-#{$space} {
+      margin: #{$space};
+    }
+
+    .ed-util-mx-#{$space} {
+      margin-left: #{$space};
+      margin-right: #{$space};
+    }
+
+    .ed-util-my-#{$space} {
+      margin-top: #{$space};
+      margin-bottom: #{$space};
+    }
+
+    .ed-util-ml-#{$space} {
+      margin-left: #{$space};
+    }
+
+    .ed-util-mr-#{$space} {
+      margin-right: #{$space};
+    }
+
+    .ed-util-mb-#{$space} {
+      margin-bottom: #{$space};
+    }
+
+    .ed-util-mt-#{$space} {
+      margin-top: #{$space};
+    }
+  } @else {
+    .ed-util-m-#{$space} {
+      margin: #{$space}rem;
+    }
+
+    .ed-util-mx-#{$space} {
+      margin-left: #{$space}rem;
+      margin-right: #{$space}rem;
+    }
+
+    .ed-util-my-#{$space} {
+      margin-top: #{$space}rem;
+      margin-bottom: #{$space}rem;
+    }
+
+    .ed-util-ml-#{$space} {
+      margin-left: #{$space}rem;
+    }
+
+    .ed-util-mr-#{$space} {
+      margin-right: #{$space}rem;
+    }
+
+    .ed-util-mb-#{$space} {
+      margin-bottom: #{$space}rem;
+    }
+
+    .ed-util-mt-#{$space} {
+      margin-top: #{$space}rem;
+    }
+
+    .ed-util-p-#{$space} {
+      padding: #{$space}rem;
+    }
+
+    .ed-util-px-#{$space} {
+      padding-left: #{$space}rem;
+      padding-right: #{$space}rem;
+    }
+
+    .ed-util-py-#{$space} {
+      padding-top: #{$space}rem;
+      padding-bottom: #{$space}rem;
+    }
+
+    .ed-util-pl-#{$space} {
+      padding-left: #{$space}rem;
+    }
+
+    .ed-util-pr-#{$space} {
+      padding-right: #{$space}rem;
+    }
+
+    .ed-util-pb-#{$space} {
+      padding-bottom: #{$space}rem;
+    }
+
+    .ed-util-pt-#{$space} {
+      padding-top: #{$space}rem;
+    }
+  }
+}
+
+// Text Alignment Utilities
+$textAlignments: ('left', 'right', 'center', 'revert');
+
+@each $textAlign in $textAlignments {
+  .ed-util-text-#{$textAlign} {
+    text-align: #{$textAlign};
+  }
+}
