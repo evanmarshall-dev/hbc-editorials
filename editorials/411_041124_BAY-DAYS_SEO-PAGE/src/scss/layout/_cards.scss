@@ -3,46 +3,18 @@
 /* -----------------------------------------------
  * HBC CARDS/#-UP-ROWS STYLES
 ----------------------------------------------- */
+
 .ed {
-  &-card {
+  &-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
     align-items: center;
-
-    // &__second-last {
-    //   grid-column: 2 / span 2;
-    //   align-self: self-start;
-    // }
-
-    // &__last {
-    //   grid-column: 1 / span 4;
-    //   align-self: self-start;
-    // }
-
-    // svg {
-    //   width: 100%;
-    // }
-
-    // h5 {
-    //   margin: 2.5rem 0 4rem;
-
-    //   @include respond-to(medium) {
-    //     margin: 2.5rem 0 0;
-    //   }
-    // }
-
-    &__image {
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-      display: block;
-    }
 
     &__link {
       cursor: pointer;
       text-decoration: none;
-      // margin: 2.625rem 0 6.75rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,10 +24,6 @@
       &:focus {
         text-decoration: underline;
         color: darken($color: $bd-red, $amount: 5%);
-      }
-
-      @include respond-to(medium) {
-        // margin: 2.5rem 0 0;
       }
     }
 
@@ -82,6 +50,63 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+      }
+    }
+
+    &__outer {
+      // display: flex;
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      // width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+
+      @include respond-to(medium) {
+        overflow-x: hidden;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__inner {
+      // display: flex;
+      // flex-direction: row;
+      // width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex: 0 0 auto;
+      margin-right: 0;
+      scroll-snap-align: start;
+
+      svg {
+        max-width: 70%;
+        width: 70%;
+        height: 70%;
+        display: block;
+
+        @include respond-to(medium) {
+          max-width: 30%;
+          width: 30%;
+          height: 30%;
+        }
+      }
+
+      @include respond-to(medium) {
+        flex: 1 0 auto;
+        margin-right: 1%;
+        scroll-snap-align: none;
+        width: calc(96% / 4);
+
+        &:nth-of-type(4),
+        &:nth-of-type(8) {
+          margin-right: 0;
+        }
       }
     }
   }
