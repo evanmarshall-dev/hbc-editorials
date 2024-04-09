@@ -75,6 +75,12 @@
           $hbc-white,
           lighten($color: $hbc-black, $amount: 20%)
         );
+
+        @include respond-to(medium) {
+          display: block;
+          margin: 0 auto;
+          width: calc(100% / 3);
+        }
       }
     }
 

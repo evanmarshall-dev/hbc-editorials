@@ -216,6 +216,13 @@
       background-color: $bd-sand;
     }
   }
+
+  // Flex Utilities
+  &-util {
+    &--flexible {
+      flex-grow: 1;
+    }
+  }
 }
 
 // Spacing Utilities

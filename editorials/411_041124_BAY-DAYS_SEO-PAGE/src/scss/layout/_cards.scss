@@ -20,17 +20,17 @@
     //   align-self: self-start;
     // }
 
-    svg {
-      width: 100%;
-    }
+    // svg {
+    //   width: 100%;
+    // }
 
-    h5 {
-      margin: 2.5rem 0 4rem;
+    // h5 {
+    //   margin: 2.5rem 0 4rem;
 
-      @include respond-to(medium) {
-        margin: 2.5rem 0 0;
-      }
-    }
+    //   @include respond-to(medium) {
+    //     margin: 2.5rem 0 0;
+    //   }
+    // }
 
     &__image {
       max-width: 100%;

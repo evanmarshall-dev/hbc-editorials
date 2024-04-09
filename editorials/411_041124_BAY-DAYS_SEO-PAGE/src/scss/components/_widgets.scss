@@ -3,26 +3,32 @@
 /* -----------------------------------------------
  * WIDGET STYLES
 ----------------------------------------------- */
-.hbc-ed {
-  &-widget {
-    &__wrapper {
+
+.ed {
+  &-widgets {
+    &__outer {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1.5rem 2rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      @include respond-to(medium) {
+        width: calc(100% / 4);
+      }
     }
 
     &__content {
       display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
       align-items: center;
-
-      svg {
-        width: 20%;
-      }
-
-      h4 {
-        margin-left: 1rem;
-      }
     }
   }
 }
