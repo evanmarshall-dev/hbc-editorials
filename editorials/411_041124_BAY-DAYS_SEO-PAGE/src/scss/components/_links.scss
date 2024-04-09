@@ -61,6 +61,21 @@
         $hbc-white,
         darken($color: $bd-red, $amount: 20%)
       );
+
+      &-dark {
+        @include link(
+          100%,
+          0.3rem 0,
+          null,
+          none,
+          none,
+          background-color 0.25s ease,
+          none,
+          none,
+          $hbc-white,
+          lighten($color: $hbc-black, $amount: 20%)
+        );
+      }
     }
 
     &--card {

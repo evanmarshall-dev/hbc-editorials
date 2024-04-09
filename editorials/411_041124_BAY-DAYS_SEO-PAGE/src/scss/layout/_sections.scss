@@ -7,14 +7,10 @@
   &-wrapper {
     &--main {
       background-color: $bd-sand;
-      padding: 4.875rem 3rem 0;
-
-      // @include respond-to(small) {
-      //   padding: 4.875rem 8.438rem 0;
-      // }
+      padding: 0 3rem 0;
 
       @include respond-to(medium) {
-        padding: 4.625rem 10.5rem 0;
+        padding: 0 10.5rem 0;
       }
     }
   }
@@ -25,11 +21,11 @@
     }
 
     &--links {
-      padding: 2.875rem 0 5rem;
+      // padding: 2.875rem 0 5rem;
       display: block;
 
       @include respond-to(medium) {
-        padding: 3.625rem 0 5.75rem;
+        // padding: 3.625rem 0 5.75rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -37,15 +33,15 @@
     }
 
     &--cards {
-      padding: 7.25rem 0 9.125rem;
+      // padding: 7.25rem 0 9.125rem;
       display: block;
 
       @include respond-to(medium) {
-        padding: 3.375rem 0 7.5rem;
+        // padding: 3.375rem 0 7.5rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 4.25rem 0.5rem;
+        gap: 2.25rem 0.5rem; // Top gap is 4.25rem minus the 2rem padding on top of each card.
       }
     }
   }

@@ -10,9 +10,15 @@
     justify-content: center;
     align-items: center;
 
-    &__last {
-      grid-column: 2 / span 2;
-    }
+    // &__second-last {
+    //   grid-column: 2 / span 2;
+    //   align-self: self-start;
+    // }
+
+    // &__last {
+    //   grid-column: 1 / span 4;
+    //   align-self: self-start;
+    // }
 
     svg {
       width: 100%;
@@ -36,7 +42,7 @@
     &__link {
       cursor: pointer;
       text-decoration: none;
-      margin: 2.625rem 0 6.75rem;
+      // margin: 2.625rem 0 6.75rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -49,7 +55,7 @@
       }
 
       @include respond-to(medium) {
-        margin: 2.5rem 0 0;
+        // margin: 2.5rem 0 0;
       }
     }
 
