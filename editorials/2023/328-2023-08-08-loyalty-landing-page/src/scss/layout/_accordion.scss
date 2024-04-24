@@ -1,0 +1,90 @@
+// File: _accordion.scss
+
+/* -----------------------------------------------
+ * HBC ACCORDION STYLES
+----------------------------------------------- */
+.hbc-ed {
+  &-accordion {
+    &__wrapper {
+      background-color: $hbc-blue;
+      border-radius: 6rem;
+      overflow: hidden;
+      padding: 5rem 2rem;
+      text-align: center;
+
+      @include respond-to(large) {
+        padding: 5rem;
+        text-align: left;
+      }
+    }
+
+    &__button {
+      @include font($baySans, 400, normal, null, null, 1.875rem);
+      background-color: $hbc-blue;
+      color: $spring-wood;
+      cursor: pointer;
+      padding: 1.125rem;
+      // width: calc(100% - 4rem);
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: 0;
+      transition: 0.4s;
+
+      // &:hover {
+      //   background-color: darken($color: $spring-wood, $amount: 5%);
+      //   background-color: $spring-wood;
+      //   color: $hbc-blue;
+      // }
+
+      &:focus {
+        outline: 2px solid #007bff;
+      }
+
+      &--active {
+        background-color: $spring-wood;
+        color: $hbc-blue;
+        border-radius: 4rem 4rem 0 0;
+        padding: 3rem 3rem 2rem;
+      }
+
+      &:after {
+        content: '\002B';
+        color: $spring-wood;
+        font-weight: bold;
+        float: right;
+      }
+
+      &--active:after {
+        content: '\2212';
+        color: $hbc-blue;
+        font-weight: bold;
+        float: right;
+      }
+    }
+
+    &__panel {
+      background-color: $spring-wood;
+      color: $hbc-blue;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      border-radius: 0 0 4rem 4rem;
+
+      p {
+        @include font($baySans, 400, normal, null, null, 1.375rem);
+        padding: 2rem 3rem;
+        color: $hbc-blue;
+      }
+
+      &--wrapper {
+        padding: 2rem 0;
+        border-top: 2px solid $spring-wood;
+
+        &:nth-last-of-type(1) {
+          border-bottom: 2px solid $spring-wood;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+/* -----------------------------------------------
+ * Page section headings
+----------------------------------------------- */
+h1 {
+  @include bayHeading($baySans, 142px, 1);
+  font-weight: bold;
+}
+
+h2 {
+  @include bayHeading($baySans, 46px, 1);
+
+  @include respond-to(small) {
+    font-size: 62px;
+  }
+
+  @include respond-to(medium) {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  @include bayHeading($baySans, 24px, 1.1);
+  margin-bottom: 80px;
+
+  @include respond-to(medium) {
+    font-size: 34px;
+  }
+}
+
+h4 {
+  @include bayHeading($baySans, 21px, 1);
+  margin-bottom: 40px;
+
+  @include respond-to(medium) {
+    font-size: 24px;
+  }
+}
+
+h5 {
+  @include bayHeading($baySans, 14px, 1);
+  margin-bottom: 40px;
+
+  @include respond-to(medium) {
+    font-size: 22px;
+  }
+}
+
+p {
+  @include bayHeading($baySans, 10px, 1.5);
+  // margin: 40px 0 80px;
+}
+
+span {
+  &.hbc-span {
+    &__heading {
+      @include bayHeading($baySans, 14px, 1);
+
+      @include respond-to(medium) {
+        font-size: 19px;
+      }
+    }
+
+    &__line {
+      font-weight: 100;
+      margin: 0 2%;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  }
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}

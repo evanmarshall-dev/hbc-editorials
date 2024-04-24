@@ -1,0 +1,356 @@
+// File: _utilities.scss
+
+/* -----------------------------------------------
+ * HBC UTILITY CLASSES
+----------------------------------------------- */
+
+.hbc-ed {
+  // Font/Text Utilities
+  &-util {
+    &--italic {
+      font-style: italic;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+
+    &--normal {
+      font-weight: 300;
+    }
+
+    &--light {
+      font-weight: 200;
+    }
+
+    &--small {
+      font-size: 0.75rem;
+    }
+
+    &--sans {
+      font-family: $baySans;
+    }
+
+    &--serif {
+      font-family: $baySerif;
+    }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--indent {
+      text-indent: -2.5rem;
+      padding-left: 2.5rem;
+    }
+  }
+
+  // Span Utilities
+  &-util {
+    &--emphasize {
+      font-family: $baySans;
+      color: $hbc-yellow;
+      font-weight: 700;
+    }
+  }
+
+  // Display Utilities
+  &-util {
+    &--desktop-only {
+      display: none;
+
+      @include respond-to(medium) {
+        display: block;
+      }
+    }
+
+    &--mobile-only {
+      display: block;
+
+      @include respond-to(medium) {
+        display: none;
+      }
+    }
+  }
+
+  // Flex Utilities
+  &-util {
+    &__flex {
+      &--flexible {
+        flex-grow: 1;
+      }
+
+      &--row {
+        @include flex(column, null, null, null);
+
+        svg {
+          width: 50%;
+        }
+
+        & > * {
+          margin-bottom: 1rem;
+        }
+
+        @include respond-to(large) {
+          @include flex(row, null, null, null);
+
+          svg {
+            width: 100%;
+          }
+
+          width: 60%;
+
+          & > * {
+            margin-right: 2%;
+            width: calc(94% / 3);
+            flex-grow: 1;
+          }
+
+          & > *:last-child {
+            margin-right: 0;
+          }
+
+          & > *:first-child {
+            // flex-grow: 3;
+            margin-right: 4%;
+          }
+        }
+      }
+    }
+  }
+
+  // Width Utilities
+  &-util {
+    &__width {
+      &--full {
+        width: 100%;
+      }
+
+      &--half {
+        width: 50%;
+      }
+
+      &--third {
+        width: 33.333333%;
+      }
+
+      &--quarter {
+        width: 25%;
+      }
+
+      &--fifth {
+        width: 20%;
+      }
+
+      &--sixth {
+        width: 16.666667%;
+      }
+
+      &--seventh {
+        width: 14.285714%;
+      }
+
+      &--eighth {
+        width: 12.5%;
+      }
+
+      &--ninth {
+        width: 11.111111%;
+      }
+
+      &--tenth {
+        width: 10%;
+      }
+
+      &--eleventh {
+        width: 9.090909%;
+      }
+
+      &--twelfth {
+        width: 8.333333%;
+      }
+    }
+  }
+
+  // Border Utilities
+  &-util {
+    &__border {
+      &--all {
+        border: 0.125rem solid $hbc-yellow;
+
+        &-fat {
+          border: 1.875rem solid rgba(255, 255, 255, 1);
+        }
+      }
+
+      &--top {
+        border-top: 0.125rem solid $hbc-yellow;
+      }
+
+      &--bottom {
+        border-bottom: 0.125rem solid $hbc-yellow;
+      }
+
+      &--left {
+        border-left: 0.125rem solid $hbc-yellow;
+      }
+
+      &--right {
+        border-right: 0.125rem solid $hbc-yellow;
+      }
+    }
+  }
+
+  // Color Utilities
+  &-util {
+    &__color {
+      &--blue {
+        color: $hbc-blue;
+      }
+
+      &--yellow {
+        color: $hbc-yellow;
+      }
+
+      &--white {
+        color: rgba(255, 255, 255, 1);
+      }
+
+      &--beige {
+        color: $spring-wood;
+      }
+    }
+
+    &__bg {
+      &--blue {
+        background-color: $hbc-blue;
+      }
+
+      &--yellow {
+        background-color: $hbc-yellow;
+      }
+
+      &--transparent {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+// Spacing Utilities
+$spaceAmounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, auto);
+
+@each $space in $spaceAmounts {
+  @if $space==auto {
+    .util-m-#{$space} {
+      margin: #{$space};
+    }
+
+    .util-mx-#{$space} {
+      margin-left: #{$space};
+      margin-right: #{$space};
+    }
+
+    .util-my-#{$space} {
+      margin-top: #{$space};
+      margin-bottom: #{$space};
+    }
+
+    .util-ml-#{$space} {
+      margin-left: #{$space};
+    }
+
+    .util-mr-#{$space} {
+      margin-right: #{$space};
+    }
+
+    .util-mb-#{$space} {
+      margin-bottom: #{$space};
+    }
+
+    .util-mt-#{$space} {
+      margin-top: #{$space};
+    }
+  } @else {
+    .util-m-#{$space} {
+      margin: #{$space}rem;
+    }
+
+    .util-mx-#{$space} {
+      margin-left: #{$space}rem;
+      margin-right: #{$space}rem;
+    }
+
+    .util-my-#{$space} {
+      margin-top: #{$space}rem;
+      margin-bottom: #{$space}rem;
+    }
+
+    .util-ml-#{$space} {
+      margin-left: #{$space}rem;
+    }
+
+    .util-mr-#{$space} {
+      margin-right: #{$space}rem;
+    }
+
+    .util-mb-#{$space} {
+      margin-bottom: #{$space}rem;
+    }
+
+    .util-mt-#{$space} {
+      margin-top: #{$space}rem;
+    }
+
+    .util-p-#{$space} {
+      padding: #{$space}rem;
+    }
+
+    .util-px-#{$space} {
+      padding-left: #{$space}rem;
+      padding-right: #{$space}rem;
+    }
+
+    .util-py-#{$space} {
+      padding-top: #{$space}rem;
+      padding-bottom: #{$space}rem;
+    }
+
+    .util-pl-#{$space} {
+      padding-left: #{$space}rem;
+    }
+
+    .util-pr-#{$space} {
+      padding-right: #{$space}rem;
+    }
+
+    .util-pb-#{$space} {
+      padding-bottom: #{$space}rem;
+    }
+
+    .util-pt-#{$space} {
+      padding-top: #{$space}rem;
+    }
+  }
+}
+
+// Text Alignment Utilities
+$textAlignments: ('left', 'right', 'center', 'revert');
+
+@each $textAlign in $textAlignments {
+  .util-text-#{$textAlign} {
+    text-align: #{$textAlign};
+  }
+}
