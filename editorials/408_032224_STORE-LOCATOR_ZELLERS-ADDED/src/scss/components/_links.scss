@@ -115,5 +115,36 @@
         background-color: lighten($color: $hbc-black, $amount: 20%);
       }
     }
+
+    &--tab {
+      color: $hbc-black;
+      background-color: $hbc-grey;
+      border: none;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1.875rem;
+      margin-right: 1.25rem;
+      border-radius: 0.125rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      #{$a-tags-hover} {
+        text-decoration: none;
+        border: none;
+        color: $hbc-black;
+        background-color: darken($color: $hbc-grey, $amount: 20%);
+      }
+
+      @include respond-to(medium) {
+        width: calc(100% / 7);
+      }
+    }
   }
 }
