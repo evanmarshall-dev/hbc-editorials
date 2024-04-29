@@ -1,0 +1,79 @@
+// File: _variables.scss
+
+/* -----------------------------------------------
+ * HBC VARIABLES
+----------------------------------------------- */
+// Primary Colors
+$hbc-green: rgba(0, 112, 74, 1);
+$hbc-red: rgba(179, 8, 56, 1);
+$hbc-yellow: rgba(238, 178, 17, 1);
+$hbc-blue: rgba(0, 39, 76, 1);
+$hbc-black: #2d2d2d;
+$hbc-white: #ffffff;
+$hbc-grey: #f7f7f7;
+
+// Secondary Colors
+$spring-wood: rgba(248, 248, 242, 1);
+
+// Woolmark Colors
+$wm-gray: rgba(175, 184, 190, 1);
+$wm-charcoal: rgba(44, 51, 60, 1);
+$wm-grayellow: rgba(189, 182, 166, 1);
+$wm-grabrown: rgba(134, 123, 100, 1);
+$wm-beige: rgba(245, 244, 240, 1);
+
+// Bay Days Colors
+$bd-red: #df1e26;
+$bd-sand: #edeae6;
+
+// Black Friday Colors
+$bf-green: #b5cf5a;
+
+// Holiday Colors
+$hol-red: #b20838;
+$hol-beige: #faf1e5;
+
+// Fonts
+// @import url('https://use.typekit.net/pdw1vaj.css');
+
+// $hbc-serif: 'ivypresto-display', serif;
+$hbc-sans-default: 'Neue Montreal', 'proxima-nova', 'Helvetica Neue', sans-serif;
+// $hbc-sans-medium: 'Neue Montreal medium', 'proxima-nova-semibold', 'Helvetica Neue', sans-serif;
+// $hbc-sans-bold: 'Neue Montreal bold', 'proxima-nova-bold', 'Helvetica Neue',
+//   sans-serif;
+
+// Breakpoints
+// How to use in styles: @include respond-to(medium) { ... }
+$breakpoints: (
+  // Mobile first styles from 0px to 320px
+  'xxsmall':
+    (
+      /* Tiny Mobile Styles (321px or 20.0625em - 375px). */ min-width:
+        20.0625em
+    ),
+  'xsmall': (
+    /* Extra Small Mobile Styles (376px or 23.5em - 425px). */ min-width: 23.5em
+  ),
+  'small': (
+    /* Small Mobile Styles (426px or 26.625em - 768px). */ min-width: 26.625em
+  ),
+  'medium': (
+    /* Medium or Tablet Styles (769px or 48.0625em - 1024px). */ min-width:
+      48.0625em
+  ),
+  'large': (
+    /* Large Desktop Styles (1025px or 64.0625em - 1440px). */ min-width:
+      64.0625em
+  ),
+  'xlarge': (
+    /* Large Desktop Styles (1441px or 90.0625em - 2560px). */ min-width:
+      90.0625em
+  ),
+  'xxlarge': (
+    /* Huge or 4K Desktop Styles (2561px or 160.0625em and Up). */ min-width:
+      160.0625em
+  )
+);
+
+// Links and hover states
+$a-tags-hover: '&:active, &:hover, &:focus';
