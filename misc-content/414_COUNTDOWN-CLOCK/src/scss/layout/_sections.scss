@@ -3,63 +3,121 @@
 /* -----------------------------------------------
  * HBC CONTAINER/WRAPPERS STYLES
 ----------------------------------------------- */
+
 .ed {
   &-wrapper {
-    &--main {
-      background-color: $bd-sand;
-      padding: 0 3rem 0;
+    // &--main {
+    //   background-color: $bd-sand;
+    //   padding: 0 3rem 0;
 
-      @include respond-to(medium) {
-        padding: 0 10.5rem 0;
-      }
-    }
+    //   @include respond-to(medium) {
+    //     padding: 0 10.5rem 0;
+    //   }
+    // }
   }
 
   &-container {
     &--header {
       z-index: 0;
-    }
-
-    &--links {
-      // padding: 2.875rem 0 5rem;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      text-align: center;
 
       @include respond-to(medium) {
-        // padding: 3.625rem 0 5.75rem;
-        display: flex;
+        padding: 1.25rem 0 0;
+      }
+    }
+
+    &--clock {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      @include respond-to(medium) {
         flex-direction: row;
-        justify-content: space-between;
+      }
+
+      .countdown {
+        display: flex;
+        padding-top: 0.5rem;
+
+        & > * {
+          width: 30px;
+          text-align: center;
+        }
+
+        @include respond-to(medium) {
+          padding-top: 0;
+        }
+
+        h2,
+        .separator {
+          font-family: $hbc-sans-default;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 1;
+          letter-spacing: 0.1rem;
+          margin: 0;
+          color: #000;
+        }
+
+        h3 {
+          font-family: $hbc-sans-default;
+          font-weight: 700;
+          font-size: 0.75rem;
+          line-height: 1;
+          letter-spacing: 0.1rem;
+          margin: 0;
+          text-transform: uppercase;
+          color: #000;
+        }
       }
     }
 
-    &--cards {
-      // padding: 7.25rem 0 9.125rem;
-      display: block;
+    // &--links {
+    //   // padding: 2.875rem 0 5rem;
+    //   display: block;
 
-      @include respond-to(medium) {
-        // padding: 3.375rem 0 7.5rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 2.25rem 0.5rem; // Top gap is 4.25rem minus the 2rem padding on top of each card.
-      }
-    }
+    //   @include respond-to(medium) {
+    //     // padding: 3.625rem 0 5.75rem;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //   }
+    // }
 
-    &--widgets {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(4, 1fr);
+    // &--cards {
+    //   // padding: 7.25rem 0 9.125rem;
+    //   display: block;
 
-      @include respond-to(small) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 0.75rem;
-      }
+    //   @include respond-to(medium) {
+    //     // padding: 3.375rem 0 7.5rem;
+    //     display: grid;
+    //     grid-template-columns: repeat(4, 1fr);
+    //     grid-template-rows: repeat(2, 1fr);
+    //     gap: 2.25rem 0.5rem; // Top gap is 4.25rem minus the 2rem padding on top of each card.
+    //   }
+    // }
 
-      @include respond-to(medium) {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-      }
-    }
+    // &--widgets {
+    //   display: grid;
+    //   grid-template-columns: repeat(1, 1fr);
+    //   grid-template-rows: repeat(4, 1fr);
+
+    //   @include respond-to(small) {
+    //     grid-template-columns: repeat(2, 1fr);
+    //     grid-template-rows: repeat(2, 1fr);
+    //     gap: 0.75rem;
+    //   }
+
+    //   @include respond-to(medium) {
+    //     grid-template-columns: repeat(4, 1fr);
+    //     grid-template-rows: 1fr;
+    //   }
+    // }
   }
 }

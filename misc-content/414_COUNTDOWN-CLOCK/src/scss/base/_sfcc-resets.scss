@@ -9,63 +9,59 @@
   color: $hbc-white;
 }
 
-.back-to-top.back-to-top-zellers.icon-back-to-top-arrow.active {
-  display: none;
-}
+// .back-to-top.back-to-top-zellers.icon-back-to-top-arrow.active {
+//   display: none;
+// }
 
 // * SFCC GLOBAL STYLE RESETS.
-.cat-landing {
-  .secondary-content {
-    .home-slots {
-      html {
-        scroll-behavior: smooth;
-      }
-
-      * {
-        font-family: $hbc-sans-default;
-        // font-size: 1.25rem;
-        // font-weight: 400;
-        // line-height: 1.5;
-        // margin: 0;
-      }
-
-      // TODO: Un-comment when copy needs to be added to mobile hero banner, but not tablet and up.
-      // .hero-banner {
-      //   .content-body {
-      //     .content-text {
-      //       display: block;
-
-      //       @include respond-to(medium) {
-      //         display: none;
-      //       }
-      //     }
-      //   }
-      // }
-
-      // TODO: Un-comment when page components need to be full bleed and no space between sections/content slots.
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-      padding: 0;
-      margin: 0 auto;
-
-      // TODO: Un-comment to make images within page components responsive.
-      p {
-        margin-bottom: 0;
-
-        picture {
-          img {
-            max-width: 100%;
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-
-      // TODO: Un-comment when new visual navigation module needs to have a different background color.
-      // #bayCatNav {
-      //   background: #f7f7f7;
-      // }
-    }
+.home-slots {
+  html {
+    scroll-behavior: smooth;
   }
+
+  * {
+    // font-family: $hbc-sans-default;
+    // font-size: 1.25rem;
+    // font-weight: 400;
+    // line-height: 1.5;
+    // margin: 0;
+  }
+
+  // TODO: Un-comment when copy needs to be added to mobile hero banner, but not tablet and up.
+  // .hero-banner {
+  //   .content-body {
+  //     .content-text {
+  //       display: block;
+
+  //       @include respond-to(medium) {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // TODO: Un-comment when page components need to be full bleed and no space between sections/content slots.
+  // max-width: 100%;
+  // width: 100%;
+  // height: auto;
+  // margin: 0 auto;
+  // padding: 0 0 0.625rem;
+
+  // TODO: Un-comment to make images within page components responsive.
+  // p {
+  //   margin-bottom: 0;
+
+  //   picture {
+  //     img {
+  //       max-width: 100%;
+  //       width: 100%;
+  //       height: auto;
+  //     }
+  //   }
+  // }
+
+  // TODO: Un-comment when new visual navigation module needs to have a different background color.
+  // #bayCatNav {
+  //   background: #f7f7f7;
+  // }
 }

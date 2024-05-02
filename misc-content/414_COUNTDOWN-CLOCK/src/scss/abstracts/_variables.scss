@@ -22,7 +22,7 @@ $wm-grabrown: rgba(134, 123, 100, 1);
 $wm-beige: rgba(245, 244, 240, 1);
 
 // Bay Days Colors
-$bd-red: #df1e26;
+$bd-red: #d80700;
 $bd-sand: #edeae6;
 
 // Black Friday Colors
@@ -37,9 +37,10 @@ $hol-beige: #faf1e5;
 
 // $hbc-serif: 'ivypresto-display', serif;
 $hbc-sans-default: 'Neue Montreal', 'proxima-nova', 'Helvetica Neue', sans-serif;
-// $hbc-sans-medium: 'Neue Montreal medium', 'proxima-nova-semibold', 'Helvetica Neue', sans-serif;
-// $hbc-sans-bold: 'Neue Montreal bold', 'proxima-nova-bold', 'Helvetica Neue',
-//   sans-serif;
+$hbc-sans-medium: 'Neue Montreal medium', 'proxima-nova-semibold',
+  'Helvetica Neue', sans-serif;
+$hbc-sans-bold: 'Neue Montreal bold', 'proxima-nova-bold', 'Helvetica Neue',
+  sans-serif;
 
 // Breakpoints
 // How to use in styles: @include respond-to(medium) { ... }
