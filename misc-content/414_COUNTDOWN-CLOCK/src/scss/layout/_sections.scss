@@ -26,9 +26,9 @@
       padding: 0 1.25rem;
       text-align: center;
 
-      @include respond-to(medium) {
-        padding: 1.25rem 0 0;
-      }
+      // @include respond-to(medium) {
+      //   padding: 1.25rem 0 0;
+      // }
     }
 
     &--clock {
