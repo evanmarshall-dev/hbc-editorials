@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="fr-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bay Days | The Bay Canada</title>
+    <link
+      rel="stylesheet"
+      href="https://www.thebay.com/on/demandware.static/Sites-TheBay-Site/-/en_CA/v1712236745383/css/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.thebay.com/on/demandware.static/Sites-TheBay-Site/-/en_CA/v1712130735115/css/typography.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.thebay.com/on/demandware.static/Sites-TheBay-Site/-/en_CA/v1712130735115/css/zellers-svg-font.css"
+    />
+  </head>
+  <div class="cat-landing">
+    <div class="secondary-content">
+      <div class="home-slots">
+        <body style="margin: 0">
+          <main>
+            <header>
+              <a
+                href="$url('Search-Show','cgid','root','pmin','0')$&sre=414_050224_COUNTDOWN-CLOCK_SHOP-NOW"
+              >
+                <section>
+                  <div class="countdown-clock" style="text-align: center">
+                    <div class="ends-in-container">
+                      <div class="ends-in" style="padding-right: 20px">
+                        <h2 style="color: red">Fin de l’offre dans</h2>
+                      </div>
+                      <div class="countdown" data-epoch="1714967999"></div>
+                    </div>
+                  </div>
+                </section>
+              </a>
+            </header>
+          </main>
+          <!-- <script>
+                !(function (e, n) {
+                  'object' == typeof exports && 'undefined' != typeof module
+                    ? n()
+                    : 'function' == typeof define && define.amd
+                      ? define(n)
+                      : n();
+                })(0, function () {
+                  'use strict';
+                  function e(e) {
+                    var n = this.constructor;
+                    return this.then(
+                      function (t) {
+                        return n.resolve(e()).then(function () {
+                          return t;
+                        });
+                      },
+                      function (t) {
+                        return n.resolve(e()).then(function () {
+                          return n.reject(t);
+                        });
+                      },
+                    );
+                  }
+                  function n(e) {
+                    return !(!e || void 0 === e.length);
+                  }
+                  function t() {}
+                  function o(e) {
+                    if (!(this instanceof o))
+                      throw new TypeError(
+                        'Promises must be constructed via new',
+                      );
+                    if ('function' != typeof e)
+                      throw new TypeError('not a function');
+                    (this._state = 0),
+                      (this._handled = !1),
+                      (this._value = void 0),
+                      (this._deferreds = []),
+                      c(e, this);
+                  }
+                  function r(e, n) {
+                    for (; 3 === e._state; ) e = e._value;
+                    0 !== e._state
+                      ? ((e._handled = !0),
+                        o._immediateFn(function () {
+                          var t = 1 === e._state ? n.onFulfilled : n.onRejected;
+                          if (null !== t) {
+                            var o;
+                            try {
+                              o = t(e._value);
+                            } catch (e) {
+                              return void f(n.promise, e);
+                            }
+                            i(n.promise, o);
+                          } else (1 === e._state ? i : f)(n.promise, e._value);
+                        }))
+                      : e._deferreds.push(n);
+                  }
+                  function i(e, n) {
+                    try {
+                      if (n === e)
+                        throw new TypeError(
+                          'A promise cannot be resolved with itself.',
+                        );
+                      if (
+                        n &&
+                        ('object' == typeof n || 'function' == typeof n)
+                      ) {
+                        var t = n.then;
+                        if (n instanceof o)
+                          return (e._state = 3), (e._value = n), void u(e);
+                        if ('function' == typeof t)
+                          return void c(
+                            (function (e, n) {
+                              return function () {
+                                e.apply(n, arguments);
+                              };
+                            })(t, n),
+                            e,
+                          );
+                      }
+                      (e._state = 1), (e._value = n), u(e);
+                    } catch (n) {
+                      f(e, n);
+                    }
+                  }
+                  function f(e, n) {
+                    (e._state = 2), (e._value = n), u(e);
+                  }
+                  function u(e) {
+                    2 === e._state &&
+                      0 === e._deferreds.length &&
+                      o._immediateFn(function () {
+                        e._handled || o._unhandledRejectionFn(e._value);
+                      });
+                    for (var n = 0, t = e._deferreds.length; t > n; n++)
+                      r(e, e._deferreds[n]);
+                    e._deferreds = null;
+                  }
+                  function c(e, n) {
+                    var t = !1;
+                    try {
+                      e(
+                        function (e) {
+                          t || ((t = !0), i(n, e));
+                        },
+                        function (e) {
+                          t || ((t = !0), f(n, e));
+                        },
+                      );
+                    } catch (e) {
+                      if (t) return;
+                      (t = !0), f(n, e);
+                    }
+                  }
+                  var a = setTimeout;
+                  (o.prototype.catch = function (e) {
+                    return this.then(null, e);
+                  }),
+                    (o.prototype.then = function (e, n) {
+                      var o = new this.constructor(t);
+                      return (
+                        r(
+                          this,
+                          new (function (e, n, t) {
+                            (this.onFulfilled =
+                              'function' == typeof e ? e : null),
+                              (this.onRejected =
+                                'function' == typeof n ? n : null),
+                              (this.promise = t);
+                          })(e, n, o),
+                        ),
+                        o
+                      );
+                    }),
+                    (o.prototype.finally = e),
+                    (o.all = function (e) {
+                      return new o(function (t, o) {
+                        function r(e, n) {
+                          try {
+                            if (
+                              n &&
+                              ('object' == typeof n || 'function' == typeof n)
+                            ) {
+                              var u = n.then;
+                              if ('function' == typeof u)
+                                return void u.call(
+                                  n,
+                                  function (n) {
+                                    r(e, n);
+                                  },
+                                  o,
+                                );
+                            }
+                            (i[e] = n), 0 == --f && t(i);
+                          } catch (e) {
+                            o(e);
+                          }
+                        }
+                        if (!n(e))
+                          return o(
+                            new TypeError('Promise.all accepts an array'),
+                          );
+                        var i = Array.prototype.slice.call(e);
+                        if (0 === i.length) return t([]);
+                        for (var f = i.length, u = 0; i.length > u; u++)
+                          r(u, i[u]);
+                      });
+                    }),
+                    (o.resolve = function (e) {
+                      return e && 'object' == typeof e && e.constructor === o
+                        ? e
+                        : new o(function (n) {
+                            n(e);
+                          });
+                    }),
+                    (o.reject = function (e) {
+                      return new o(function (n, t) {
+                        t(e);
+                      });
+                    }),
+                    (o.race = function (e) {
+                      return new o(function (t, r) {
+                        if (!n(e))
+                          return r(
+                            new TypeError('Promise.race accepts an array'),
+                          );
+                        for (var i = 0, f = e.length; f > i; i++)
+                          o.resolve(e[i]).then(t, r);
+                      });
+                    }),
+                    (o._immediateFn =
+                      ('function' == typeof setImmediate &&
+                        function (e) {
+                          setImmediate(e);
+                        }) ||
+                      function (e) {
+                        a(e, 0);
+                      }),
+                    (o._unhandledRejectionFn = function (e) {
+                      void 0 !== console &&
+                        console &&
+                        console.warn(
+                          'Possible Unhandled Promise Rejection:',
+                          e,
+                        );
+                    });
+                  var l = (function () {
+                    if ('undefined' != typeof self) return self;
+                    if ('undefined' != typeof window) return window;
+                    if ('undefined' != typeof global) return global;
+                    throw Error('unable to locate global object');
+                  })();
+                  'Promise' in l
+                    ? l.Promise.prototype.finally ||
+                      (l.Promise.prototype.finally = e)
+                    : (l.Promise = o);
+                });
+                var editorialPromise = new Promise(function (e, n) {
+                  document.addEventListener('DOMContentLoaded', function () {
+                    $ ? e('jQuery Loaded!') : n('Error: jQuery did not load');
+                  });
+                });
+                editorialPromise.then(
+                  function (e) {
+                    !(function r(e, n, t) {
+                      function o(i, f) {
+                        if (!n[i]) {
+                          if (!e[i]) {
+                            var c = 'function' == typeof require && require;
+                            if (!f && c) return c(i, !0);
+                            if (u) return u(i, !0);
+                            var a = new Error("Cannot find module '" + i + "'");
+                            throw ((a.code = 'MODULE_NOT_FOUND'), a);
+                          }
+                          var p = (n[i] = { exports: {} });
+                          e[i][0].call(
+                            p.exports,
+                            function (r) {
+                              return o(e[i][1][r] || r);
+                            },
+                            p,
+                            p.exports,
+                            r,
+                            e,
+                            n,
+                            t,
+                          );
+                        }
+                        return n[i].exports;
+                      }
+                      for (
+                        var u = 'function' == typeof require && require, i = 0;
+                        i < t.length;
+                        i++
+                      )
+                        o(t[i]);
+                      return o;
+                    })(
+                      {
+                        1: [
+                          function (require, module, exports) {
+                            'use strict';
+                            Object.defineProperty(exports, '__esModule', {
+                              value: !0,
+                            });
+                            exports.default = void 0;
+                            var obj,
+                              _CountdownClock =
+                                (obj = require('./components/CountdownClock')) &&
+                                obj.__esModule
+                                  ? obj
+                                  : { default: obj };
+                            function _defineProperties(target, props) {
+                              for (var i = 0; i < props.length; i++) {
+                                var descriptor = props[i];
+                                descriptor.enumerable =
+                                  descriptor.enumerable || !1;
+                                descriptor.configurable = !0;
+                                'value' in descriptor &&
+                                  (descriptor.writable = !0);
+                                Object.defineProperty(
+                                  target,
+                                  descriptor.key,
+                                  descriptor,
+                                );
+                              }
+                            }
+                            var _default = (function () {
+                              function App() {
+                                !(function (instance, Constructor) {
+                                  if (!(instance instanceof Constructor))
+                                    throw new TypeError(
+                                      'Cannot call a class as a function',
+                                    );
+                                })(this, App);
+                                this.init();
+                              }
+                              !(function (
+                                Constructor,
+                                protoProps,
+                                staticProps,
+                              ) {
+                                protoProps &&
+                                  _defineProperties(
+                                    Constructor.prototype,
+                                    protoProps,
+                                  );
+                                staticProps &&
+                                  _defineProperties(Constructor, staticProps);
+                              })(App, [
+                                {
+                                  key: 'init',
+                                  value: function () {
+                                    new _CountdownClock.default();
+                                  },
+                                },
+                              ]);
+                              return App;
+                            })();
+                            exports.default = _default;
+                          },
+                          { './components/CountdownClock': 2 },
+                        ],
+                        2: [
+                          function (require, module, exports) {
+                            'use strict';
+                            Object.defineProperty(exports, '__esModule', {
+                              value: !0,
+                            });
+                            exports.default = void 0;
+                            function _defineProperties(target, props) {
+                              for (var i = 0; i < props.length; i++) {
+                                var descriptor = props[i];
+                                descriptor.enumerable =
+                                  descriptor.enumerable || !1;
+                                descriptor.configurable = !0;
+                                'value' in descriptor &&
+                                  (descriptor.writable = !0);
+                                Object.defineProperty(
+                                  target,
+                                  descriptor.key,
+                                  descriptor,
+                                );
+                              }
+                            }
+                            var _default = (function () {
+                              function CountdownClock() {
+                                var selector =
+                                  0 < arguments.length &&
+                                  void 0 !== arguments[0]
+                                    ? arguments[0]
+                                    : '.countdown';
+                                !(function (instance, Constructor) {
+                                  if (!(instance instanceof Constructor))
+                                    throw new TypeError(
+                                      'Cannot call a class as a function',
+                                    );
+                                })(this, CountdownClock);
+                                this.w = window;
+                                this.d = this.w.document;
+                                this.selector = selector;
+                                this.epoch = '';
+                                this.init();
+                              }
+                              !(function (
+                                Constructor,
+                                protoProps,
+                                staticProps,
+                              ) {
+                                protoProps &&
+                                  _defineProperties(
+                                    Constructor.prototype,
+                                    protoProps,
+                                  );
+                                staticProps &&
+                                  _defineProperties(Constructor, staticProps);
+                              })(CountdownClock, [
+                                {
+                                  key: 'init',
+                                  value: function () {
+                                    this.getDefaults();
+                                    this.insertToDom();
+                                  },
+                                },
+                                {
+                                  key: 'getDefaults',
+                                  value: function () {
+                                    return {
+                                      hideDays: !0,
+                                      labels: [
+                                        'jours',
+                                        'heures',
+                                        'mins',
+                                        'secs',
+                                      ],
+                                      color: 'white',
+                                    };
+                                  },
+                                },
+                                {
+                                  key: 'insertToDom',
+                                  value: function () {
+                                    var _this2 = this,
+                                      _this = this,
+                                      mainClass = this.selector.substring(1);
+                                    this.d
+                                      .querySelectorAll(this.selector)
+                                      .forEach(function (v) {
+                                        var runOnce = !0,
+                                          epoch = v.getAttribute('data-epoch'),
+                                          labels =
+                                            v.getAttribute('data-labels'),
+                                          hideDays =
+                                            v.getAttribute('data-hide-days'),
+                                          color = v.getAttribute('data-color')
+                                            ? v.getAttribute('data-color')
+                                            : _this2.getDefaults().color;
+                                        v.getAttribute('data-background');
+                                        labels = labels
+                                          ? labels.split(',')
+                                          : _this2.getDefaults().labels;
+                                        hideDays =
+                                          'true' == hideDays ||
+                                          null == hideDays;
+                                        v.innerHTML = _this.template();
+                                        var initialValues = function () {
+                                            v.querySelector(
+                                              '.'.concat(
+                                                mainClass,
+                                                '__days h2',
+                                              ),
+                                            ).innerHTML =
+                                              _this.getTimeValues(epoch).days;
+                                            v.querySelector(
+                                              '.'.concat(
+                                                mainClass,
+                                                '__hours h2',
+                                              ),
+                                            ).innerHTML =
+                                              _this.getTimeValues(epoch).hours;
+                                            v.querySelector(
+                                              '.'.concat(
+                                                mainClass,
+                                                '__minutes h2',
+                                              ),
+                                            ).innerHTML =
+                                              _this.getTimeValues(
+                                                epoch,
+                                              ).minutes;
+                                            v.querySelector(
+                                              '.'.concat(
+                                                mainClass,
+                                                '__seconds h2',
+                                              ),
+                                            ).innerHTML =
+                                              _this.getTimeValues(
+                                                epoch,
+                                              ).seconds;
+                                            hideDays &&
+                                              '00' ==
+                                                _this.getTimeValues(epoch)
+                                                  .days &&
+                                              setHideDays();
+                                            color &&
+                                              runOnce &&
+                                              v.classList.add(
+                                                ''
+                                                  .concat(mainClass, '__')
+                                                  .concat(color),
+                                              );
+                                          },
+                                          setHideDays = function () {
+                                            v.querySelector(
+                                              '.'.concat(mainClass, '__days'),
+                                            ).style.display = 'none';
+                                            v.querySelector(
+                                              '.separator__days',
+                                            ).style.display = 'none';
+                                          };
+                                        initialValues();
+                                        !(function () {
+                                          v.querySelector(
+                                            '.'.concat(mainClass, '__days h3'),
+                                          ).innerHTML = labels[0];
+                                          v.querySelector(
+                                            '.'.concat(mainClass, '__hours h3'),
+                                          ).innerHTML = labels[1];
+                                          v.querySelector(
+                                            '.'.concat(
+                                              mainClass,
+                                              '__minutes h3',
+                                            ),
+                                          ).innerHTML = labels[2];
+                                          v.querySelector(
+                                            '.'.concat(
+                                              mainClass,
+                                              '__seconds h3',
+                                            ),
+                                          ).innerHTML = labels[3];
+                                        })();
+                                        var myTimer = setInterval(
+                                          initialValues,
+                                          1e3,
+                                        );
+                                        _this.getTimeValues(epoch).stopTimer &&
+                                          clearInterval(myTimer);
+                                        runOnce = !1;
+                                      });
+                                  },
+                                },
+                                {
+                                  key: 'getTimeValues',
+                                  value: function (epoch) {
+                                    var currentDateObj = new Date(),
+                                      currentUTCTime = Math.round(
+                                        currentDateObj.getTime() / 1e3,
+                                      ),
+                                      theTime = {},
+                                      endDate = parseInt(epoch),
+                                      thisDate = parseInt(currentUTCTime),
+                                      timeDiff = parseInt(endDate - thisDate);
+                                    theTime.days = parseInt(
+                                      (endDate - thisDate) / 86400,
+                                    );
+                                    theTime.hours = parseInt(
+                                      timeDiff / 3600 - 24 * theTime.days < 0
+                                        ? 0
+                                        : timeDiff / 3600 - 24 * theTime.days,
+                                    );
+                                    theTime.minutes =
+                                      parseInt(timeDiff / 60) -
+                                      60 * parseInt(timeDiff / 3600);
+                                    theTime.seconds =
+                                      parseInt(+timeDiff) -
+                                      60 * parseInt(timeDiff / 60);
+                                    for (var key in theTime)
+                                      theTime[key] < 10 &&
+                                        (theTime[key] = '0' + theTime[key]);
+                                    theTime.stopTimer = !1;
+                                    if (Number(thisDate) >= Number(endDate)) {
+                                      theTime.days = '00';
+                                      theTime.hours = '00';
+                                      theTime.minutes = '00';
+                                      theTime.seconds = '00';
+                                      theTime.stopTimer = !0;
+                                    }
+                                    return theTime;
+                                  },
+                                },
+                                {
+                                  key: 'template',
+                                  value: function () {
+                                    var mainClass = this.selector.substring(1);
+                                    return '\n            <div class="'
+                                      .concat(
+                                        mainClass,
+                                        '__days">\n                <h2></h2>\n                <h3>JOURS</h3>\n            </div>\n            <div class="separator separator__days">:</div>\n            <div class="',
+                                      )
+                                      .concat(
+                                        mainClass,
+                                        '__hours">\n                <h2></h2>\n                <h3>HEURES</h3>\n            </div>\n            <div class="separator">:</div>\n            <div class="',
+                                      )
+                                      .concat(
+                                        mainClass,
+                                        '__minutes">\n                <h2></h2>\n                <h3>MINS</h3>\n            </div>\n            <div class="separator"><h2>:</h2></div>\n            <div class="',
+                                      )
+                                      .concat(
+                                        mainClass,
+                                        '__seconds">\n                <h2></h2>\n                <h3>SECS</h3>\n            </div>\n        ',
+                                      );
+                                  },
+                                },
+                              ]);
+                              return CountdownClock;
+                            })();
+                            exports.default = _default;
+                          },
+                          {},
+                        ],
+                        3: [
+                          function (require, module, exports) {
+                            'use strict';
+                            var obj;
+                            new ((obj = require('./app-js/app')) &&
+                            obj.__esModule
+                              ? obj
+                              : { default: obj }
+                            ).default();
+                          },
+                          { './app-js/app': 1 },
+                        ],
+                      },
+                      {},
+                      [3],
+                    );
+                    console.log(e);
+                  },
+                  function (e) {
+                    console.log(e);
+                  },
+                );
+              </script> -->
+        </body>
+      </div>
+    </div>
+  </div>
+</html>
