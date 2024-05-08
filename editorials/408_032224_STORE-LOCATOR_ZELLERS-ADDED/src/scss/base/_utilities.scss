@@ -164,6 +164,10 @@
       color: $hbc-white;
     }
 
+    &--t-grey {
+      color: $hbc-grey;
+    }
+
     &--t-beige {
       color: $spring-wood;
     }
@@ -198,6 +202,10 @@
 
     &--bg-white {
       background-color: $hbc-white;
+    }
+
+    &--bg-grey {
+      background-color: $hbc-grey;
     }
 
     &--bg-clear {

@@ -115,26 +115,26 @@
             </section>
 
             <!-- START OF BC -->
-            <div
+            <section
               class="ed-container--tab"
               id="tab1"
               role="tabpanel"
               aria-labelledby="tab1-tab"
               tabindex="0"
             >
-              <section id="british-columbia" class="theBay-stores-province">
-                <hr class="theBay-stores" />
-                <div class="theBay-province">
-                  <h2 class="hbc-h2">British Columbia</h2>
-                </div>
-              </section>
+              <header class="ed-container--header">
+                <hr />
+                <h2 class="ed-type--h2">British Columbia</h2>
+              </header>
 
-              <section class="theBay-single-store-container">
-                <address class="theBay-stores-info">
-                  <h4 class="hbc-h4">Hudson's Bay Vancouver Downtown</h4>
-                  <p class="theBay-address">674 Granville Street</p>
-                  <p class="theBay-address">Vancouver, BC V6C 1Z6</p>
-                  <div class="theBay-address zellers-location">
+              <div class="ed-container--store">
+                <address class="ed-container--store__address">
+                  <h3 class="ed-type--h3">Hudson's Bay Vancouver Downtown</h3>
+                  <p class="ed-type--p">
+                    674 Granville Street<br />
+                    Vancouver, BC V6C 1Z6
+                  </p>
+                  <div class="ed-container--zellers">
                     <svg
                       width="16"
                       height="16"
@@ -162,55 +162,25 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    <h6 class="hbc-h6 hbc-util__pl--half">
+                    <h4 class="ed-type--h4">
                       Zellers
                       <span class="hbc-util__font--normal">- Level B1</span>
-                    </h6>
+                    </h4>
                   </div>
-                  <p class="theBay-address telephone">
-                    <a href="tel:6046816211">604-681-6211</a>
-                  </p>
+                  <a class="ed-type--link" href="tel:+16046816211"
+                    >604-681-6211</a
+                  >
                 </address>
-                <div class="theBay-stores-hours">
+                <div class="ed-container--store__hours">
                   <a
+                    class="ed-type--link"
                     href="https://maps.app.goo.gl/6fRxMnhiXGL91TzZA"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Click here for store hours</a
                   >
-                  <!-- <h5 class="hbc-h5">Hours</h5> -->
-                  <!-- <div class="theBay-stores-listing">
-            <div class="theBay-stores-listing-row">
-              <span class="theBay-day">Monday</span>
-              <span class="theBay-time">10 AM - 7 PM</span>
-            </div>
-            <div class="theBay-stores-listing-row">
-              <span class="theBay-day">Tuesday</span>
-              <span class="theBay-time">10 AM - 7 PM</span>
-            </div>
-            <div class="theBay-stores-listing-row">
-              <span class="theBay-day">Wednesday</span>
-              <span class="theBay-time">10 AM - 7 PM</span>
-            </div>
-            <div class="theBay-stores-listing-row">
-              <span class="theBay-day">Thursday</span>
-              <span class="theBay-time">10 AM - 8 PM</span>
-            </div>
-            <div class="theBay-stores-listing-row">
-              <span class="theBay-day">Friday</span>
-              <span class="theBay-time">10 AM - 8 PM</span>
-            </div>
-            <div class="theBay-stores-listing-row">
-              <span class="theBay-day">Saturday</span>
-              <span class="theBay-time">10 AM - 8 PM</span>
-            </div>
-            <div class="theBay-stores-listing-row">
-              <span class="theBay-day">Sunday</span>
-              <span class="theBay-time">11 AM - 7 PM</span>
-            </div>
-          </div> -->
                 </div>
-                <div class="theBay-stores-directions">
+                <div class="ed-container--store__map">
                   <div class="theBay-stores-map">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.67693487889!2d-123.12032192295473!3d49.28251857139282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717f1eee9af7%3A0x4fd5f4c24883576e!2sHudson&#39;s%20Bay!5e0!3m2!1sen!2sca!4v1683057024009!5m2!1sen!2sca"
@@ -220,25 +190,16 @@
                       referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
                   </div>
-                  <div class="theBay-stores-cta-custom-link">
-                    <a
-                      href="https://goo.gl/maps/1aRa5QvxQL36zxHz6?sre=Stores_LP_Hudsons_Bay_Vancouver_Downtown_Get_Directions"
-                      target="_blank"
-                      class="theBay-stores-cta-custom-a-link"
-                      ><span>Get Directions</span></a
-                    >
-                    <img
-                      src="/on/demandware.static/Sites-TheBay-Site/-/default/dwb1feca50/images/arrow-right.svg"
-                      alt=""
-                      class="NavigateTo-arrow"
-                    />
-                  </div>
+                  <a
+                    href="https://goo.gl/maps/1aRa5QvxQL36zxHz6?sre=Stores_LP_Hudsons_Bay_Vancouver_Downtown_Get_Directions"
+                    target="_blank"
+                    class="ed-link--regular ed-type--link ed-util--t-black ed-util--bg-grey"
+                    >Get Directions &rarr;</a
+                  >
                 </div>
-              </section>
+              </div>
 
-              <section class="theBay-stores-divider">
-                <hr class="theBay-stores" />
-              </section>
+              <hr class="theBay-stores" />
 
               <section class="theBay-single-store-container">
                 <address class="theBay-stores-info">
@@ -1922,7 +1883,7 @@
                   </div>
                 </div>
               </section>
-            </div>
+            </section>
             <!-- END OF BC -->
 
             <!-- START OF AB -->
