@@ -233,103 +233,6 @@
   }
 }
 
-// Spacing Utilities
-$spaceAmounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, auto);
-
-@each $space in $spaceAmounts {
-  @if $space==auto {
-    .ed-util-m-#{$space} {
-      margin: #{$space};
-    }
-
-    .ed-util-mx-#{$space} {
-      margin-left: #{$space};
-      margin-right: #{$space};
-    }
-
-    .ed-util-my-#{$space} {
-      margin-top: #{$space};
-      margin-bottom: #{$space};
-    }
-
-    .ed-util-ml-#{$space} {
-      margin-left: #{$space};
-    }
-
-    .ed-util-mr-#{$space} {
-      margin-right: #{$space};
-    }
-
-    .ed-util-mb-#{$space} {
-      margin-bottom: #{$space};
-    }
-
-    .ed-util-mt-#{$space} {
-      margin-top: #{$space};
-    }
-  } @else {
-    .ed-util-m-#{$space} {
-      margin: #{$space}rem;
-    }
-
-    .ed-util-mx-#{$space} {
-      margin-left: #{$space}rem;
-      margin-right: #{$space}rem;
-    }
-
-    .ed-util-my-#{$space} {
-      margin-top: #{$space}rem;
-      margin-bottom: #{$space}rem;
-    }
-
-    .ed-util-ml-#{$space} {
-      margin-left: #{$space}rem;
-    }
-
-    .ed-util-mr-#{$space} {
-      margin-right: #{$space}rem;
-    }
-
-    .ed-util-mb-#{$space} {
-      margin-bottom: #{$space}rem;
-    }
-
-    .ed-util-mt-#{$space} {
-      margin-top: #{$space}rem;
-    }
-
-    .ed-util-p-#{$space} {
-      padding: #{$space}rem;
-    }
-
-    .ed-util-px-#{$space} {
-      padding-left: #{$space}rem;
-      padding-right: #{$space}rem;
-    }
-
-    .ed-util-py-#{$space} {
-      padding-top: #{$space}rem;
-      padding-bottom: #{$space}rem;
-    }
-
-    .ed-util-pl-#{$space} {
-      padding-left: #{$space}rem;
-    }
-
-    .ed-util-pr-#{$space} {
-      padding-right: #{$space}rem;
-    }
-
-    .ed-util-pb-#{$space} {
-      padding-bottom: #{$space}rem;
-    }
-
-    .ed-util-pt-#{$space} {
-      padding-top: #{$space}rem;
-    }
-  }
-}
-
 // Text Alignment Utilities
 $textAlignments: ('left', 'right', 'center', 'revert');
 
@@ -337,4 +240,100 @@ $textAlignments: ('left', 'right', 'center', 'revert');
   .ed-util-text-#{$textAlign} {
     text-align: #{$textAlign};
   }
+}
+
+// Spacing Utility
+$space-stops: (
+  '-0': 0,
+  '-pnt25': 0.25rem,
+  '-pnt5': 0.5rem,
+  '-pnt75': 0.75rem,
+  '-1': 1rem,
+  '-1pnt25': 1.25rem,
+  '-1pnt5': 1.5rem,
+  '-1pnt75': 1.75rem,
+  '-2': 2rem,
+  '-2pnt25': 2.25rem,
+  '-2pnt5': 2.5rem,
+  '-3': 3rem,
+  '-3pnt25': 3.25rem,
+  '-3pnt5': 3.5rem,
+);
+
+@mixin finite-spacing-utils($bp: '') {
+  @each $key, $val in $space-stops {
+    .ed-util-p-#{$key}#{$bp} {
+      padding: #{$val} !important;
+    }
+    .ed-util-pt-#{$key}#{$bp} {
+      padding-top: #{$val} !important;
+    }
+    .ed-util-pr-#{$key}#{$bp} {
+      padding-right: #{$val} !important;
+    }
+    .ed-util-pb-#{$key}#{$bp} {
+      padding-bottom: #{$val} !important;
+    }
+    .ed-util-pl-#{$key}#{$bp} {
+      padding-left: #{$val} !important;
+    }
+    .ed-util-px-#{$key}#{$bp} {
+      padding-right: #{$val} !important;
+      padding-left: #{$val} !important;
+    }
+    .ed-util-py-#{$key}#{$bp} {
+      padding-top: #{$val} !important;
+      padding-bottom: #{$val} !important;
+    }
+
+    .ed-util-m-#{$key}#{$bp} {
+      margin: #{$val} !important;
+    }
+    .ed-util-mt-#{$key}#{$bp} {
+      margin-top: #{$val} !important;
+    }
+    .ed-util-mr-#{$key}#{$bp} {
+      margin-right: #{$val} !important;
+    }
+    .ed-util-mb-#{$key}#{$bp} {
+      margin-bottom: #{$val} !important;
+    }
+    .ed-util-ml-#{$key}#{$bp} {
+      margin-left: #{$val} !important;
+    }
+    .ed-util-mx-#{$key}#{$bp} {
+      margin-right: #{$val} !important;
+      margin-left: #{$val} !important;
+    }
+    .ed-util-my-#{$key}#{$bp} {
+      margin-top: #{$val} !important;
+      margin-bottom: #{$val} !important;
+    }
+  }
+}
+
+@include finite-spacing-utils;
+
+@include respond-to(xxsmall) {
+  @include finite-spacing-utils($bp: '--xxsm');
+}
+
+@include respond-to(xsmall) {
+  @include finite-spacing-utils($bp: '--xsm');
+}
+
+@include respond-to(small) {
+  @include finite-spacing-utils($bp: '--sm');
+}
+
+@include respond-to(medium) {
+  @include finite-spacing-utils($bp: '--md');
+}
+
+@include respond-to(xlarge) {
+  @include finite-spacing-utils($bp: '--xlg');
+}
+
+@include respond-to(xxlarge) {
+  @include finite-spacing-utils($bp: '--xxlg');
 }
