@@ -330,6 +330,10 @@ $space-stops: (
   @include finite-spacing-utils($bp: '--md');
 }
 
+@include respond-to(large) {
+  @include finite-spacing-utils($bp: '--lg');
+}
+
 @include respond-to(xlarge) {
   @include finite-spacing-utils($bp: '--xlg');
 }

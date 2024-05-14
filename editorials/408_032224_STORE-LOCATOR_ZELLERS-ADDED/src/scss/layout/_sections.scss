@@ -50,14 +50,19 @@
     }
 
     &--store {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
+      display: block;
       padding: 2.5rem 1.813rem 0;
+      width: 100%;
 
       @include respond-to(large) {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        & > * {
+          width: calc(100% / 3);
+        }
       }
     }
 
