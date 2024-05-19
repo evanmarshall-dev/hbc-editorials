@@ -148,4 +148,8 @@
     color: $lHoverColor;
     background-color: $lHoverBG;
   }
+
+  &:focus {
+    outline: 2px solid blue;
+  }
 }

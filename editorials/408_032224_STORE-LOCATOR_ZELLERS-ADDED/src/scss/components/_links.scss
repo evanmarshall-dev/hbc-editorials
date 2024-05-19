@@ -25,10 +25,13 @@
       text-decoration: none;
 
       &:hover,
-      &:active,
-      &:focus {
+      &:active {
         text-decoration: underline;
         color: darken($color: $bd-red, $amount: 20%);
+      }
+
+      &:focus {
+        outline: 2px solid blue;
       }
     }
 
@@ -98,6 +101,10 @@
       #{$a-tags-hover} {
         background-color: lighten($color: $hbc-black, $amount: 20%);
       }
+
+      &:focus {
+        outline: 2px solid blue;
+      }
     }
 
     &--tab {
@@ -124,6 +131,10 @@
         border: none;
         color: $hbc-black;
         background-color: darken($color: $hbc-grey, $amount: 5%);
+      }
+
+      &:focus {
+        outline: 2px solid blue;
       }
 
       @include respond-to(medium) {
