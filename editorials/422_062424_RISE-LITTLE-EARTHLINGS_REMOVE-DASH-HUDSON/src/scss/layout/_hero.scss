@@ -1,0 +1,28 @@
+/* -----------------------------------------------
+ * HERO STYLES
+----------------------------------------------- */
+#dsg-editorial.dsg-editorial {
+  section {
+    &.hbc-hero {
+      &__content {
+        padding: 0 40px 0;
+        margin: 100px 0 0;
+        text-align: center;
+
+        h3 {
+          &.hbc-hero__heading {
+            // margin-bottom: 40px;
+            width: calc(100% - 20%);
+            margin: 0 auto 40px;
+            color: $rle-green;
+          }
+        }
+
+        @include respond-to(medium) {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}

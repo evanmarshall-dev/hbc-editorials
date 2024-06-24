@@ -1,0 +1,40 @@
+/* -----------------------------------------------
+ * FOOTER STYLES
+----------------------------------------------- */
+// #dsg-editorial.dsg-editorial {
+//   footer {
+//     &.footer {
+//       background: $bayDaysBeige;
+
+//       h4,
+//       h5,
+//       p {
+//         color: $bayDaysGreen;
+//       }
+
+//       @include bayflex(
+//         column,
+//         wrap,
+//         initial,
+//         space-evenly,
+//         8rem 0 0,
+//         8rem 0 0,
+//         auto,
+//         100%,
+//         center
+//       );
+
+//       hr {
+//         @include hLine(0, 0.015rem, solid, $bayDaysGreen, 80%, 5rem auto);
+//       }
+//     }
+
+//     .footer__wrapper {
+//       padding: 0 2rem;
+
+//       @include respond-to(large) {
+//         padding: 0 8rem;
+//       }
+//     }
+//   }
+// }
