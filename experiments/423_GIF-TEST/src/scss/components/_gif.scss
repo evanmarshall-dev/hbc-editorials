@@ -1,0 +1,112 @@
+// File: _gif.scss
+
+// for blink/webkit
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+// for firefox
+details > summary:first-of-type {
+  list-style: none;
+}
+
+.ed {
+  // TODO: Remove wrapper main styles for production.
+  &-wrapper {
+    &--main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-container {
+    &--gif {
+      display: inline-block;
+      position: relative;
+    }
+  }
+
+  &-gif {
+    img {
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      overflow: visible;
+    }
+  }
+}
+
+[open] summary {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+
+  #play {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    margin: 0.45rem auto 0;
+  }
+
+  #pause {
+    display: none;
+  }
+}
+
+summary {
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+
+  #play {
+    display: none;
+  }
+
+  #pause {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    margin: 0.45rem auto 0;
+  }
+
+  & + * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    padding-top: 3rem;
+    background: #000;
+    color: #fff;
+    overflow-y: auto;
+  }
+
+  &:hover {
+    border: 1px solid #c7c7c7;
+    background-color: #fafafa;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    border: 1px solid #c7c7c7;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &:focus {
+    border: 1px solid #9c9c9c;
+    background-color: #fafafa;
+    box-shadow: 0 0 0 2px #0369a1;
+  }
+}
