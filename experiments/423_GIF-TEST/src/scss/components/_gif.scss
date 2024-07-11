@@ -110,3 +110,14 @@ summary {
     box-shadow: 0 0 0 2px #0369a1;
   }
 }
+
+/* GIF scale on hover override */
+a img#gif--no-scale:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
+
+/* Blank hero text on mobile homepage override */
+.home-2 .content-text {
+  display: none;
+}
