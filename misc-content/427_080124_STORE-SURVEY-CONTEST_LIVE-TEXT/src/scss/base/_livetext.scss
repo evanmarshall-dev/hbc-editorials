@@ -1,0 +1,148 @@
+// File: _livetext.scss
+
+@import url(https://use.typekit.net/qno3ktb.css);
+
+#hbc-footer-page.hbc-footer-page {
+  font-family:
+    proxima-nova,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Sans-Serif;
+  color: #666;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1220px;
+  width: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 959px) {
+  #hbc-footer-page.hbc-footer-page {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 581px) {
+  #hbc-footer-page.hbc-footer-page {
+    font-size: 12px;
+    width: auto !important;
+  }
+}
+
+#hbc-footer-page.hbc-footer-page h1,
+#hbc-footer-page.hbc-footer-page h2,
+#hbc-footer-page.hbc-footer-page h3,
+#hbc-footer-page.hbc-footer-page h4,
+#hbc-footer-page.hbc-footer-page h5,
+#hbc-footer-page.hbc-footer-page h6 {
+  color: #333;
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+  position: relative;
+}
+
+#hbc-footer-page.hbc-footer-page strong {
+  font-weight: 700;
+  color: #333;
+}
+
+#hbc-footer-page.hbc-footer-page em {
+  font-weight: 700;
+  color: #666;
+}
+
+#hbc-footer-page.hbc-footer-page h1 {
+  font-family:
+    adobe-caslon-pro,
+    Times New Roman,
+    Times,
+    Serif;
+  font-size: 1.66667em;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 5px 5px;
+  margin-bottom: 20px;
+}
+
+#hbc-footer-page.hbc-footer-page h2 {
+  font-family:
+    proxima-nova,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Sans-Serif;
+  font-size: 1em;
+  border: none;
+  border-bottom: thin solid #ccc;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  letter-spacing: 0.25em;
+}
+
+#hbc-footer-page.hbc-footer-page h3 {
+  font-family:
+    adobe-caslon-pro,
+    Times New Roman,
+    Times,
+    Serif;
+  font-size: 1.25em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  font-weight: 400;
+}
+
+#hbc-footer-page.hbc-footer-page h4 {
+  padding: 0;
+  font-size: 1em;
+}
+
+#hbc-footer-page.hbc-footer-page h5 {
+  font-size: 0.91667em;
+}
+
+#hbc-footer-page.hbc-footer-page h6 {
+  padding: 0;
+}
+
+#hbc-footer-page.hbc-footer-page h6:before {
+  content: '+';
+  padding: 0 5px 0 0;
+}
+
+#hbc-footer-page.hbc-footer-page p {
+  font-size: 1em;
+  font-family:
+    proxima-nova,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Sans-Serif;
+  margin: 5px 0 10px;
+  padding: 0 0 10px;
+}
+
+#hbc-footer-page.hbc-footer-page a,
+#hbc-footer-page.hbc-footer-page a:visited {
+  font-weight: 700;
+  color: #333;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+#hbc-footer-page.hbc-footer-page a:hover,
+#hbc-footer-page.hbc-footer-page a:visited:hover {
+  opacity: 0.7;
+}
+
+#hbc-footer-page div ul li {
+  list-style: disc !important;
+}
