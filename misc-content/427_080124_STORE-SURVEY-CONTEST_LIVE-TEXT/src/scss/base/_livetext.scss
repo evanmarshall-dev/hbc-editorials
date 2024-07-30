@@ -148,3 +148,11 @@
 #hbc-footer-page div ul li {
   list-style: disc !important;
 }
+
+.ed {
+  &-util {
+    &--underline {
+      text-decoration: underline;
+    }
+  }
+}
