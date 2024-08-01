@@ -3,6 +3,9 @@
 /* -----------------------------------------------
  * BASE AND RESET STYLES
 ----------------------------------------------- */
+// Proxima Nova font import.
+@import url(https://use.typekit.net/qno3ktb.css);
+
 // Theme specific highlight color resets.
 ::selection {
   background-color: $hbc-black;
