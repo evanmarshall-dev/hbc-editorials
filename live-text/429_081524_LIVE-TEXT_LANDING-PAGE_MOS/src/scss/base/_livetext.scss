@@ -1,5 +1,6 @@
 // File: _livetext.scss
 
+// STORE SURVEY CONTEST TYPE LIVE TEXT STYLES - LEGAL.
 @import url(https://use.typekit.net/qno3ktb.css);
 
 #hbc-footer-page.hbc-footer-page {
@@ -65,8 +66,8 @@
     Times,
     Serif;
   font-size: 1.66667em;
-  border: none;
-  border-bottom: thin solid #ccc;
+  // border: none;
+  // border-bottom: thin solid #ccc;
   font-weight: 700;
   text-align: center;
   padding: 10px 5px 5px;
@@ -155,4 +156,135 @@
       text-decoration: underline;
     }
   }
+}
+
+// REGULAR OFFER DETAILS PAGE TYPE LIVE TEXT STYLES.
+#hbc-livetext-page.hbc-livetext-page {
+  font-family:
+    proxima-nova,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Sans-Serif;
+  color: #666;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  /*margin: 2em auto !important;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;*/
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px !important;
+  margin: 0 auto;
+  text-align: center;
+}
+#hbc-livetext-page.hbc-livetext-page h2.heading {
+  letter-spacing: 0.05em;
+}
+@media (max-width: 959px) {
+  #hbc-livetext-page.hbc-livetext-page {
+    font-size: 12px;
+  }
+  #hbc-livetext-page.hbc-livetext-page p,
+  .home-slots #hbc-livetext-legal.hbc-livetext-legal p {
+    text-align: left;
+  }
+}
+@media (min-width: 581px) {
+  #hbc-livetext-page.hbc-livetext-page {
+    font-size: 14px;
+  }
+}
+#hbc-livetext-page.hbc-livetext-page h2.heading,
+#hbc-livetext-page.hbc-livetext-page h2,
+#hbc-livetext-page.hbc-livetext-page h3,
+#hbc-livetext-page.hbc-livetext-page h4,
+#hbc-livetext-page.hbc-livetext-page h5,
+#hbc-livetext-page.hbc-livetext-page h6 {
+  color: #333;
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+  position: relative;
+}
+#hbc-livetext-page.hbc-livetext-page strong {
+  font-weight: 700;
+  color: #333;
+}
+#hbc-livetext-page.hbc-livetext-page em {
+  font-weight: 700;
+  color: #666;
+}
+#hbc-livetext-page.hbc-livetext-page h2.heading {
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: center;
+}
+#hbc-livetext-page.hbc-livetext-page h2 {
+  font-family:
+    proxima-nova,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Sans-Serif;
+  font-size: 1.9em;
+  border: none;
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 0.25em;
+  font-weight: normal;
+}
+#hbc-livetext-page.hbc-livetext-page h3 {
+  font-size: 1.25em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+}
+#hbc-livetext-page.hbc-livetext-page h4 {
+  padding: 0;
+  font-size: 1em;
+}
+#hbc-livetext-page.hbc-livetext-page h5 {
+  font-size: 0.91667em;
+}
+#hbc-livetext-page.hbc-livetext-page h6 {
+  padding: 0;
+}
+#hbc-livetext-page.hbc-livetext-page h6:before {
+  content: '+';
+  padding: 0 5px 0 0;
+}
+#hbc-livetext-page.hbc-livetext-page p {
+  font-size: 1em;
+  font-family:
+    proxima-nova,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Sans-Serif;
+  margin: 0 10px;
+  line-height: 150%;
+  color: black;
+  margin: 2% 0 2% 0;
+  text-align: center;
+}
+#hbc-livetext-legal.hbc-livetext-legal {
+  margin-top: 50px;
+  font-size: 1em;
+  font-family:
+    proxima-nova,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    Sans-Serif;
+  margin-left: 10px;
+  line-height: 150%;
+  color: black;
+  text-align: left;
+}
+.main {
+  padding: 0 !important;
 }
