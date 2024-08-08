@@ -3,13 +3,13 @@
 /* -----------------------------------------------
  * HBC ACCORDION STYLES
 ----------------------------------------------- */
-.hbc-ed {
+.ed {
   &-accordion {
     &__wrapper {
       background-color: $hbc-blue;
-      border-radius: 6rem;
+      // border-radius: 6rem;
       overflow: hidden;
-      padding: 5rem 2rem;
+      margin: 4rem 0;
       text-align: center;
 
       @include respond-to(large) {
@@ -19,7 +19,7 @@
     }
 
     &__button {
-      @include font($baySans, 400, normal, null, null, 1.875rem);
+      // @include font($baySans, 400, normal, null, null, 1.875rem);
       background-color: $hbc-blue;
       color: $spring-wood;
       cursor: pointer;
@@ -68,7 +68,7 @@
       border-radius: 0 0 4rem 4rem;
 
       p {
-        @include font($baySans, 400, normal, null, null, 1.375rem);
+        // @include font($baySans, 400, normal, null, null, 1.375rem);
         padding: 2rem 3rem;
         color: $hbc-blue;
       }
