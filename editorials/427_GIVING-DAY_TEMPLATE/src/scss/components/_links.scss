@@ -26,63 +26,63 @@
       }
     }
 
-    &--underline {
-      cursor: pointer;
-      text-decoration: none;
+    // &--underline {
+    //   cursor: pointer;
+    //   text-decoration: none;
 
-      &:hover,
-      &:active {
-        text-decoration: underline;
-        color: darken($color: $bd-red, $amount: 20%);
-      }
+    //   &:hover,
+    //   &:active {
+    //     text-decoration: underline;
+    //     color: darken($color: $bd-red, $amount: 20%);
+    //   }
 
-      &:focus {
-        outline: none;
-        outline-offset: 0;
-        box-shadow: none;
-        border: 1px solid blue;
-      }
-    }
+    //   &:focus {
+    //     outline: none;
+    //     outline-offset: 0;
+    //     box-shadow: none;
+    //     border: 1px solid blue;
+    //   }
+    // }
 
-    &--full {
-      @include link(
-        100%,
-        0.3rem 0,
-        null,
-        none,
-        none,
-        background-color 0.25s ease,
-        none,
-        none,
-        $hbc-white,
-        darken($color: $bd-red, $amount: 20%)
-      );
+    // &--full {
+    //   @include link(
+    //     100%,
+    //     0.3rem 0,
+    //     null,
+    //     none,
+    //     none,
+    //     background-color 0.25s ease,
+    //     none,
+    //     none,
+    //     $hbc-white,
+    //     darken($color: $bd-red, $amount: 20%)
+    //   );
 
-      &-dark {
-        @include link(
-          100%,
-          0.3rem 0,
-          null,
-          none,
-          none,
-          background-color 0.25s ease,
-          none,
-          none,
-          $hbc-white,
-          lighten($color: $hbc-black, $amount: 20%)
-        );
+    //   &-dark {
+    //     @include link(
+    //       100%,
+    //       0.3rem 0,
+    //       null,
+    //       none,
+    //       none,
+    //       background-color 0.25s ease,
+    //       none,
+    //       none,
+    //       $hbc-white,
+    //       lighten($color: $hbc-black, $amount: 20%)
+    //     );
 
-        @include respond-to(medium) {
-          display: block;
-          margin: 0 auto;
-          width: calc(100% / 3);
-        }
-      }
-    }
+    //     @include respond-to(medium) {
+    //       display: block;
+    //       margin: 0 auto;
+    //       width: calc(100% / 3);
+    //     }
+    //   }
+    // }
 
-    &--card {
-      position: relative;
-    }
+    // &--card {
+    //   position: relative;
+    // }
   }
 
   &-button {
@@ -119,42 +119,42 @@
       }
     }
 
-    &--tab {
-      color: $hbc-black;
-      background-color: $hbc-grey;
-      border: none;
-      font-size: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 1.875rem;
-      margin-right: 1.25rem;
-      border-radius: 0.125rem;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background-color 0.25s ease;
+    // &--tab {
+    //   color: $hbc-black;
+    //   background-color: $hbc-grey;
+    //   border: none;
+    //   font-size: 1rem;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   padding: 1rem 1.875rem;
+    //   margin-right: 1.25rem;
+    //   border-radius: 0.125rem;
+    //   text-decoration: none;
+    //   cursor: pointer;
+    //   transition: background-color 0.25s ease;
 
-      &:last-child {
-        margin-right: 0;
-      }
+    //   &:last-child {
+    //     margin-right: 0;
+    //   }
 
-      #{$a-tags-hover} {
-        text-decoration: none;
-        border: none;
-        color: $hbc-black;
-        background-color: darken($color: $hbc-grey, $amount: 5%);
-      }
+    //   #{$a-tags-hover} {
+    //     text-decoration: none;
+    //     border: none;
+    //     color: $hbc-black;
+    //     background-color: darken($color: $hbc-grey, $amount: 5%);
+    //   }
 
-      &:focus {
-        outline: none;
-        outline-offset: 0;
-        box-shadow: none;
-        border: 1px solid blue;
-      }
+    //   &:focus {
+    //     outline: none;
+    //     outline-offset: 0;
+    //     box-shadow: none;
+    //     border: 1px solid blue;
+    //   }
 
-      @include respond-to(medium) {
-        width: calc(100% / 7);
-      }
-    }
+    //   @include respond-to(medium) {
+    //     width: calc(100% / 7);
+    //   }
+    // }
   }
 }

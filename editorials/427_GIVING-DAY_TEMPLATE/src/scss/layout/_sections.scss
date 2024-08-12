@@ -5,14 +5,6 @@
 ----------------------------------------------- */
 .ed {
   &-wrapper {
-    // &--hero {
-    //   padding: 0;
-
-    //   @include respond-to(medium) {
-    //     margin: 2rem 2rem 0;
-    //   }
-    // }
-
     &--main {
       margin: 0;
 
@@ -20,14 +12,6 @@
         margin: 2rem;
       }
     }
-
-    // &--menu {
-    //   padding: 1rem 0 0;
-
-    //   @include respond-to(medium) {
-    //     padding: 2.5rem 0 0;
-    //   }
-    // }
   }
 
   &-container {
@@ -49,58 +33,9 @@
       @include respond-to(medium) {
         padding: 2.5rem 0 1.5rem;
       }
-
-      //     hr {
-      //       margin: 0;
-      //       width: 100%;
-      //       height: 0.125rem;
-      //       border: 0;
-      //       border-top: 0.063rem solid #ccc;
-      //       // overflow: visible;
-      //       // box-sizing: content-box;
-      //     }
-
-      //     h2 {
-      //       display: inline-block;
-      //       background-color: $hbc-white;
-      //       padding: 0 0.313rem;
-      //       margin: -1rem 0 0 1.5rem;
-      //       position: absolute;
-      //     }
     }
 
-    //   &--tab {
-    //     padding: 5rem 1rem;
-
-    //     @include respond-to(medium) {
-    //       padding: 5rem 2.5rem;
-    //     }
-    //   }
-
-    //   &--store {
-    //     display: block;
-    //     padding: 2.5rem 1.5rem 0;
-    //     width: 100%;
-
-    //     @include respond-to(large) {
-    //       display: flex;
-    //       flex-direction: row;
-    //       justify-content: space-between;
-    //       align-items: flex-start;
-
-    //       & > * {
-    //         width: calc(100% / 3);
-    //       }
-    //     }
-    //   }
-
-    //   &--zellers {
-    //     display: flex;
-    //     align-items: center;
-    //   }
-
     &--links {
-      // padding: 2.875rem 0 5rem;
       display: block;
 
       @include respond-to(medium) {
@@ -119,22 +54,5 @@
         }
       }
     }
-
-    //   &--widgets {
-    //     display: grid;
-    //     grid-template-columns: repeat(1, 1fr);
-    //     grid-template-rows: repeat(4, 1fr);
-
-    //     @include respond-to(small) {
-    //       grid-template-columns: repeat(2, 1fr);
-    //       grid-template-rows: repeat(2, 1fr);
-    //       gap: 0.75rem;
-    //     }
-
-    //     @include respond-to(medium) {
-    //       grid-template-columns: repeat(4, 1fr);
-    //       grid-template-rows: 1fr;
-    //     }
-    // }
   }
 }
