@@ -18,7 +18,10 @@
 
 a {
   &:focus {
-    outline: 2px solid blue;
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border: 1px solid blue;
   }
 }
 
