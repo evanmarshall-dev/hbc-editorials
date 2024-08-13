@@ -41,10 +41,27 @@ a {
         // margin: 0;
       }
 
+      a,
+      button,
+      p {
+        font-family: $hbc-sans-default;
+      }
+
+      h1 {
+        font-family: $hbc-sans-bold;
+      }
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: $hbc-sans-medium;
+      }
+
       header {
         background-color: transparent;
         z-index: 0;
-        text-align: center;
       }
 
       // TODO: Un-comment when copy needs to be added to mobile hero banner, but not tablet and up.

@@ -7,6 +7,14 @@
 .ed {
   // Font Utilities
   &-util {
+    &--p {
+      font-size: 1rem;
+    }
+
+    &--cta {
+      font-size: 1.15rem;
+    }
+
     &--italic {
       font-style: italic;
     }

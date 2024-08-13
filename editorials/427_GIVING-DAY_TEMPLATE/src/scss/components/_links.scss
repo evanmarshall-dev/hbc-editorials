@@ -19,6 +19,7 @@
         darken($color: $hbc-grey, $amount: 10%)
       );
 
+      font-family: $hbc-sans-default;
       margin: 1.5rem 0;
 
       @include respond-to(medium) {
@@ -101,6 +102,7 @@
         background-color 0.25s ease,
         opacity 0.25s ease;
       z-index: 1000;
+      font-family: $hbc-sans-default;
 
       &.show {
         opacity: 1;
