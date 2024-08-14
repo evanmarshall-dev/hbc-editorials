@@ -4,11 +4,22 @@
 * SVG/ICONS STYLES
 ----------------------------------------------- */
 
-.ed {
-  &-icon {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+// .ed {
+//   &-icon {
+//     max-width: 100%;
+//     width: 100%;
+//     height: auto;
+//     display: block;
+//   }
+// }
+
+// For Styling Google Icons.
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48;
+
+  font-size: 3rem;
 }
