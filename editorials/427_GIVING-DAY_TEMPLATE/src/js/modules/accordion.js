@@ -18,6 +18,7 @@ for (i = 0; i < acc.length; i += 1) {
 
     const link = document.getElementById('hbfLink');
     link.setAttribute('aria-hidden', expanded);
+    link.style.display = 'inline-block';
   });
 
   acc[i].addEventListener('keydown', function (event) {
