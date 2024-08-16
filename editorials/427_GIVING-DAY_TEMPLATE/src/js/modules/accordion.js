@@ -15,6 +15,9 @@ for (i = 0; i < acc.length; i += 1) {
     } else {
       panel.style.maxHeight = `${panel.scrollHeight}px`;
     }
+
+    const link = document.getElementById('hbfLink');
+    link.setAttribute('aria-hidden', expanded);
   });
 
   acc[i].addEventListener('keydown', function (event) {
