@@ -131,6 +131,19 @@
     }
   }
 
+  // Image Utilities
+  &-util {
+    &-img {
+      &--fluid {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+
   // Border Utilities
   &-util {
     &--b-all {
