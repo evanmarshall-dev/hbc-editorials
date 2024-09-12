@@ -1,0 +1,110 @@
+{
+  "stores": [
+    {
+      "bc": [
+        {
+          "storeName": "Hudson's Bay Vancouver Downtown",
+          "streetAddress": "674 Granville Street",
+          "city": "Vancouver",
+          "province": "BC",
+          "postalCode": "V6C 1Z6",
+          "containsZellers": true,
+          "zellersFloor": "Level B1",
+          "phoneLink": "6046816211",
+          "phoneNumber": "604-681-6211",
+          "hoursLink": "https://maps.app.goo.gl/6fRxMnhiXGL91TzZA",
+          "locationLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.67693487889!2d-123.12032192295473!3d49.28251857139282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717f1eee9af7%3A0x4fd5f4c24883576e!2sHudson&#39;s%20Bay!5e0!3m2!1sen!2sca!4v1683057024009!5m2!1sen!2sca",
+          "directionsLink": "https://goo.gl/maps/1aRa5QvxQL36zxHz6?sre=Stores_LP_Hudsons_Bay_Vancouver_Downtown_Get_Directions"
+        },
+        {
+          "storeName": "Hudson's Bay Surrey Guildford Town Centre",
+          "streetAddress": "1400 152 Street",
+          "city": "Surrey",
+          "province": "BC",
+          "postalCode": "V3R 7C1",
+          "containsZellers": true,
+          "zellersFloor": "Level 1",
+          "phoneLink": "6045882111",
+          "phoneNumber": "604-588-2111",
+          "hoursLink": "https://maps.app.goo.gl/kyfLhvxSbPZ9byePA",
+          "locationLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.5246553766633!2d-122.80560872314402!3d49.1906059772695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d76cdf7274e9%3A0xd07c48383c6ed3!2sHudson&#39;s%20Bay!5e0!3m2!1sen!2sca!4v1683209045173!5m2!1sen!2sca",
+          "directionsLink": "https://goo.gl/maps/dx2PLaqXFD65Y48U7?sre=Stores_LP_Hudsons_Bay_Surry_Guildford_Town_Centre_Get_Directions"
+        },
+        {
+          "storeName": "Hudson's Bay Victoria Mayfair Shopping Centre",
+          "streetAddress": "3125 Douglas Street",
+          "city": "Victoria",
+          "province": "BC",
+          "postalCode": "V8Z 3K3",
+          "containsZellers": true,
+          "zellersFloor": "Lower Level",
+          "phoneLink": "2503863322",
+          "phoneNumber": "250-386-3322",
+          "hoursLink": "https://maps.app.goo.gl/7pVYeXRrN34b718L9",
+          "locationLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.538798560696!2d-123.3709541231922!3d48.446190829625294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f739d4d1fdf8b%3A0xe1b576dd19cd1320!2sHudson&#39;s%20Bay!5e0!3m2!1sen!2sca!4v1695215459241!5m2!1sen!2sca",
+          "directionsLink": "https://maps.app.goo.gl/NbVLpdKp9mq592yG6?sre=Stores_LP_Hudsons_Bay_Victoria_Mayfair_Shopping_Centre_Get_Directions"
+        },
+        {
+          "storeName": "Hudson's Bay Burnaby Metropolis At Metrotown",
+          "streetAddress": "4850 Kingsway",
+          "city": "Burnaby",
+          "province": "BC",
+          "postalCode": "V5H 4P2",
+          "containsZellers": true,
+          "zellersFloor": "Upper Level",
+          "phoneLink": "6044361196",
+          "phoneNumber": "604-436-1196",
+          "hoursLink": "https://maps.app.goo.gl/JfqX7Yo4NH7HZMpt9",
+          "locationLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.669373132499!2d-122.99839182315783!3d49.22579707478037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486765a2310592d%3A0xe868aae2b908a55c!2sHudson&#39;s%20Bay!5e0!3m2!1sen!2sca!4v1695215787184!5m2!1sen!2sca",
+          "directionsLink": "https://maps.app.goo.gl/fAQRNZfSCpHLCruJ8?sre=Stores_LP_Hudsons_Bay_Burnaby_Metropolis_At_Metrotown_Get_Directions"
+        },
+        {
+          "storeName": "Hudson's Bay West Vancouver Park Royal Centre",
+          "streetAddress": "725 Park Royal North",
+          "city": "Vancouver",
+          "province": "BC",
+          "postalCode": "V7T 1H9",
+          "containsZellers": true,
+          "zellersFloor": "Upper Level",
+          "phoneLink": "6049251411",
+          "phoneNumber": "604-925-1411",
+          "hoursLink": "https://maps.app.goo.gl/fAiHifHeUfNK7uM2A",
+          "locationLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.2628999677204!2d-123.13842592315335!3d49.328241267526394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54866e2124e14b3d%3A0x1af0d41d43e76f8e!2sHudson&#39;s%20Bay!5e0!3m2!1sen!2sca!4v1695216208337!5m2!1sen!2sca",
+          "directionsLink": "https://maps.app.goo.gl/vvp27xkQt9WJhFnn7?sre=Stores_LP_Hudsons_Bay_West_Vancouver_Park_Royal_Centre_Get_Directions"
+        },
+        {
+          "storeName": "Hudson's Bay Richmond Centre",
+          "streetAddress": "6060 Minoru Boulevard",
+          "city": "Richmond",
+          "province": "BC",
+          "postalCode": "V6Y 1Y2",
+          "containsZellers": true,
+          "zellersFloor": "Main Level L1",
+          "phoneLink": "6042733844",
+          "phoneNumber": "604-273-3844",
+          "hoursLink": "https://maps.app.goo.gl/Yq6KKnzzSiadg1Wa7",
+          "locationLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.6544207903803!2d-123.14103412316045!3d49.169167378785446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54860acc9b16de7b%3A0x29e407b978d42687!2sHudson&#39;s%20Bay!5e0!3m2!1sen!2sca!4v1695216414951!5m2!1sen!2sca",
+          "directionsLink": "https://maps.app.goo.gl/3sCLtgjxX8B133Ux7?sre=Stores_LP_Hudsons_Bay_Richmond_Centre_Get_Directions"
+        }
+      ]
+    },
+    {
+      "ab": [{}]
+    },
+    {
+      "sk": [{}]
+    },
+    {
+      "mb": [{}]
+    },
+    {
+      "on": [{}]
+    },
+    {
+      "qc": [{}]
+    },
+    {
+      "ns": [{}]
+    }
+  ]
+}

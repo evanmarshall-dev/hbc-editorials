@@ -35,3 +35,65 @@
 | Polo Park          | MB       |
 
 ## Selling LOFT
+
+| Store              | Province |
+| ------------------ | -------- |
+| Vancouver Downtown | BC       |
+| Queen St.          | ON       |
+| Montreal           | QC       |
+| Market Mall        | AB       |
+| Yorkdale           | ON       |
+| Mayfair            | BC       |
+| Carrefour          | QC       |
+| Bayshore           | ON       |
+| Limeridge          | ON       |
+| Polo Park          | MB       |
+| Park Royal         | BC       |
+| Pointe Claire      | QC       |
+| Scarborough        | ON       |
+| Southgate          |          |
+| Sherway            |          |
+| Metrotown          |          |
+| Fairview           |          |
+| Kelowna            |          |
+| Erin Mills         |          |
+| Mapleview          |          |
+| St. Bruno          |          |
+| Oshawa             |          |
+| Oakville           |          |
+| Waterloo           |          |
+| Southcentre        |          |
+| Dartmouth          |          |
+| Bramalea           |          |
+| Rosemere           |          |
+| Masonville         |          |
+| Newmarket          |          |
+| Coquitlam          |          |
+| Capitale           |          |
+| Guildford          |          |
+| Nanaimo            |          |
+| St. Laurent        |          |
+| Langley            |          |
+| West Edmonton      |          |
+| Chinook            |          |
+| Richmond           |          |
+| Markville          |          |
+| Red Deer           |          |
+| Pen Centre         |          |
+| Brossard           |          |
+| Abbotsford         |          |
+| Mississauga        |          |
+| Victoria           |          |
+| Vernon             |          |
+| Richmond Hill      |          |
+| Pickering          |          |
+| Anjou              |          |
+| Windsor            |          |
+| Barrie             |          |
+| London W.O.        |          |
+| Rideau             |          |
+| St. Vital          |          |
+| Kingston           |          |
+| Sunridge           |          |
+| Laval              |          |
+| Rockland           |          |
