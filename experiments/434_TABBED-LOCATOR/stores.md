@@ -1,37 +1,37 @@
-# List of Stores with Ann Taylor
+# List of Stores
 
-1963 BAY.COM
+## Selling Ann Taylor
 
-- 1101 VANCOUVER DOWNTOWN - BC
-- 1108 MAYFAIR - BC
-- 1127 METROTOWN - BC
-- 1111 RICHMOND - BC
-- 1161 PARK ROYAL - BC
-- 1142 GUILDFORD - BC
+| Store              | Province |
+| ------------------ | -------- |
+| Vancouver Downtown | BC       |
+| Mayfair            | BC       |
+| Park Royal         | BC       |
+| Guildford          | BC       |
+| Richmond           | BC       |
+| Metrotown          | BC       |
+| Queen St           | ON       |
+| Upper Canada Mall  | ON       |
+| Yorkdale           | ON       |
+| Bayshore           | ON       |
+| Limeridge          | ON       |
+| Sherway            | ON       |
+| Fairview           | ON       |
+| Mapleview          | ON       |
+| Scarborough        | ON       |
+| Mississauga        | ON       |
+| Richmond Hill      | ON       |
+| Bramalea           | ON       |
+| Montreal           | QC       |
+| Carrefour          | QC       |
+| Pointe Claire      | QC       |
+| Anjou              | QC       |
+| St. Bruno          | QC       |
+| Market Mall        | AB       |
+| Southgate          | AB       |
+| Southcentre        | AB       |
+| Chinook            | AB       |
+| West Edmonton      | AB       |
+| Polo Park          | MB       |
 
-- 1560 QUEEN STREET - ON
-- 1634 BAYSHORE - ON
-- 1550 LIMERIDGE MALL - ON
-- 1554 YORKDALE - ON
-- 1546 SCARBOROUGH - ON
-- 1544 SHERWAY - ON
-- 1514 FAIRVIEW - ON
-- 1537 MAPLEVIEW - ON
-- 1518 MISSISSAUGA - ON
-- 1547 RICHMOND HILL - ON
-- 1517 BRAMALEA - ON
-- 1531 UPPER CANADA MALL - ON
-
-- 1601 MONTREAL CENTRE-VILL - QC
-- 1613 CARREFOUR LAVAL - QC
-- 1611 POINTE CLAIRE - QC
-- 1612 ANJOU - QC
-- 1610 ST. BRUNO - QC
-
-- 1144 MARKET MALL - AB
-- 1125 SOUTHGATE - AB
-- 1164 SOUTHCENTRE - AB
-- 1138 CHINOOK - AB
-- 1147 WEST EDMONTON MALL - AB
-
-- 1140 POLO PARK - MB
+## Selling LOFT
