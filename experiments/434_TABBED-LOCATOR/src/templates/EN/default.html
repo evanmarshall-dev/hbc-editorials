@@ -22,6 +22,8 @@
       <div class="home-slots">
         <body style="margin: 0">
           <main class="ed-wrapper--main">
+            <div id="display-data"></div>
+
             <section class="ed-container--top">
               <header>
                 <h5 class="ed-type--h5 ed-util--t-black">
@@ -2647,6 +2649,30 @@
               <!-- END OF QB -->
             </section>
           </main>
+          <!-- <script>
+            // Parse the embedded JSON data
+            const storeDataScript = document.getElementById('store-data');
+            const jsonData = JSON.parse(storeDataScript.textContent);
+            const stores = jsonData['British Columbia'];
+
+            // Display the data in the HTML
+            const storeList = document.getElementById('store-list');
+            if (stores && stores.length > 0) {
+              stores.forEach((store) => {
+                const storeDiv = document.createElement('div');
+                storeDiv.innerHTML = `
+          <p><strong>Store Name:</strong> ${store.storeName}</p>
+          <p><strong>Street Address:</strong> ${store.streetAddress}</p>
+          <p><strong>City:</strong> ${store.city}</p>
+          <hr>
+        `;
+                storeList.appendChild(storeDiv);
+              });
+            } else {
+              storeList.innerHTML =
+                '<p>No stores found in British Columbia.</p>';
+            }
+          </script> -->
         </body>
       </div>
     </div>
