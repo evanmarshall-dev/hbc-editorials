@@ -1,17 +1,13 @@
 /* eslint-disable no-undef */
 
-// console.log(data.bc[2].storeName);
-
 const display = document.querySelector('#display-data');
 
-const getData = () => data.bc;
+const getData = (region) => data[region];
 
-// console.log(getData());
-
-const displayStores = () => {
+const displayStores = (region, keyword) => {
   // Store data in payload.
-  const payload = getData();
-  console.log(payload);
+  const payload = getData(region);
+  // ? console.log(payload);
 
   // Ensure payload is an array before mapping
   if (!Array.isArray(payload)) {
@@ -19,11 +15,16 @@ const displayStores = () => {
     return;
   }
 
+  // Filter the payload based on the keyword in storeName.
+  const filteredPayload = payload.filter((object) =>
+    object.storeName.toLowerCase().includes(keyword.toLowerCase()),
+  );
+
   // Store mapped data in dataDisplay.
   // object stores each object as we iterate the array.
-  const dataDisplay = payload
+  const dataDisplay = filteredPayload
     .map((object) => {
-      console.log(object);
+      // ? console.log(object);
       // Deconstruct properties out of our object.
       const {
         storeName,
@@ -57,4 +58,7 @@ const displayStores = () => {
   // Insert data into DOM we call the display variable above.
   display.innerHTML = dataDisplay;
 };
-displayStores();
+// Example calls
+displayStores('bc', 'Vancouver'); // Display BC stores with 'Vancouver' in the store name
+// ? displayStores('ab', 'Calgary'); // Display AB stores with 'Calgary' in the store name
+// ? displayStores('qc', 'Montreal'); // Display QC stores with 'Montreal' in the store name
