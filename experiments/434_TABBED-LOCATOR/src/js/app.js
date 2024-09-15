@@ -5,17 +5,14 @@ const display = document.querySelector('.ed-container--tab');
 const getData = (region) => data[region];
 
 const displayStores = (region, ...keywords) => {
-  // Store data in payload.
   const payload = getData(region);
 
-  // Filter the payload based on the keywords in storeName.
   const filteredPayload = payload.filter((object) =>
     keywords.some((keyword) =>
       object.storeName.toLowerCase().includes(keyword.toLowerCase()),
     ),
   );
 
-  // Store mapped data in dataDisplay.
   const dataDisplay = filteredPayload
     .map((object) => {
       const {
@@ -32,7 +29,6 @@ const displayStores = (region, ...keywords) => {
         hasZellers,
       } = object;
 
-      // Return HTML from object.
       return `
         <div class="ed-container--store">
           <address
@@ -126,10 +122,8 @@ const displayStores = (region, ...keywords) => {
       `;
     })
     .join('');
-  // Insert data into DOM we call the display variable above.
+
   display.innerHTML = dataDisplay;
 };
 
-// Example calls
-displayStores('bc', 'Vancouver'); // Display BC stores with 'Vancouver' in the store name
-// displayStores('on', 'Toronto', 'Eglinton'); // Display ON stores with 'Toronto' and 'Eglinton' in the store name
+displayStores('bc', 'Vancouver');
