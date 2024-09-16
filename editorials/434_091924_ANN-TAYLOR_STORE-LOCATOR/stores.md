@@ -16,14 +16,14 @@
 | Bayshore           |    ON    | Langley            |    BC    |
 | Limeridge          |    ON    | Abbotsford         |    BC    |
 | Sherway            |    ON    | Victoria           |    BC    |
-| Fairview           |    ON    | Vernon             |    BC    |
+| Toronto Fairview   |    ON    | Vernon             |    BC    |
 | Mapleview          |    ON    | Queen St.          |    ON    |
 | Scarborough        |    ON    | Newmarket          |    ON    |
 | Mississauga        |    ON    | Yorkdale           |    ON    |
 | Richmond Hill      |    ON    | Bayshore           |    ON    |
 | Bramalea           |    ON    | Limeridge          |    ON    |
 | Rockland           |    QC    | Sherway            |    ON    |
-| Carrefour          |    QC    | Fairview           |    ON    |
+| Carrefour          |    QC    | Toronto Fairview   |    ON    |
 | Pointe Claire      |    QC    | Mapleview          |    ON    |
 | Anjou              |    QC    | Scarborough        |    ON    |
 | St. Bruno          |    QC    | Mississauga        |    ON    |
