@@ -1,0 +1,21 @@
+// File: widgets.scss
+
+/* -----------------------------------------------
+ * WIDGET STYLES
+----------------------------------------------- */
+
+.ed {
+  &-widgets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      display: block;
+      max-width: 30%;
+      width: 30%;
+      height: 30%;
+    }
+  }
+}

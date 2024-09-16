@@ -1,0 +1,64 @@
+// File: _sections.scss
+
+/* -----------------------------------------------
+ * HBC CONTAINER/WRAPPERS STYLES
+----------------------------------------------- */
+.ed {
+  &-wrapper {
+    &--main {
+      max-width: 90%;
+      padding: 2rem 0;
+      margin: 0 auto;
+      // height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &-container {
+    &--top {
+      padding-bottom: 2rem;
+
+      header {
+        padding-bottom: 2rem;
+      }
+
+      nav {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+
+        @include respond-to(medium) {
+          overflow-x: hidden;
+        }
+      }
+    }
+
+    &--bottom {
+      height: 40vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    &--store {
+      width: 100%;
+      padding: 2rem 0;
+
+      @include respond-to(medium) {
+        display: flex;
+        align-items: flex-start;
+        // justify-content: space-evenly;
+
+        & > * {
+          width: calc(100% / 3);
+        }
+      }
+
+      &__zellers {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

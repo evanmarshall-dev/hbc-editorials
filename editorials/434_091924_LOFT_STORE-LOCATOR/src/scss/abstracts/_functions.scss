@@ -1,0 +1,10 @@
+// File: _functions.scss
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+
+// How to use.
+// div {
+//   width: pxToRem(480px); // gives 30rem
+// }
