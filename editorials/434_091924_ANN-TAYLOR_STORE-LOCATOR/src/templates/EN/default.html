@@ -50,84 +50,86 @@
               </header>
               <nav class="ed-nav--tabs" role="tablist">
                 <button
-                  onclick="displayStores('bc', 'Vancouver')"
+                  onclick="displayStores('bc', 'Vancouver Downtown', 'Mayfair', 'Park Royal', 'Guildford', 'Richmond', 'Metrotown')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab1"
+                  aria-selected="false"
+                  data-tab="tab1"
                 >
                   British Columbia
                 </button>
                 <button
-                  onclick="displayStores('ab', 'Calgary')"
+                  onclick="displayStores('ab', 'Market Mall', 'Southgate', 'Southcentre', 'Chinook', 'West Edmonton')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab2"
+                  aria-selected="false"
+                  data-tab="tab2"
                 >
                   Alberta
                 </button>
-                <button
+                <!-- <button
                   onclick="displayStores('sk', 'Saskatoon')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab3"
+                  aria-selected="false"
+                  data-tab="tab3"
                 >
                   Saskatchewan
-                </button>
+                </button> -->
                 <button
-                  onclick="displayStores('mb', 'Winnipeg')"
+                  onclick="displayStores('mb', 'Polo Park')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab4"
+                  aria-selected="false"
+                  data-tab="tab4"
                 >
                   Manitoba
                 </button>
                 <button
-                  onclick="displayStores('on', 'Toronto', 'Eglinton')"
+                  onclick="displayStores('on', 'Queen St', 'Newmarket', 'Yorkdale', 'Bayshore', 'Limeridge', 'Sherway', 'Toronto Fairview', 'Mapleview', 'Scarborough', 'Mississauga', 'Richmond Hill', 'Bramalea')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab5"
+                  aria-selected="false"
+                  data-tab="tab5"
                 >
                   Ontario
                 </button>
                 <button
-                  onclick="displayStores('qc', 'La Baie')"
+                  onclick="displayStores('qc', 'Rockland', 'Carrefour', 'Pointe Claire', 'Anjou', 'St. Bruno')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab6"
+                  aria-selected="false"
+                  data-tab="tab6"
                 >
                   Quebec
                 </button>
-                <button
+                <!-- <button
                   onclick="displayStores('ns', 'Dartmouth')"
                   class="ed-button--tab ed-type-button"
                   role="tab"
                   aria-controls="tab7"
+                  aria-selected="false"
+                  data-tab="tab7"
                 >
                   Nova Scotia
-                </button>
-                <!-- <button
-                  href="#tab1"
-                  class="ed-button--tab ed-type--button"
-                  role="tab"
-                  aria-controls="tab1"
-                  id="tab1-tab"
-                  data-tab="tab1"
-                  aria-selected="true"
-                >
-                  British Columbia
                 </button> -->
               </nav>
             </section>
 
             <section class="ed-container--bottom">
-              <!-- <div
+              <!-- TODO: Change id and aria-labelledby depending on what button is clicked. -->
+              <div
                 class="ed-container--tab"
-                id="tab1"
                 role="tabpanel"
-                aria-labelledby="tab1-tab"
                 tabindex="0"
-              > -->
-              <div class="ed-container--tab" role="tabpanel" tabindex="0"></div>
+                aria-labelledby=""
+              ></div>
             </section>
           </main>
         </body>

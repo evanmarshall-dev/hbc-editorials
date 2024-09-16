@@ -22,7 +22,7 @@
 | Mississauga        |    ON    | Yorkdale           |    ON    |
 | Richmond Hill      |    ON    | Bayshore           |    ON    |
 | Bramalea           |    ON    | Limeridge          |    ON    |
-| Montreal           |    QC    | Sherway            |    ON    |
+| Rockland           |    QC    | Sherway            |    ON    |
 | Carrefour          |    QC    | Fairview           |    ON    |
 | Pointe Claire      |    QC    | Mapleview          |    ON    |
 | Anjou              |    QC    | Scarborough        |    ON    |
@@ -43,7 +43,6 @@
 |                    |          | London             |    ON    |
 |                    |          | Rideau             |    ON    |
 |                    |          | Kingston           |    ON    |
-|                    |          | Montreal           |    QC    |
 |                    |          | Carrefour          |    QC    |
 |                    |          | Pointe Claire      |    QC    |
 |                    |          | Anjou              |    QC    |

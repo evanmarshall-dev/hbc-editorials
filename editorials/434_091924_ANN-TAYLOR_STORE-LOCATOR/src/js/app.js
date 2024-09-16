@@ -126,4 +126,26 @@ const displayStores = (region, ...keywords) => {
   display.innerHTML = dataDisplay;
 };
 
-displayStores('bc', 'Vancouver');
+document.querySelectorAll('.ed-button--tab').forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const tabId = event.target.getAttribute('aria-controls');
+
+    document.querySelectorAll('.ed-button--tab').forEach((btn) => {
+      btn.setAttribute('aria-selected', 'false');
+    });
+    event.target.setAttribute('aria-selected', 'true');
+
+    const tabPanel = document.querySelector('.ed-container--tab');
+    tabPanel.setAttribute('aria-labelledby', tabId);
+  });
+});
+
+displayStores(
+  'bc',
+  'Vancouver Downtown',
+  'Mayfair',
+  'Park Royal',
+  'Guildford',
+  'Richmond',
+  'Metrotown',
+);
