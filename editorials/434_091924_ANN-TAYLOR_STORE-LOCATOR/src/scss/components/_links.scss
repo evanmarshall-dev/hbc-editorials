@@ -21,17 +21,12 @@
     }
 
     &--underline {
-      cursor: pointer;
       text-decoration: none;
+      display: inline-block;
 
       &:hover,
       &:active {
         text-decoration: underline;
-        color: darken($color: $bd-red, $amount: 20%);
-      }
-
-      &:focus {
-        outline: 2px solid blue;
       }
     }
 

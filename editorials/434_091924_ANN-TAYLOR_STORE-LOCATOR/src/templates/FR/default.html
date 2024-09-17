@@ -25,42 +25,28 @@
             <section class="ed-container--top">
               <header>
                 <h5 class="ed-type--h5 ed-util--t-black">
-                  Ann Taylor is an American sportswear brand rooted in a
-                  heritage of work wear, iconic silhouettes, signature color,
-                  print and pattern that is considered Always Ann. The brand
-                  seeks to blend the best of sophisticated, fashionable design
-                  with notable quality and fit while staying one step ahead of
-                  the modern woman&apos;s needs and desires driven by her
-                  evolving lifestyle. Ann Taylor creates value for our customers
-                  through a unique combination of timeless, everyday-chic
-                  wardrobing that takes her to work and beyond.
+                  Depuis 1954, Ann Taylor crée des incontournables intemporels.
+                  Un mélange de modèles sophistiqués, emblématiques et griffés à
+                  porter au travail ou ailleurs, jour après jour.
                   <br /><br />
-                  It all began nearly 70 years ago with just a dream and a
-                  dress. Founder, Richard Liebeskind, dreamed of opening a shop.
-                  Then his dressmaker father gave him a gift. It was a
-                  shirt-dress called…the Ann Taylor. Nearly 70 years since the
-                  first Ann Taylor opened, the brands mission has never changed…
-                  help women look and feel confident and great. Through all the
-                  moments that matter.
-                  <br /><br />
-                  Now back in the Canadian retail space, Ann Taylor is available
-                  at Hudson&apos;s Bay. Customers can shop the brand at the
-                  following locations&colon;
+                  Ann Taylor est de retour au Canada et offerte à La Baie
+                  d&apos;Hudson. La marque se trouve aux magasins suivants
+                  &colon;
                 </h5>
               </header>
               <nav class="ed-nav--tabs" role="tablist">
                 <button
-                  onclick="displayStores('bc', 'Vancouver Downtown', 'Mayfair', 'Park Royal', 'Guildford', 'Richmond', 'Metrotown')"
+                  onclick="displayStores('bc', 'Centre-Ville', 'Mayfair', 'Park Royal', 'Guildford', 'Richmond', 'Metrotown')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab1"
                   aria-selected="false"
                   data-tab="tab1"
                 >
-                  British Columbia
+                  Colombie-Britannique
                 </button>
                 <button
-                  onclick="displayStores('ab', 'Market Mall', 'Southgate', 'Southcentre', 'Chinook', 'West Edmonton')"
+                  onclick="displayStores('ab', 'Market Mall', 'Southgate', 'Southcentre', 'Chinook', `Ouest d'Edmonton`)"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab2"
@@ -80,7 +66,7 @@
                   Saskatchewan
                 </button> -->
                 <button
-                  onclick="displayStores('mb', 'Polo Park')"
+                  onclick="displayStores('mb', 'Parc Polo')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab4"
@@ -90,7 +76,7 @@
                   Manitoba
                 </button>
                 <button
-                  onclick="displayStores('on', 'Queen St', 'Newmarket', 'Yorkdale', 'Bayshore', 'Limeridge', 'Sherway', 'Toronto Fairview', 'Mapleview', 'Scarborough', 'Mississauga', 'Richmond Hill', 'Bramalea')"
+                  onclick="displayStores('on', 'Rue Queen', 'Upper Canada', 'Yorkdale', 'Bayshore', 'Lime Ridge', 'Sherway', 'Toronto Fairview', 'Mapleview', 'Scarborough', 'Mississauga Square One', 'Richmond Hill', 'Bramalea')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab5"
@@ -100,14 +86,14 @@
                   Ontario
                 </button>
                 <button
-                  onclick="displayStores('qc', 'Rockland', 'Carrefour', 'Pointe Claire', 'Anjou', 'St. Bruno')"
+                  onclick="displayStores('qc', 'Centre-Ville', 'Carrefour Laval', 'Pointe-Claire', 'Anjou', 'Saint-Bruno')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab6"
                   aria-selected="false"
                   data-tab="tab6"
                 >
-                  Quebec
+                  Québec
                 </button>
                 <!-- <button
                   onclick="displayStores('ns', 'Dartmouth')"
@@ -117,13 +103,12 @@
                   aria-selected="false"
                   data-tab="tab7"
                 >
-                  Nova Scotia
+                  Nouvelle-Écosse
                 </button> -->
               </nav>
             </section>
 
             <section class="ed-container--bottom">
-              <!-- TODO: Change id and aria-labelledby depending on what button is clicked. -->
               <div
                 class="ed-container--tab"
                 role="tabpanel"
