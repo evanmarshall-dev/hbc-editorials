@@ -11,22 +11,22 @@
 | Richmond           |    BC    | Richmond           |    BC    |
 | Metrotown          |    BC    | Metrotown          |    BC    |
 | Queen St           |    ON    | Kelowna            |    BC    |
-| Newmarket          |    ON    | Coquitlam          |    BC    |
+| Upper Canada       |    ON    | Coquitlam          |    BC    |
 | Yorkdale           |    ON    | Nanaimo            |    BC    |
 | Bayshore           |    ON    | Langley            |    BC    |
-| Limeridge          |    ON    | Abbotsford         |    BC    |
+| Lime Ridge         |    ON    | Abbotsford         |    BC    |
 | Sherway            |    ON    | Victoria           |    BC    |
-| Fairview           |    ON    | Vernon             |    BC    |
+| Toronto Fairview   |    ON    | Vernon             |    BC    |
 | Mapleview          |    ON    | Queen St.          |    ON    |
-| Scarborough        |    ON    | Newmarket          |    ON    |
-| Mississauga        |    ON    | Yorkdale           |    ON    |
+| Scarborough        |    ON    | Upper Canada       |    ON    |
+| Mississauga S.O.   |    ON    | Yorkdale           |    ON    |
 | Richmond Hill      |    ON    | Bayshore           |    ON    |
-| Bramalea           |    ON    | Limeridge          |    ON    |
-| Montreal           |    QC    | Sherway            |    ON    |
-| Carrefour          |    QC    | Fairview           |    ON    |
-| Pointe Claire      |    QC    | Mapleview          |    ON    |
+| Bramalea           |    ON    | Lime Ridge         |    ON    |
+| Centre-Ville       |    QC    | Sherway            |    ON    |
+| Carrefour Laval    |    QC    | Toronto Fairview   |    ON    |
+| Pointe-Claire      |    QC    | Mapleview          |    ON    |
 | Anjou              |    QC    | Scarborough        |    ON    |
-| St. Bruno          |    QC    | Mississauga        |    ON    |
+| St. Bruno          |    QC    | Mississauga S.O.   |    ON    |
 | Market Mall        |    AB    | Richmond Hill      |    ON    |
 | Southgate          |    AB    | Bramalea           |    ON    |
 | Southcentre        |    AB    | Erin Mills         |    ON    |
@@ -43,16 +43,15 @@
 |                    |          | London             |    ON    |
 |                    |          | Rideau             |    ON    |
 |                    |          | Kingston           |    ON    |
-|                    |          | Montreal           |    QC    |
-|                    |          | Carrefour          |    QC    |
-|                    |          | Pointe Claire      |    QC    |
+|                    |          | Carrefour Laval    |    QC    |
+|                    |          | Pointe-Claire      |    QC    |
 |                    |          | Anjou              |    QC    |
 |                    |          | St. Bruno          |    QC    |
 |                    |          | Rosemere           |    QC    |
 |                    |          | Capitale           |    QC    |
 |                    |          | Brossard           |    QC    |
 |                    |          | Laval              |    QC    |
-|                    |          | Rockland           |    QC    |
+|                    |          | Centre-Ville       |    QC    |
 |                    |          | Market Mall        |    AB    |
 |                    |          | Southgate          |    AB    |
 |                    |          | Southcentre        |    AB    |

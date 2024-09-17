@@ -25,109 +25,95 @@
             <section class="ed-container--top">
               <header>
                 <h5 class="ed-type--h5 ed-util--t-black">
-                  Ann Taylor is an American sportswear brand rooted in a
-                  heritage of work wear, iconic silhouettes, signature color,
-                  print and pattern that is considered Always Ann. The brand
-                  seeks to blend the best of sophisticated, fashionable design
-                  with notable quality and fit while staying one step ahead of
-                  the modern woman&apos;s needs and desires driven by her
-                  evolving lifestyle. Ann Taylor creates value for our customers
-                  through a unique combination of timeless, everyday-chic
-                  wardrobing that takes her to work and beyond.
+                  LOFT is where feminine fashion and endless versatility meet.
+                  From their signature colors to mood-boosting prints, these
+                  everyday styles can be mixed and matched with ease.
                   <br /><br />
-                  It all began nearly 70 years ago with just a dream and a
-                  dress. Founder, Richard Liebeskind, dreamed of opening a shop.
-                  Then his dressmaker father gave him a gift. It was a
-                  shirt-dress called…the Ann Taylor. Nearly 70 years since the
-                  first Ann Taylor opened, the brands mission has never changed…
-                  help women look and feel confident and great. Through all the
-                  moments that matter.
-                  <br /><br />
-                  Now back in the Canadian retail space, Ann Taylor is available
-                  at Hudson&apos;s Bay. Customers can shop the brand at the
-                  following locations&colon;
+                  LOFT is back in Canada, available at Hudson&apos;s Bay. Shop
+                  the brand at the following locations&colon;
                 </h5>
               </header>
               <nav class="ed-nav--tabs" role="tablist">
                 <button
-                  onclick="displayStores('bc', 'Vancouver')"
+                  onclick="displayStores('bc', 'Vancouver Downtown', 'Mayfair', 'Park Royal', 'Guildford', 'Richmond', 'Metrotown')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab1"
+                  aria-selected="false"
+                  data-tab="tab1"
                 >
                   British Columbia
                 </button>
                 <button
-                  onclick="displayStores('ab', 'Calgary')"
+                  onclick="displayStores('ab', 'Market Mall', 'Southgate', 'Southcentre', 'Chinook', 'West Edmonton')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab2"
+                  aria-selected="false"
+                  data-tab="tab2"
                 >
                   Alberta
                 </button>
-                <button
+                <!-- <button
                   onclick="displayStores('sk', 'Saskatoon')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab3"
+                  aria-selected="false"
+                  data-tab="tab3"
                 >
                   Saskatchewan
-                </button>
+                </button> -->
                 <button
-                  onclick="displayStores('mb', 'Winnipeg')"
+                  onclick="displayStores('mb', 'Polo Park')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab4"
+                  aria-selected="false"
+                  data-tab="tab4"
                 >
                   Manitoba
                 </button>
                 <button
-                  onclick="displayStores('on', 'Toronto', 'Eglinton')"
+                  onclick="displayStores('on', 'Queen St', 'Upper Canada', 'Yorkdale', 'Bayshore', 'Lime Ridge', 'Sherway', 'Toronto Fairview', 'Mapleview', 'Scarborough', 'Mississauga Square One', 'Richmond Hill', 'Bramalea')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab5"
+                  aria-selected="false"
+                  data-tab="tab5"
                 >
                   Ontario
                 </button>
                 <button
-                  onclick="displayStores('qc', 'La Baie')"
+                  onclick="displayStores('qc', 'Centre-Ville', 'Carrefour Laval', 'Pointe-Claire', 'Anjou', 'St. Bruno')"
                   class="ed-type-button ed-button--tab"
                   role="tab"
                   aria-controls="tab6"
+                  aria-selected="false"
+                  data-tab="tab6"
                 >
                   Quebec
                 </button>
-                <button
+                <!-- <button
                   onclick="displayStores('ns', 'Dartmouth')"
                   class="ed-button--tab ed-type-button"
                   role="tab"
                   aria-controls="tab7"
+                  aria-selected="false"
+                  data-tab="tab7"
                 >
                   Nova Scotia
-                </button>
-                <!-- <button
-                  href="#tab1"
-                  class="ed-button--tab ed-type--button"
-                  role="tab"
-                  aria-controls="tab1"
-                  id="tab1-tab"
-                  data-tab="tab1"
-                  aria-selected="true"
-                >
-                  British Columbia
                 </button> -->
               </nav>
             </section>
 
             <section class="ed-container--bottom">
-              <!-- <div
+              <div
                 class="ed-container--tab"
-                id="tab1"
                 role="tabpanel"
-                aria-labelledby="tab1-tab"
                 tabindex="0"
-              > -->
-              <div class="ed-container--tab" role="tabpanel" tabindex="0"></div>
+                aria-labelledby=""
+              ></div>
             </section>
           </main>
         </body>
