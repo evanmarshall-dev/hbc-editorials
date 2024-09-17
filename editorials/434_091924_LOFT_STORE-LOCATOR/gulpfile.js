@@ -23,9 +23,7 @@ export const paths = {
     htmlfr: 'src/html/FR/index.html',
     template: 'src/templates/EN/**/*',
     templatefr: 'src/templates/FR/**/*',
-    // TODO: Un-comment depending on use of French or English data.
     js: ['src/js/data/data.js', 'src/js/**/*.js'],
-    // js: ['src/js/data/dataFr.js', 'src/js/**/*.js'],
     // js: 'src/js/**/*.js',
   },
   dev: 'dev',

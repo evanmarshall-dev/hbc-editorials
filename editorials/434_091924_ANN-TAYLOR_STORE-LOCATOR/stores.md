@@ -26,7 +26,7 @@
 | Carrefour Laval    |    QC    | Toronto Fairview   |    ON    |
 | Pointe-Claire      |    QC    | Mapleview          |    ON    |
 | Anjou              |    QC    | Scarborough        |    ON    |
-| St. Bruno          |    QC    | Mississauga S.O.   |    ON    |
+| Saint-Bruno        |    QC    | Mississauga S.O.   |    ON    |
 | Market Mall        |    AB    | Richmond Hill      |    ON    |
 | Southgate          |    AB    | Bramalea           |    ON    |
 | Southcentre        |    AB    | Erin Mills         |    ON    |
@@ -46,7 +46,7 @@
 |                    |          | Carrefour Laval    |    QC    |
 |                    |          | Pointe-Claire      |    QC    |
 |                    |          | Anjou              |    QC    |
-|                    |          | St. Bruno          |    QC    |
+|                    |          | Saint-Bruno        |    QC    |
 |                    |          | Rosemere           |    QC    |
 |                    |          | Capitale           |    QC    |
 |                    |          | Brossard           |    QC    |
