@@ -3,7 +3,7 @@
 const display = document.querySelector('.ed-container--tab');
 
 // TODO: Set this flag to true for French, false for English.
-const isFrench = true;
+const isFrench = false;
 const getData = (region) => (isFrench ? dataFr[region] : data[region]);
 
 const displayStores = (region, ...keywords) => {

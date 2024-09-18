@@ -243,9 +243,13 @@ document.querySelectorAll('.ed-button--tab').forEach((button) => {
 
 displayStores(
   'qc',
-  'Centre-Ville',
   'Carrefour Laval',
   'Pointe-Claire',
   'Anjou',
   'Saint-Bruno',
+  'Rosemère',
+  'Capitale',
+  'Brossard',
+  'Centre Laval',
+  'Montréal Centre-Ville',
 );
