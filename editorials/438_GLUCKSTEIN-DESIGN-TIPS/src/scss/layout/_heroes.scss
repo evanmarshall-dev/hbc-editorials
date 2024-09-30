@@ -1,0 +1,32 @@
+// File: _hero.scss
+
+/* -----------------------------------------------
+ * HBC HERO STYLES
+----------------------------------------------- */
+
+.ed {
+  &-hero {
+    position: relative;
+    display: grid;
+
+    &__copy {
+      display: flex;
+      flex-direction: column;
+      // justify-content: flex-start;
+      width: 70%;
+      margin: 5% 0 0 5%;
+
+      @include respond-to(medium) {
+        // TODO: Set to either flex-start, flex-end or space-around to position vertically within hero.
+        justify-content: space-around;
+        width: 40%;
+        margin: 0 0 0 5%;
+      }
+    }
+
+    &__copy,
+    &__image {
+      grid-area: 1/2;
+    }
+  }
+}
