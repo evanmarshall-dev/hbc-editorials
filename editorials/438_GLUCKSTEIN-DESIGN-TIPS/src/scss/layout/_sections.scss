@@ -25,6 +25,31 @@
   &-container {
     &--header {
       z-index: 0;
+      display: block;
+      margin: 0 auto;
+      max-width: 50%;
+      margin-top: 2.5rem;
+
+      @include respond-to(medium) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 40%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+
+        @include respond-to(medium) {
+          border-radius: 50%;
+          width: 15%;
+          margin-right: 2rem;
+          margin-bottom: 0;
+        }
+      }
 
       hr {
         margin: 0;

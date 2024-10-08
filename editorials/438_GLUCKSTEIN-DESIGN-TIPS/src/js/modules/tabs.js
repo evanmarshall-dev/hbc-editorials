@@ -25,42 +25,42 @@
 //   });
 // });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const tabLinks = document.querySelectorAll('.ed-button--tab');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const tabLinks = document.querySelectorAll('.ed-button--tab');
 
-  tabLinks.forEach((link) => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
+//   tabLinks.forEach((link) => {
+//     link.addEventListener('click', function (event) {
+//       event.preventDefault();
 
-      const contentClasses = this.getAttribute('data-contents').split(' ');
+//       const contentClasses = this.getAttribute('data-contents').split(' ');
 
-      // Hide all tab contents
-      document
-        .querySelectorAll(
-          '.TEST_VISUAL-NAV_GLUCKSTEIN, .multi-image-container, .shop-beauty-banner, .new-prodict-slot, .evergreen-promo',
-        )
-        .forEach((content) => {
-          content.setAttribute('hidden', 'true');
-        });
+//       // Hide all tab contents
+//       document
+//         .querySelectorAll(
+//           '.TEST_VISUAL-NAV_GLUCKSTEIN, .multi-image-container, .shop-beauty-banner, .new-prodict-slot, .evergreen-promo',
+//         )
+//         .forEach((content) => {
+//           content.setAttribute('hidden', 'true');
+//         });
 
-      // Reset aria-selected attribute for all tabs
-      tabLinks.forEach((tabLink) => {
-        tabLink.setAttribute('aria-selected', 'false');
-      });
+//       // Reset aria-selected attribute for all tabs
+//       tabLinks.forEach((tabLink) => {
+//         tabLink.setAttribute('aria-selected', 'false');
+//       });
 
-      // Show the selected tab contents
-      contentClasses.forEach((className) => {
-        document.querySelectorAll(`.${className}`).forEach((content) => {
-          content.removeAttribute('hidden');
-        });
-      });
+//       // Show the selected tab contents
+//       contentClasses.forEach((className) => {
+//         document.querySelectorAll(`.${className}`).forEach((content) => {
+//           content.removeAttribute('hidden');
+//         });
+//       });
 
-      this.setAttribute('aria-selected', 'true');
-    });
-  });
+//       this.setAttribute('aria-selected', 'true');
+//     });
+//   });
 
-  // Simulate click on the first button to load default tab content
-  if (tabLinks.length > 0) {
-    tabLinks[0].click();
-  }
-});
+//   // Simulate click on the first button to load default tab content
+//   if (tabLinks.length > 0) {
+//     tabLinks[0].click();
+//   }
+// });

@@ -57,7 +57,8 @@ export const serve = (done) => {
     port: 8888,
     open: 'local',
     // browser: 'google chrome',
-    browser: '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe',
+    // browser: '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe',
+    browser: '/usr/bin/google-chrome-stable'
   });
   done();
 };
