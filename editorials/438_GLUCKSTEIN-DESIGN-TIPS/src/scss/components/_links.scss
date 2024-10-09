@@ -131,8 +131,8 @@
       #{$a-tags-hover} {
         text-decoration: none;
         border: none;
-        color: $hbc-black;
-        background-color: darken($color: $hbc-grey, $amount: 5%);
+        color: $hbc-white;
+        background-color: darken($color: $hbc-grey, $amount: 30%);
       }
 
       &:focus {

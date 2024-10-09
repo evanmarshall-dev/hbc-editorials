@@ -64,3 +64,14 @@
 //     tabLinks[0].click();
 //   }
 // });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const currentUrl = window.location.href;
+  const navItems = document.querySelectorAll('.ed-nav--tabs a');
+
+  navItems.forEach((item) => {
+    if (currentUrl.includes(item.getAttribute('href'))) {
+      item.classList.add('ed-active');
+    }
+  });
+});
