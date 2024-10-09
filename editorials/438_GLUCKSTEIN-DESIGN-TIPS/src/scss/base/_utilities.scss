@@ -27,6 +27,14 @@
       font-family: $hbc-sans-default;
     }
 
+    &--sans-bold {
+      font-family: $hbc-sans-bold;
+    }
+
+    &--sans-medium {
+      font-family: $hbc-sans-medium;
+    }
+
     // &--serif {
     //   font-family: $hbc-serif;
     // }
@@ -126,7 +134,7 @@
     }
 
     &--b-bottom {
-      border-bottom: 0.125rem solid $hbc-yellow;
+      border-bottom: 0.1rem solid #bebebe;
     }
 
     &--b-left {
