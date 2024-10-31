@@ -1,0 +1,58 @@
+// File: _sections.scss
+
+/* -----------------------------------------------
+ * HBC CONTAINER/WRAPPERS STYLES
+----------------------------------------------- */
+.ed {
+  &-wrapper {
+    &--main {
+      margin: 0;
+
+      @include respond-to(medium) {
+        margin: 2rem;
+      }
+    }
+  }
+
+  &-container {
+    &--cards {
+      padding: 3.5rem 1.5rem;
+      display: block;
+
+      @include respond-to(medium) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &--header {
+      z-index: 0;
+      padding: 2.5rem 1.5rem 1.5rem;
+
+      @include respond-to(medium) {
+        padding: 2.5rem 0 1.5rem;
+      }
+    }
+
+    &--links {
+      display: block;
+
+      @include respond-to(medium) {
+        padding: 2rem 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > * {
+          margin: 0 1% 0 0;
+          width: calc(99% / 2);
+
+          &:nth-of-type(2) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

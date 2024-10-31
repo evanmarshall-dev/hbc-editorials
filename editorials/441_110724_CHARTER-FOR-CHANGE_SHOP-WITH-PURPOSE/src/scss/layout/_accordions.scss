@@ -1,0 +1,71 @@
+// File: _accordion.scss
+
+/* -----------------------------------------------
+ * HBC ACCORDION STYLES
+----------------------------------------------- */
+.ed {
+  &-accordion {
+    &__wrapper {
+      // border: 1px solid $hbc-black;
+      overflow: hidden;
+      margin: 0 0 4rem;
+      text-align: center;
+
+      @include respond-to(medium) {
+        text-align: left;
+      }
+    }
+
+    &__button {
+      background-color: $hbc-beige;
+      cursor: pointer;
+      padding: 1.125rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: 2px solid $hbc-white;
+      transition: 0.4s;
+
+      &:focus {
+        outline: none;
+        outline-offset: 0;
+        box-shadow: none;
+        border: 1px solid blue;
+      }
+
+      &--active {
+        color: $hbc-blue;
+      }
+
+      &:after {
+        content: '\002B';
+        color: $hbc-black;
+        font-weight: bold;
+        float: right;
+      }
+
+      &--active:after {
+        content: '\2212';
+        color: $hbc-black;
+        font-weight: bold;
+        float: right;
+      }
+    }
+
+    &__panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
+      p {
+        padding: 1.125rem;
+      }
+
+      &--wrapper {
+        &:nth-last-of-type(1) {
+          border-bottom: 2px solid $hbc-beige;
+        }
+      }
+    }
+  }
+}

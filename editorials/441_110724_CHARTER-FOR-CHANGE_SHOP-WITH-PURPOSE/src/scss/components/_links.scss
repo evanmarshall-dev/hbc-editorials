@@ -1,0 +1,88 @@
+// File: _links.scss
+
+/* -----------------------------------------------
+ * HBC CTA/LINK STYLES
+----------------------------------------------- */
+.ed {
+  &-link {
+    &--regular {
+      @include link(
+        100%,
+        0.75rem 0,
+        null,
+        none,
+        none,
+        background-color 0.25s ease,
+        none,
+        none,
+        $hbc-black,
+        darken($color: $hbc-grey, $amount: 10%)
+      );
+
+      font-family: $hbc-sans-default;
+      margin: 1.5rem 0;
+
+      @include respond-to(medium) {
+        margin: 0;
+      }
+    }
+
+    // &--underline {
+    //   cursor: pointer;
+    //   text-decoration: none;
+
+    //   &:hover,
+    //   &:active {
+    //     text-decoration: underline;
+    //     color: darken($color: $bd-red, $amount: 20%);
+    //   }
+
+    //   &:focus {
+    //     outline: none;
+    //     outline-offset: 0;
+    //     box-shadow: none;
+    //     border: 1px solid blue;
+    //   }
+    // }
+
+    // &--full {
+    //   @include link(
+    //     100%,
+    //     0.3rem 0,
+    //     null,
+    //     none,
+    //     none,
+    //     background-color 0.25s ease,
+    //     none,
+    //     none,
+    //     $hbc-white,
+    //     darken($color: $bd-red, $amount: 20%)
+    //   );
+
+    //   &-dark {
+    //     @include link(
+    //       100%,
+    //       0.3rem 0,
+    //       null,
+    //       none,
+    //       none,
+    //       background-color 0.25s ease,
+    //       none,
+    //       none,
+    //       $hbc-white,
+    //       lighten($color: $hbc-black, $amount: 20%)
+    //     );
+
+    //     @include respond-to(medium) {
+    //       display: block;
+    //       margin: 0 auto;
+    //       width: calc(100% / 3);
+    //     }
+    //   }
+    // }
+
+    // &--card {
+    //   position: relative;
+    // }
+  }
+}
