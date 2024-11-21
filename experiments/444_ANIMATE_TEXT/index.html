@@ -1,0 +1,99 @@
+<style>
+  #ed-heading {
+    width: 20vw;
+    display: inline-block;
+    position: relative;
+    /* font-family: 'Neue Montreal', proxima-nova, 'Helvetica Neue', sans-serif; */
+    /* font-family: 'Neue Montreal medium', proxima-nova-semibold, 'Helvetica Neue', sans-serif; */
+    font-family: 'Neue Montreal Bold', proxima-nova-bold, 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .inner-left {
+    display: inline-block;
+    animation: innerLeft 1s ease both;
+  }
+
+  .text-clip {
+    display: inline-block;
+    animation: textClip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+
+  .outer-left {
+    display: inline-block;
+    animation: outerLeft 1s ease both;
+  }
+
+  @keyframes textClip {
+    from {
+      /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); */
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @keyframes outerLeft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  @keyframes innerLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+</style>
+
+<div id="ed-heading">
+  <span id="ed-heading__the">The</span>
+  <span id="ed-heading__everyday">EVERYDAY</span>
+  <span id="ed-heading__edit">Edit</span>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const heading = document.getElementById('ed-heading')
+    const the = document.getElementById('ed-heading__the');
+    const everyday = document.getElementById('ed-heading__everyday');
+    const edit = document.getElementById('ed-heading__edit');
+
+    const animateElement = (element, animationClass, delay) => {
+      setTimeout(() => {
+        element.classList.add(animationClass);
+      }, delay);
+    };
+
+    animateElement(the, 'inner-left', 2000);
+    animateElement(everyday, 'text-clip', 0);
+    animateElement(edit, 'outer-left', 2000);
+
+    // Repeat the animation with a delay
+    setInterval(() => {
+      the.classList.remove('inner-left');
+      everyday.classList.remove('text-clip');
+      edit.classList.remove('outer-left');
+
+      setTimeout(() => {
+        animateElement(the, 'inner-left', 1000);
+        animateElement(everyday, 'text-clip', 0);
+        animateElement(edit, 'outer-left', 1000);
+      }, 1000); // Delay before repeating the animation
+    }, 3000); // Total duration of all animations plus delay
+  });
+</script>
