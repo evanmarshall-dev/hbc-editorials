@@ -19,48 +19,96 @@
 
   .inner-left {
     display: inline-block;
-    animation: innerLeft 1s ease both;
+    -webkit-animation: innerLeft 1s ease both;
+            animation: innerLeft 1s ease both;
   }
 
   .text-clip {
     display: inline-block;
-    animation: textClip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-animation: textClip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+            animation: textClip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
   }
 
   .outer-left {
     display: inline-block;
-    animation: outerLeft 1s ease both;
+    -webkit-animation: outerLeft 1s ease both;
+            animation: outerLeft 1s ease both;
+  }
+
+  @-webkit-keyframes textClip {
+    from {
+      /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); */
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
   }
 
   @keyframes textClip {
     from {
       /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); */
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     to {
       /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @-webkit-keyframes outerLeft {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: none;
+              transform: none;
+      opacity: 1;
     }
   }
 
   @keyframes outerLeft {
     from {
-      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
       opacity: 0;
     }
     to {
-      transform: none;
+      -webkit-transform: none;
+              transform: none;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes innerLeft {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: none;
+              transform: none;
       opacity: 1;
     }
   }
 
   @keyframes innerLeft {
     from {
-      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
       opacity: 0;
     }
     to {
-      transform: none;
+      -webkit-transform: none;
+              transform: none;
       opacity: 1;
     }
   }
