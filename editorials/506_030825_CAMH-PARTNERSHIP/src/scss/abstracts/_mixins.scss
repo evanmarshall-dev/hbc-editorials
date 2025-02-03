@@ -1,0 +1,158 @@
+// File: _mixins.scss
+
+/* -----------------------------------------------
+ * MEDIA QUERY MIXINS
+----------------------------------------------- */
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+/* -----------------------------------------------
+ * POSITIONING MIXINS
+----------------------------------------------- */
+@mixin center($position) {
+  position: absolute;
+  @if $position == 'vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  } @else if $position == 'horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  } @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+// How to use in styles:
+// .foo {
+//   @include center(both);
+// }
+// ! Make sure parent is position:relative;
+
+/* -----------------------------------------------
+ * BACKGROUND IMAGE MIXINS
+----------------------------------------------- */
+@mixin bgImage(
+  $bgColor,
+  $bgPageDate,
+  $bgImgTitle,
+  $bgScreenType,
+  $bgSize,
+  $bgImgWidth,
+  $bgImgHeight
+) {
+  background-color: $bgColor;
+  background-image: url('https://image.s5a.com/is/image/TheBay/' + $bgPageDate + '_' + $bgImgTitle + '_' + $bgScreenType + '?scl=1&qlt=100&fmt=webp');
+  background-size: $bgSize;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 0;
+  padding-top: calc($bgImgWidth / $bgImgHeight * 100%);
+}
+
+/* -----------------------------------------------
+ * FLEXBOX MIXINS
+----------------------------------------------- */
+@mixin flex(
+  $fDirection: null,
+  $fWrap: null,
+  $fAlignItems: null,
+  $fJustContent: null
+) {
+  display: flex;
+  flex-direction: $fDirection;
+  flex-wrap: $fWrap;
+  align-items: $fAlignItems;
+  justify-content: $fJustContent;
+}
+
+/* -----------------------------------------------
+ * FONT MIXINS
+----------------------------------------------- */
+@mixin font(
+  $fFamily: null,
+  $fWeight: null,
+  $fStyle: null,
+  $flHeight: null,
+  $tTransform: null,
+  $fSize: null
+) {
+  font-family: $fFamily;
+  font-weight: $fWeight;
+  font-style: $fStyle;
+  line-height: $flHeight;
+  text-transform: $tTransform;
+  font-size: $fSize;
+}
+
+/* -----------------------------------------------
+ * HORIZONTAL RULE MIXINS
+----------------------------------------------- */
+@mixin hLine($hbRadius, $hbWidth, $hbStyle, $hbColor, $hWidth, $hMargin) {
+  border-top-radius: $hbRadius;
+  border-top-width: $hbWidth;
+  border-top-style: $hbStyle;
+  border-top-color: $hbColor;
+  width: $hWidth;
+  margin: $hMargin;
+}
+
+/* -----------------------------------------------
+ * LINK MIXINS
+----------------------------------------------- */
+@mixin link(
+  $lWidth: null,
+  $lPadding: null,
+  $lbRadius: null,
+  $lBorder: null,
+  $lTextDeco: null,
+  $lTransition: null,
+  $lHoverTextDeco: null,
+  $lHoverBorder: null,
+  $lHoverColor: null,
+  $lHoverBG: null
+) {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $lWidth;
+  padding: $lPadding;
+  border-radius: $lbRadius;
+  border: $lBorder;
+  text-decoration: $lTextDeco;
+  transition: $lTransition;
+
+  #{$a-tags-hover} {
+    text-decoration: $lHoverTextDeco;
+    border: $lHoverBorder;
+    color: $lHoverColor;
+    background-color: $lHoverBG;
+  }
+
+  &:focus {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border: 1px solid blue;
+  }
+}
