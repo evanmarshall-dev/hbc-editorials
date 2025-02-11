@@ -7,26 +7,146 @@
  * And in a Sass-way BIND them.
  --------------------------------------------- */
 
-@import 'abstracts/variables';
+// @import 'abstracts/variables';
 // @import 'abstracts/functions';
-@import 'abstracts/mixins';
+// @import 'abstracts/mixins';
 
-@import 'base/sfcc-resets';
+// @import 'base/sfcc-resets';
 // @import 'base/utilities';
 
 // @import 'components/images';
 // @import 'components/icons';
-@import 'components/links';
+@import 'components/stores';
 @import 'components/lists';
 // @import 'components/buttons';
 // @import 'components/type';
 // @import "components/modals";
 // @import 'components/widgets';
 
-@import 'layout/sections';
+// @import 'layout/sections';
 // @import 'layout/navigation';
 // @import 'layout/cards';
-// @import "layout/heros";
+// @import "layout/heroes";
 // @import "layout/footers";
 // @import 'layout/banners';
 // @import 'layout/accordions';
+
+p {
+  margin: 0 !important;
+}
+
+svg {
+  margin-right: 0.5rem !important;
+}
+
+.ed-wrapper {
+  &--main {
+    padding: 3rem 2rem;
+  }
+}
+
+.ed-container {
+  &--regular {
+    padding: 3rem 0;
+  }
+
+  &--three-col {
+    display: block;
+
+    @media (min-width: 768px) {
+      padding: 0 0 4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &--zellers {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+}
+
+.ed-headline {
+  &--large {
+    font-family:
+      Neue Montreal bold,
+      proxima-nova-bold,
+      Helvetica Neue,
+      sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0%;
+    margin-bottom: 2rem !important;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &--small {
+    font-family:
+      Neue Montreal bold,
+      proxima-nova-bold,
+      Helvetica Neue,
+      sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0%;
+  }
+}
+
+.ed-body {
+  &--large {
+    font-family:
+      Neue Montreal medium,
+      proxima-nova,
+      Helvetica Neue,
+      san-serif;
+    font-size: 1rem !important;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    margin-top: 0 !important;
+  }
+}
+
+.ed-link {
+  &--large {
+    font-family:
+      Neue Montreal medium,
+      proxima-nova-semibold,
+      Helvetica Neue,
+      san-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: +2%;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &--cta {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 0;
+    border: none;
+    transition: background-color 0.25s ease;
+    margin-top: 1.25rem;
+    background-color: #f7f7f7;
+
+    &:hover,
+    &:focus {
+      background-color: #eaeaea;
+      border: none;
+      text-decoration: none;
+    }
+  }
+}

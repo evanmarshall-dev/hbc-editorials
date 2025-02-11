@@ -1,0 +1,31 @@
+.ed-stores {
+  &--address {
+    padding-right: 0;
+
+    @media (min-width: 768px) {
+      padding-right: 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% / 3);
+    }
+  }
+
+  &--hours {
+    @media (min-width: 1024px) {
+      width: calc(100% / 3);
+    }
+  }
+
+  &--map {
+    padding-top: 1.5rem;
+
+    @media (min-width: 768px) {
+      padding-top: 0;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% / 3);
+    }
+  }
+}
