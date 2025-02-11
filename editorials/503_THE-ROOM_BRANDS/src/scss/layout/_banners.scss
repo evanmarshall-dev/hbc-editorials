@@ -1,0 +1,58 @@
+// File: _banners.scss
+
+/* -----------------------------------------------
+ * HBC BANNERS STYLES
+----------------------------------------------- */
+.ed {
+  &-banner {
+    width: 100%;
+    position: relative;
+
+    // TODO: Incorporate logo padding into inline utilities.
+    &__logo {
+      padding: 1.5rem 0 1.5rem;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      // border-radius: 50%;
+      width: 100%;
+
+      @include respond-to(medium) {
+        padding: 0 0 1.5rem;
+        width: 45%;
+      }
+    }
+
+    &__wrapper {
+      &--outer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      &--inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        // img {
+        //   max-width: 100%;
+        //   width: 100%;
+        //   height: auto;
+        // }
+
+        @include respond-to(medium) {
+          width: 50%;
+
+          &:nth-child(2) {
+            display: flex;
+            padding: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

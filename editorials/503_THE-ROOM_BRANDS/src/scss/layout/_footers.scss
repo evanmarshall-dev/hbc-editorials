@@ -1,0 +1,26 @@
+// File: _footer.scss
+
+/* -----------------------------------------------
+ * HBC FOOTER STYLES
+----------------------------------------------- */
+
+.hbc-ed {
+  &-footer {
+    &__copy {
+      @include center(both);
+
+      text-align: center;
+      width: calc(100% - 10rem);
+      color: rgba(255, 255, 255, 1);
+
+      @include respond-to(small) {
+        width: calc(100% - 8rem);
+      }
+
+      @include respond-to(large) {
+        padding: 0 2rem;
+        // width: calc(100% - 8rem);
+      }
+    }
+  }
+}

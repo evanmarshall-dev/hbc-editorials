@@ -1,0 +1,23 @@
+// File: _navigation.scss
+
+/* -----------------------------------------------
+ * HBC NAVIGATION/MENU/TABS STYLES
+----------------------------------------------- */
+
+.ed {
+  &-nav {
+    &--tabs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-wrap: nowrap;
+      overflow: auto;
+      width: fit-content;
+      margin: auto;
+      max-width: 100%;
+      // width: 100%;
+      padding-left: 1rem;
+    }
+  }
+}
