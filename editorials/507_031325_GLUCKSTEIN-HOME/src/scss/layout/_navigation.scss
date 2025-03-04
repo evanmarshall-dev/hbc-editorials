@@ -1,0 +1,33 @@
+// File: _navigation.scss
+
+/* -----------------------------------------------
+ * HBC NAVIGATION/MENU/TABS STYLES
+----------------------------------------------- */
+
+.ed {
+  &-nav {
+    &--tabs {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+
+      @include respond-to(medium) {
+        display: flex;
+      }
+
+      & > * {
+        flex: 1;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 22px 0;
+      }
+    }
+  }
+}
+
+.ed-active {
+  color: $hbc-white;
+  text-decoration: none;
+  border: none;
+  background-color: darken($color: $hbc-grey, $amount: 30%);
+}

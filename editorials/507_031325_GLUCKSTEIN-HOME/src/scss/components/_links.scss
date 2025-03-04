@@ -1,0 +1,148 @@
+// File: _links.scss
+
+/* -----------------------------------------------
+ * HBC CTA/LINK STYLES
+----------------------------------------------- */
+.ed {
+  // &-link {
+  //   &--regular {
+  //     @include link(
+  //       100%,
+  //       0.75rem 0,
+  //       null,
+  //       none,
+  //       none,
+  //       background-color 0.25s ease,
+  //       none,
+  //       none,
+  //       $hbc-black,
+  //       darken($color: $hbc-grey, $amount: 5%)
+  //     );
+  //   }
+
+  //   &--underline {
+  //     cursor: pointer;
+  //     text-decoration: none;
+
+  //     &:hover,
+  //     &:active {
+  //       text-decoration: underline;
+  //       color: darken($color: $bd-red, $amount: 20%);
+  //     }
+
+  //     &:focus {
+  //       outline: 2px solid blue;
+  //     }
+  //   }
+
+  //   &--full {
+  //     @include link(
+  //       100%,
+  //       0.3rem 0,
+  //       null,
+  //       none,
+  //       none,
+  //       background-color 0.25s ease,
+  //       none,
+  //       none,
+  //       $hbc-white,
+  //       darken($color: $bd-red, $amount: 20%)
+  //     );
+
+  //     &-dark {
+  //       @include link(
+  //         100%,
+  //         0.3rem 0,
+  //         null,
+  //         none,
+  //         none,
+  //         background-color 0.25s ease,
+  //         none,
+  //         none,
+  //         $hbc-white,
+  //         lighten($color: $hbc-black, $amount: 20%)
+  //       );
+
+  //       @include respond-to(medium) {
+  //         display: block;
+  //         margin: 0 auto;
+  //         width: calc(100% / 3);
+  //       }
+  //     }
+  //   }
+
+  //   &--card {
+  //     position: relative;
+  //   }
+  // }
+
+  &-button {
+    // &--btt {
+    //   opacity: 0;
+    //   position: fixed;
+    //   bottom: -3.125rem;
+    //   right: 1.25rem;
+    //   border: none;
+    //   border-radius: 50%;
+    //   width: 2.5rem;
+    //   height: 2.5rem;
+    //   font-size: 1.5rem;
+    //   cursor: pointer;
+    //   transition:
+    //     background-color 0.25s ease,
+    //     opacity 0.25s ease;
+    //   z-index: 1000;
+
+    //   &.show {
+    //     opacity: 1;
+    //     bottom: 1.25rem;
+    //   }
+
+    //   #{$a-tags-hover} {
+    //     background-color: lighten($color: $hbc-black, $amount: 20%);
+    //   }
+
+    //   &:focus {
+    //     outline: 2px solid blue;
+    //   }
+    // }
+
+    &--tab {
+      color: $hbc-black;
+      background-color: $hbc-grey;
+      border: none;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1.875rem;
+      margin-right: 1.25rem;
+      margin-top: 1rem;
+      border-radius: 0.125rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+      width: 100%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      #{$a-tags-hover} {
+        text-decoration: none;
+        border: none;
+        color: $hbc-white;
+        background-color: darken($color: $hbc-grey, $amount: 30%);
+      }
+
+      &:focus {
+        outline: 2px solid blue;
+      }
+
+      @include respond-to(medium) {
+        margin-top: 0;
+        width: calc(100% / 3);
+      }
+    }
+  }
+}

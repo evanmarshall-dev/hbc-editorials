@@ -1,0 +1,351 @@
+// File: _utilities.scss
+
+/* -----------------------------------------------
+ * HBC UTILITY CLASSES
+----------------------------------------------- */
+
+.ed {
+  // Font Utilities
+  &-util {
+    &--italic {
+      font-style: italic;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+
+    &--normal {
+      font-weight: 400;
+    }
+
+    &--light {
+      font-weight: 200;
+    }
+
+    &--sans {
+      font-family: $hbc-sans-default;
+    }
+
+    &--sans-bold {
+      font-family: $hbc-sans-bold;
+    }
+
+    &--sans-medium {
+      font-family: $hbc-sans-medium;
+    }
+
+    // &--serif {
+    //   font-family: $hbc-serif;
+    // }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+
+    &--superscript {
+      vertical-align: super;
+      font-size: 50%;
+    }
+  }
+
+  // Display Utilities
+  &-util {
+    &--d-desktop {
+      display: none;
+
+      @include respond-to(medium) {
+        display: block;
+      }
+    }
+
+    &--d-mobile {
+      display: block;
+
+      @include respond-to(medium) {
+        display: none;
+      }
+    }
+  }
+
+  // Width Utilities
+  &-util {
+    &--w-full {
+      width: 100%;
+    }
+
+    &--w-half {
+      width: 50%;
+    }
+
+    &--w-third {
+      width: 33.333333%;
+    }
+
+    &--w-quarter {
+      width: 25%;
+    }
+
+    &--w-fifth {
+      width: 20%;
+    }
+
+    &--w-sixth {
+      width: 16.666667%;
+    }
+
+    &--w-seventh {
+      width: 14.285714%;
+    }
+
+    &--w-eighth {
+      width: 12.5%;
+    }
+
+    &--w-ninth {
+      width: 11.111111%;
+    }
+
+    &--w-tenth {
+      width: 10%;
+    }
+
+    &--w-eleventh {
+      width: 9.090909%;
+    }
+
+    &--w-twelfth {
+      width: 8.333333%;
+    }
+  }
+
+  // Border Utilities
+  &-util {
+    &--b-all {
+      border: 0.125rem solid $hbc-yellow;
+    }
+
+    &--b-fat {
+      border: 1.875rem solid rgba(255, 255, 255, 1);
+    }
+
+    &--b-top {
+      border-top: 0.125rem solid $hbc-yellow;
+    }
+
+    &--b-bottom {
+      border-bottom: 0.1rem solid #bebebe;
+    }
+
+    &--b-left {
+      border-left: 0.125rem solid $hbc-yellow;
+    }
+
+    &--b-right {
+      border-right: 0.125rem solid $hbc-yellow;
+    }
+  }
+
+  // Color Utilities
+  &-util {
+    &--t-green {
+      color: $hbc-green;
+    }
+
+    &--t-red {
+      color: $hbc-red;
+    }
+
+    &--t-yellow {
+      color: $hbc-yellow;
+    }
+
+    &--t-blue {
+      color: $hbc-blue;
+    }
+
+    &--t-black {
+      color: $hbc-black;
+    }
+
+    &--t-white {
+      color: $hbc-white;
+    }
+
+    &--t-grey {
+      color: $hbc-grey;
+    }
+
+    &--t-beige {
+      color: $spring-wood;
+    }
+
+    &--t-bay-days-red {
+      color: $bd-red;
+    }
+
+    &--t-bay-days-sand {
+      color: $bd-sand;
+    }
+
+    &--bg-green {
+      background-color: $hbc-green;
+    }
+
+    &--bg-red {
+      color: $hbc-red;
+    }
+
+    &--bg-yellow {
+      background-color: $hbc-yellow;
+    }
+
+    &--bg-blue {
+      background-color: $hbc-blue;
+    }
+
+    &--bg-black {
+      background-color: $hbc-black;
+    }
+
+    &--bg-white {
+      background-color: $hbc-white;
+    }
+
+    &--bg-grey {
+      background-color: $hbc-grey;
+    }
+
+    &--bg-clear {
+      background-color: transparent;
+    }
+
+    &--bg-beige {
+      background-color: $spring-wood;
+    }
+
+    &--bg-bay-days-red {
+      background-color: $bd-red;
+    }
+
+    &--bg-bay-days-sand {
+      background-color: $bd-sand;
+    }
+  }
+
+  // Flex Utilities
+  &-util {
+    &--flexible {
+      flex-grow: 1;
+    }
+  }
+}
+
+// Text Alignment Utilities
+$textAlignments: ('left', 'right', 'center', 'revert');
+
+@each $textAlign in $textAlignments {
+  .ed-util-text-#{$textAlign} {
+    text-align: #{$textAlign};
+  }
+}
+
+// Spacing Utility
+$space-stops: (
+  '-0': 0,
+  '-pnt25': 0.25rem,
+  '-pnt5': 0.5rem,
+  '-pnt75': 0.75rem,
+  '-1': 1rem,
+  '-1pnt25': 1.25rem,
+  '-1pnt5': 1.5rem,
+  '-1pnt75': 1.75rem,
+  '-2': 2rem,
+  '-2pnt25': 2.25rem,
+  '-2pnt5': 2.5rem,
+  '-3': 3rem,
+  '-3pnt25': 3.25rem,
+  '-3pnt5': 3.5rem,
+);
+
+@mixin finite-spacing-utils($bp: '') {
+  @each $key, $val in $space-stops {
+    .ed-util-p-#{$key}#{$bp} {
+      padding: #{$val} !important;
+    }
+    .ed-util-pt-#{$key}#{$bp} {
+      padding-top: #{$val} !important;
+    }
+    .ed-util-pr-#{$key}#{$bp} {
+      padding-right: #{$val} !important;
+    }
+    .ed-util-pb-#{$key}#{$bp} {
+      padding-bottom: #{$val} !important;
+    }
+    .ed-util-pl-#{$key}#{$bp} {
+      padding-left: #{$val} !important;
+    }
+    .ed-util-px-#{$key}#{$bp} {
+      padding-right: #{$val} !important;
+      padding-left: #{$val} !important;
+    }
+    .ed-util-py-#{$key}#{$bp} {
+      padding-top: #{$val} !important;
+      padding-bottom: #{$val} !important;
+    }
+
+    .ed-util-m-#{$key}#{$bp} {
+      margin: #{$val} !important;
+    }
+    .ed-util-mt-#{$key}#{$bp} {
+      margin-top: #{$val} !important;
+    }
+    .ed-util-mr-#{$key}#{$bp} {
+      margin-right: #{$val} !important;
+    }
+    .ed-util-mb-#{$key}#{$bp} {
+      margin-bottom: #{$val} !important;
+    }
+    .ed-util-ml-#{$key}#{$bp} {
+      margin-left: #{$val} !important;
+    }
+    .ed-util-mx-#{$key}#{$bp} {
+      margin-right: #{$val} !important;
+      margin-left: #{$val} !important;
+    }
+    .ed-util-my-#{$key}#{$bp} {
+      margin-top: #{$val} !important;
+      margin-bottom: #{$val} !important;
+    }
+  }
+}
+
+@include finite-spacing-utils;
+
+@include respond-to(xxsmall) {
+  @include finite-spacing-utils($bp: '--xxsm');
+}
+
+@include respond-to(xsmall) {
+  @include finite-spacing-utils($bp: '--xsm');
+}
+
+@include respond-to(small) {
+  @include finite-spacing-utils($bp: '--sm');
+}
+
+@include respond-to(medium) {
+  @include finite-spacing-utils($bp: '--md');
+}
+
+@include respond-to(large) {
+  @include finite-spacing-utils($bp: '--lg');
+}
+
+@include respond-to(xlarge) {
+  @include finite-spacing-utils($bp: '--xlg');
+}
+
+@include respond-to(xxlarge) {
+  @include finite-spacing-utils($bp: '--xxlg');
+}
