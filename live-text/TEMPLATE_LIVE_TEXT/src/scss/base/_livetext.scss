@@ -50,6 +50,16 @@
     }
   }
 
+  &-label {
+    &--large {
+      font-family: 'Neue Montreal Medium', proxima-nova-semibold,
+        'Helvetica Neue', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
   &-body {
     &--large {
       font-family: 'Neue Montreal', proxima-nova, 'Helvetica Neue', sans-serif;
