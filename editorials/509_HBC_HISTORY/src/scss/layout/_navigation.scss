@@ -5,9 +5,28 @@
 ----------------------------------------------- */
 
 .ed {
+  &-overlay {
+    &--dark {
+      opacity: 0.6;
+      background: #000;
+      height: 100%;
+      position: absolute;
+      // top: 149px;
+      // top: 0;
+      transition: all 0.7s ease;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
   &-article {
     &-history {
+      background: #1d1d1d;
       margin-bottom: 7.5vw;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
 
       &__date {
         opacity: 1;
@@ -31,12 +50,12 @@
             text-transform: uppercase;
             color: #fff;
             font-weight: 600;
-            margin: 0;
-            padding: 0;
+            // margin: 0;
+            // padding: 0;
 
-            [tabindex='-1'] {
-              outline: none;
-            }
+            // [tabindex='-1'] {
+            //   outline: none;
+            // }
           }
 
           a {
@@ -70,19 +89,19 @@
         left: 15%;
         position: relative;
         transition: transform 0.1s;
-        width: 77%;
+        // width: 77%;
 
-        &--blank {
-          height: 1105px;
-          transform: translate3d(0px, -0.0665%, 0px);
-          top: 0;
-          position: absolute;
-          transition: transform 0.2s;
-          width: 100%;
-        }
+        // &--blank {
+        // height: 1105px;
+        // transform: translate3d(0px, -0.0665%, 0px);
+        // top: 0;
+        // position: absolute;
+        // transition: transform 0.2s;
+        // width: 100%;
+        // }
 
         &--content {
-          transform: translate3d(0px, 0%, 0px);
+          // transform: translate3d(0px, 0%, 0px);
           overflow: hidden;
           position: absolute;
           transition: transform 0.2s;
@@ -90,9 +109,9 @@
           left: 21.875%;
 
           img {
-            max-width: unset !important;
-            height: unset !important;
-            vertical-align: unset !important;
+            // max-width: unset !important;
+            // height: unset !important;
+            // vertical-align: unset !important;
           }
         }
       }
@@ -133,8 +152,8 @@
 
       ul {
         list-style: none;
-        margin: 0;
-        padding: 0;
+        // margin: 0;
+        // padding: 0;
 
         li {
           padding: 0;
@@ -185,46 +204,7 @@ header {
     letter-spacing: normal;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
-  header {
-    padding-left: 55px;
-  }
-  nav {
-    position: fixed;
-    left: -250px;
-
-    &.active {
-      left: 0;
-      #overlay {
-        left: 250px;
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-    #overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      visibility: hidden;
-      opacity: 0;
-      transition:
-        left 0.3s ease-in-out,
-        opacity 0.3s ease-in-out;
-    }
+    // margin: 0;
+    // padding: 0;
   }
 }
