@@ -20,53 +20,24 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <title>The Hudson's Bay Heritage | The Bay Canada</title>
+    <title>HBC History | The Bay Canada</title>
   </head>
   <div class="cat-landing">
     <div class="secondary-content">
       <div class="home-slots">
         <body style="margin: 0">
           <div class="ed-wrapper--main">
-            <nav role="navigation" class="ed-nav--sidebar">
-              <ul>
-                <li>
-                  <a
-                    class="selected"
-                    tabindex="0"
-                    role="button"
-                    aria-current="true"
-                    href="#"
-                    ><span>1883</span></a
-                  >
-                </li>
-                <li>
-                  <a tabindex="0" role="button" href="#"><span>1923</span></a>
-                </li>
-                <li>
-                  <a tabindex="0" role="button" href="#"><span>1969</span></a>
-                </li>
-                <li>
-                  <a tabindex="0" role="button" href="#"><span>1999</span></a>
-                </li>
-                <li>
-                  <a tabindex="0" role="button" href="#"><span>2001</span></a>
-                </li>
-                <li>
-                  <a tabindex="0" role="button" href="#"><span>2024</span></a>
-                </li>
-              </ul>
-            </nav>
-            <header>
+            <header class="ed-header">
               <svg
+                class="ed-icon"
                 id="a"
                 xmlns="http://www.w3.org/2000/svg"
-                width="10%"
-                height="78.53"
                 role="img"
-                aria-labelledby="title21 desc21"
+                height="78.53"
+                aria-labelledby="title1 desc1"
               >
-                <title id="title21">Hudson's Bay Stripes</title>
-                <desc id="desc21">
+                <title id="title1">Hudson's Bay Stripes</title>
+                <desc id="desc1">
                   Four full width stripes in the Hudson's Bay colours of red,
                   blue, green and yellow.
                 </desc>
@@ -93,80 +64,283 @@
                 />
                 <rect id="e" width="100%" height="13.88" fill="#00704a" />
               </svg>
-              <h1>Our Heritage Timeline</h1>
+              <h1 class="ed-display--medium">HBC History</h1>
             </header>
-            <article class="ed-article-history">
-              <div class="ed-article-container">
-                <div class="ed-article-history__date">
-                  <div class="ed-article-history__date--wrapper">
-                    <h2 tabindex="-1">1883</h2>
-                    <a href="#" title="Discover 1883"><span>Discover</span></a>
-                  </div>
-                </div>
-                <div class="ed-article-history__image">
-                  <div class="ed-article-history__image--blank">
-                    <div class="ed-article-history__image--content">
-                      <div class="ed-overlay--dark"></div>
-                      <picture>
-                        <source
-                          srcset="
-                            https://image.s5a.com/is/image/TheBay/507_031325_BRAND-LANDING-PAGE_GLUCKSTEINHOME_PRODUCT-CAROUSEL_1_MOBILE?scl=1&qlt=72&fmt=webp
-                          "
-                          media="(max-width:768px)"
-                        />
-                        <source
-                          srcset="
-                            https://image.s5a.com/is/image/TheBay/507_031325_BRAND-LANDING-PAGE_GLUCKSTEINHOME_PRODUCT-CAROUSEL_1_DESKTOP?scl=1&qlt=72&fmt=webp
-                          "
-                          media="(min-width: 769px) and (max-width: 1024px)"
-                        />
-                        <img
-                          src="https://image.s5a.com/is/image/TheBay/507_031325_BRAND-LANDING-PAGE_GLUCKSTEINHOME_PRODUCT-CAROUSEL_1_DESKTOP?scl=1&qlt=75&fmt=webp"
-                          alt=""
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="ed-article-history">
-              <div class="ed-article-container">
-                <div class="ed-article-history__date">
-                  <div class="ed-article-history__date--wrapper">
-                    <h2 tabindex="-1">1883</h2>
-                    <a href="#" title="Discover 1883"><span>Discover</span></a>
-                  </div>
-                </div>
-                <div class="ed-article-history__image">
-                  <div class="ed-article-history__image--blank">
-                    <div class="ed-article-history__image--content">
-                      <picture>
-                        <source
-                          srcset="
-                            https://image.s5a.com/is/image/TheBay/507_031325_BRAND-LANDING-PAGE_GLUCKSTEINHOME_PRODUCT-CAROUSEL_1_MOBILE?scl=1&qlt=72&fmt=webp
-                          "
-                          media="(max-width:768px)"
-                        />
-                        <source
-                          srcset="
-                            https://image.s5a.com/is/image/TheBay/507_031325_BRAND-LANDING-PAGE_GLUCKSTEINHOME_PRODUCT-CAROUSEL_1_DESKTOP?scl=1&qlt=72&fmt=webp
-                          "
-                          media="(min-width: 769px) and (max-width: 1024px)"
-                        />
-                        <img
-                          src="https://image.s5a.com/is/image/TheBay/507_031325_BRAND-LANDING-PAGE_GLUCKSTEINHOME_PRODUCT-CAROUSEL_1_DESKTOP?scl=1&qlt=75&fmt=webp"
-                          alt=""
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
 
-          <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+            <hr class="ed-line--light" />
+
+            <nav role="navigation" class="ed-nav__sidebar">
+              <ul>
+                <li>
+                  <a
+                    class="ed-nav__sidebar-link"
+                    tabindex="0"
+                    role="button"
+                    href="#article-1600"
+                    data-target="#article-1600"
+                    >1600</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="ed-nav__sidebar-link"
+                    tabindex="0"
+                    role="button"
+                    href="#article-1610"
+                    data-target="#article-1610"
+                    >1610</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="ed-nav__sidebar-link"
+                    tabindex="0"
+                    role="button"
+                    href="#article-1659"
+                    data-target="#article-1659"
+                    >1659</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="ed-nav__sidebar-link"
+                    tabindex="0"
+                    role="button"
+                    href="#article-1660"
+                    data-target="#article-1660"
+                    >1660</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="ed-nav__sidebar-link"
+                    tabindex="0"
+                    role="button"
+                    href="#article-1665"
+                    data-target="#article-1665"
+                    >1665</a
+                  >
+                </li>
+
+                <!-- TODO: Update href, data-target, and text. -->
+                <li>
+                  <a
+                    class="ed-nav__sidebar-link"
+                    tabindex="0"
+                    role="button"
+                    href="#article-1668"
+                    data-target="#article-1668"
+                    >1668</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="ed-wrapper--article">
+              <article id="article-1600" class="ed-article ed-article--short">
+                <!-- <div class="ed-article__container"> -->
+                <!-- <div class="ed-overlay--dark"></div> -->
+                <!-- <div class="ed-article__container-overlay"> -->
+                <h2 class="ed-headline--medium">1600</h2>
+                <p class="ed-body--large">
+                  Beaver hats are the height of fashion for men and women of
+                  wealth and power.
+                </p>
+                <a
+                  class="ed-link--large"
+                  href="#"
+                  title="Learn More 1600"
+                  data-target="#modal"
+                  >Learn More</a
+                >
+                <!-- </div> -->
+                <img
+                  class="ed-article__container-image"
+                  src="https://image.s5a.com/is/image/TheBay/508_200325_BEAVER-HAT_CASE-KOPLIMAE?scl=1&qlt=75&fmt=webp"
+                  alt=""
+                />
+                <!-- </div> -->
+              </article>
+
+              <article
+                id="article-1610"
+                class="ed-article ed-article--tall ed-article--wide"
+              >
+                <!-- <div class="ed-article__container"> -->
+                <!-- <div class="ed-overlay--dark"></div> -->
+                <!-- <div class="ed-article__container-overlay"> -->
+                <h2 class="ed-headline--medium">1610</h2>
+                <p class="ed-body--large">
+                  Henry Hudson searches for the Northwest Passage.
+                </p>
+                <a
+                  class="ed-link--large"
+                  href="#"
+                  title="Learn More 1610"
+                  data-target="#modal-1"
+                  >Learn More</a
+                >
+                <!-- </div> -->
+                <img
+                  class="ed-article__container-image"
+                  src="https://image.s5a.com/is/image/TheBay/508_200325_HENRY-HUDSON?scl=1&qlt=75&fmt=webp"
+                  alt=""
+                />
+                <!-- </div> -->
+              </article>
+
+              <article id="article-1659" class="ed-article ed-article--short">
+                <!-- <div class="ed-article__container"> -->
+                <!-- <div class="ed-overlay--dark"></div> -->
+                <!-- <div class="ed-article__container-overlay"> -->
+                <h2 class="ed-headline--medium">1659</h2>
+                <p class="ed-body--large">
+                  Radisson and des Groseilliers, voyageurs from New France, make
+                  a fur-trading journey to the land north of Lake Superior.
+                </p>
+                <a
+                  class="ed-link--large"
+                  href="#"
+                  title="Learn More 1659"
+                  data-target="#modal-2"
+                  >Learn More</a
+                >
+                <!-- </div> -->
+                <img
+                  class="ed-article__container-image"
+                  src="https://image.s5a.com/is/image/TheBay/508_200325_MAP_CANADA-NEW-FRANCE?scl=1&qlt=75&fmt=webp"
+                  alt=""
+                />
+                <!-- </div> -->
+              </article>
+
+              <article id="article-1660" class="ed-article ed-article--short">
+                <!-- <div class="ed-article__container"> -->
+                <!-- <div class="ed-overlay--dark"></div> -->
+                <!-- <div class="ed-article__container-overlay"> -->
+                <h2 class="ed-headline--medium">1660</h2>
+                <p class="ed-body--large">
+                  Radisson and des Groseilliers return to Montreal with a rich
+                  load of furs.
+                </p>
+                <a
+                  class="ed-link--large"
+                  href="#"
+                  title="Learn More 1660"
+                  data-target="#modal-3"
+                  >Learn More</a
+                >
+                <!-- </div> -->
+                <img
+                  class="ed-article__container-image"
+                  src="https://image.s5a.com/is/image/TheBay/508_200325_FREDERIC-REMINGTON-RADISSON_GROSEILLIERS?scl=1&qlt=75&fmt=webp"
+                  alt=""
+                />
+                <!-- </div> -->
+              </article>
+
+              <article id="article-1665" class="ed-article ed-article--short">
+                <!-- <div class="ed-article__container"> -->
+                <!-- <div class="ed-overlay--dark"></div> -->
+                <!-- <div class="ed-article__container-overlay"> -->
+                <h2 class="ed-headline--medium">1665</h2>
+                <p class="ed-body--large">
+                  Radisson and des Groseilliers travel to England to look for
+                  investors to back their business venture.
+                </p>
+                <a
+                  class="ed-link--large"
+                  href="#"
+                  title="Learn More 1665"
+                  data-target="#modal-4"
+                  >Learn More</a
+                >
+                <!-- </div> -->
+                <img
+                  class="ed-article__container-image"
+                  src="https://image.s5a.com/is/image/TheBay/508_200325_PRINCE-RUPERT?scl=1&qlt=75&fmt=webp"
+                  alt=""
+                />
+                <!-- </div> -->
+              </article>
+
+              <!-- TODO: Update article ID and class, h2, p, link title and data-target, and image. -->
+              <article
+                id="article-1668"
+                class="ed-article ed-article--tall ed-article--wide"
+              >
+                <!-- <div class="ed-article__container"> -->
+                <!-- <div class="ed-overlay--dark"></div> -->
+                <!-- <div class="ed-article__container-overlay"> -->
+                <h2 class="ed-headline--medium">1668</h2>
+                <p class="ed-body--large">
+                  Des Groseilliers aboard the 12-metre ship Nonsuch travels to
+                  James Bay.
+                </p>
+                <a
+                  class="ed-link--large"
+                  href="#"
+                  title="Learn More 1668"
+                  data-target="#modal-5"
+                  >Learn More</a
+                >
+                <!-- </div> -->
+                <img
+                  class="ed-article__container-image"
+                  src="https://image.s5a.com/is/image/TheBay/508_200325_WILKINSON-NOSUCH?scl=1&qlt=75&fmt=webp"
+                  alt=""
+                />
+                <!-- </div> -->
+              </article>
+            </div>
+
+            <div id="modal" class="ed-modal">
+              <div class="ed-modal__content">
+                <span class="ed-modal__content-close">&times;</span>
+                <p>Modal content goes here...</p>
+              </div>
+            </div>
+
+            <div id="modal-1" class="ed-modal">
+              <div class="ed-modal__content">
+                <span class="ed-modal__content-close">&times;</span>
+                <p>Modal 1 content goes here...</p>
+              </div>
+            </div>
+
+            <div id="modal-2" class="ed-modal">
+              <div class="ed-modal__content">
+                <span class="ed-modal__content-close">&times;</span>
+                <p>Modal 2 content goes here...</p>
+              </div>
+            </div>
+
+            <div id="modal-3" class="ed-modal">
+              <div class="ed-modal__content">
+                <span class="ed-modal__content-close">&times;</span>
+                <p>Modal 3 content goes here...</p>
+              </div>
+            </div>
+
+            <div id="modal-4" class="ed-modal">
+              <div class="ed-modal__content">
+                <span class="ed-modal__content-close">&times;</span>
+                <p>Modal 4 content goes here...</p>
+              </div>
+            </div>
+
+            <!-- TODO: Update modal ID, and p. -->
+            <div id="modal-5" class="ed-modal">
+              <div class="ed-modal__content">
+                <span class="ed-modal__content-close">&times;</span>
+                <p>Modal 5 content goes here...</p>
+              </div>
+            </div>
+          </div>
         </body>
       </div>
     </div>

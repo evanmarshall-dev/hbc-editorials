@@ -1,0 +1,295 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.ed {
+  &-wrapper {
+    &--main {
+      min-height: 100vh;
+      background-color: rgba($black, 0.95);
+      // background-color: #1d1d1d;
+    }
+
+    &--article {
+      max-width: 350px;
+      margin: 20px auto 0;
+      padding: 0 0 3rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      // Instead of grid template rows, when we do not know how many items we will have we use grid auto rows.
+      grid-auto-rows: 450px;
+      gap: 30px;
+
+      @include respond-to(medium) {
+        grid-template-columns: 1fr 1fr;
+        max-width: 650px;
+        margin: 40px auto 0;
+      }
+
+      @include respond-to(large) {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 950px;
+        margin: 60px auto 0;
+      }
+    }
+  }
+
+  &-display {
+    &--medium {
+      font-family: 'Ivy Presto Regular', adobe-caslon-pro, serif;
+      font-weight: 500;
+      font-size: 3.125rem;
+      color: #fff;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      line-height: 4rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-headline {
+    &--medium {
+      font-family: 'Neue Montreal Bold', proxima-nova-bold,
+        'Helvetica Neue Bold', sans-serif;
+      font-size: 4rem;
+      color: #fff;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      line-height: 4.5rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-body {
+    &--large {
+      font-family: 'Neue Montreal', proxima-nova, 'Helvetica Neue', sans-serif;
+      font-size: 1rem;
+      color: #fff;
+      line-height: 1.25rem;
+      letter-spacing: normal;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-link {
+    &--large {
+      font-family: 'Neue Montreal', proxima-nova, 'Helvetica Neue', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-decoration: underline;
+      color: #fff;
+      letter-spacing: normal;
+      margin: 1rem 0;
+      padding: 0;
+      text-underline-offset: 0.25rem;
+      display: inline-block;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  &-icon {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+
+    @include respond-to(medium) {
+      width: 20%;
+    }
+
+    @include respond-to(large) {
+      width: 10%;
+    }
+  }
+
+  &-line {
+    &--light {
+      width: 75%;
+      margin-bottom: 2rem;
+      margin-top: 0;
+    }
+  }
+
+  &-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+  &-article {
+    overflow: hidden;
+    background-color: rgba($hbc-black, 1);
+    border-radius: 6px;
+    border: 16px solid rgba($hbc-black, 1);
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
+
+    &--short {
+      // span one row for height.
+      grid-row: span 1;
+    }
+
+    &--tall {
+      grid-row: span 1;
+
+      @include respond-to(medium) {
+        grid-row: span 2;
+      }
+    }
+
+    &--wide {
+      grid-column: span 1;
+
+      @include respond-to(medium) {
+        grid-column: span 2;
+      }
+    }
+
+    &__container {
+      position: relative;
+      width: 40%; // Make the container smaller
+      margin: 0 auto; // Center the container horizontally
+
+      .ed-overlay--dark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        transition: background 0.3s ease; // Add transition for smooth effect
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.7); // Darken the overlay on hover
+        }
+      }
+
+      &-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+        color: #fff;
+      }
+
+      &-image {
+        // display: block;
+        min-width: 100%;
+        // width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-fit: fill;
+        object-fit: contain;
+        object-position: center top;
+      }
+    }
+  }
+
+  &-nav {
+    &__sidebar {
+      position: fixed;
+      text-align: center;
+      display: block;
+      opacity: 1;
+      top: calc(50% + 80px);
+      transform: translateY(-50%);
+      width: 15%;
+      transition: opacity 0.2s;
+      z-index: 2;
+
+      @include respond-to(medium) {
+        width: 20%;
+      }
+
+      // @include respond-to(large) {
+      //   width: 30%;
+      // }
+
+      &-link {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        padding-bottom: 1rem;
+        transition: color 0.3s;
+        font-family: 'Neue Montreal Medium', proxima-nova-semibold,
+          'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+        letter-spacing: normal;
+        text-underline-offset: 0.25rem;
+
+        &.active {
+          font-weight: bold;
+          color: $hbc-yellow; // Highlight color for active nav item
+        }
+
+        &:hover {
+          color: $hbc-yellow;
+        }
+      }
+
+      ul {
+        list-style: none;
+        // margin: 0;
+        // padding: 0;
+
+        li {
+          padding: 0;
+          height: 22px;
+          margin: 0 auto 9px;
+          text-align: center;
+          width: 37px;
+        }
+      }
+    }
+  }
+
+  &-modal {
+    display: none; // Hidden by default
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    &__content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      position: relative;
+
+      &-close {
+        color: #aaa;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        transform: translate(-2%, -2%);
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
