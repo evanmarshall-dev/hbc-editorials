@@ -11,24 +11,30 @@ html {
     }
 
     &--article {
-      max-width: 350px;
+      max-width: 400px;
       margin: 20px auto 0;
       padding: 0 0 3rem;
       display: grid;
       grid-template-columns: 1fr;
       // Instead of grid template rows, when we do not know how many items we will have we use grid auto rows.
-      grid-auto-rows: 550px;
+      grid-auto-rows: 600px;
       gap: 30px;
 
       @include respond-to(medium) {
         grid-template-columns: 1fr 1fr;
-        max-width: 650px;
+        max-width: 615px;
         margin: 40px auto 0;
       }
 
       @include respond-to(large) {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 950px;
+        max-width: 880px;
+        margin: 60px auto 0;
+      }
+
+      @include respond-to(xlarge) {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1080px;
         margin: 60px auto 0;
       }
     }
@@ -190,7 +196,7 @@ html {
       text-align: center;
       display: block;
       opacity: 1;
-      top: calc(50% + 80px);
+      top: 50%;
       transform: translateY(-50%);
       width: 15%;
       z-index: 2;
@@ -232,12 +238,12 @@ html {
       ul {
         list-style: none;
         // margin: 0;
-        // padding: 0;
+        // padding: 2% 0;
 
         li {
           padding: 0;
           height: 22px;
-          margin: 0 auto 9px;
+          margin: 0 0 9px 15%;
           text-align: center;
           width: 37px;
         }
