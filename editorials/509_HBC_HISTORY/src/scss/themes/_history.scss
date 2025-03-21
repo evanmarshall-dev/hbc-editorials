@@ -6,7 +6,7 @@ html {
   &-wrapper {
     &--main {
       min-height: 100vh;
-      background-color: rgba($black, 0.95);
+      background-color: rgba($hbc-beige, 1);
       // background-color: #1d1d1d;
     }
 
@@ -17,7 +17,7 @@ html {
       display: grid;
       grid-template-columns: 1fr;
       // Instead of grid template rows, when we do not know how many items we will have we use grid auto rows.
-      grid-auto-rows: 450px;
+      grid-auto-rows: 550px;
       gap: 30px;
 
       @include respond-to(medium) {
@@ -39,7 +39,7 @@ html {
       font-family: 'Ivy Presto Regular', adobe-caslon-pro, serif;
       font-weight: 500;
       font-size: 3.125rem;
-      color: #fff;
+      color: rgba($hbc-black, 1);
       letter-spacing: normal;
       text-transform: uppercase;
       line-height: 4rem;
@@ -53,7 +53,7 @@ html {
       font-family: 'Neue Montreal Bold', proxima-nova-bold,
         'Helvetica Neue Bold', sans-serif;
       font-size: 4rem;
-      color: #fff;
+      color: rgba($hbc-white, 1);
       letter-spacing: normal;
       text-transform: uppercase;
       line-height: 4.5rem;
@@ -65,7 +65,7 @@ html {
       font-family: 'Neue Montreal Bold', proxima-nova-bold,
         'Helvetica Neue Bold', sans-serif;
       font-size: 2rem;
-      color: #fff;
+      color: rgba($hbc-black, 1);
       letter-spacing: normal;
       text-transform: uppercase;
       line-height: 2rem;
@@ -78,7 +78,7 @@ html {
     &--large {
       font-family: 'Neue Montreal', proxima-nova, 'Helvetica Neue', sans-serif;
       font-size: 1rem;
-      color: #fff;
+      color: rgba($hbc-white, 0.85);
       line-height: 1.25rem;
       letter-spacing: normal;
       margin: 0;
@@ -92,7 +92,7 @@ html {
       font-size: 1rem;
       line-height: 1.5rem;
       text-decoration: underline;
-      color: #fff;
+      color: rgba($hbc-black, 1);
       letter-spacing: normal;
       margin: 1rem 0;
       padding: 0;
@@ -102,7 +102,7 @@ html {
       &:hover,
       &:focus {
         text-decoration: none;
-        color: #fff;
+        color: rgba($hbc-black, 1);
       }
     }
   }
@@ -136,10 +136,16 @@ html {
 
   &-article {
     overflow: hidden;
-    background-color: rgba($hbc-black, 1);
-    border-radius: 6px;
-    border: 16px solid rgba($hbc-black, 1);
-    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
+    background-color: rgba($hbc-blue, 1);
+    // border-radius: 6px;
+    border: 1rem solid rgba($hbc-blue, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    }
 
     &--short {
       // span one row for height.
@@ -160,6 +166,10 @@ html {
       @include respond-to(medium) {
         grid-column: span 2;
       }
+
+      // @include respond-to(large) {
+      //   grid-column: span 3;
+      // }
     }
 
     &__image {
@@ -184,8 +194,6 @@ html {
       transform: translateY(-50%);
       width: 15%;
       z-index: 2;
-      max-height: 60%;
-      overflow-y: scroll;
 
       // @include respond-to(medium) {
       //   width: 20%;
@@ -196,7 +204,7 @@ html {
       // }
 
       &-link {
-        color: #fff;
+        color: rgba($hbc-black, 1);
         cursor: pointer;
         text-decoration: none;
         padding-bottom: 1rem;
@@ -211,12 +219,13 @@ html {
 
         &.active {
           font-weight: bold;
-          color: $hbc-yellow; // Highlight color for active nav item
+          color: $hbc-red; // Highlight color for active nav item
           text-decoration: underline;
         }
 
         &:hover {
-          color: $hbc-yellow;
+          color: $hbc-red;
+          font-weight: bold;
         }
       }
 
