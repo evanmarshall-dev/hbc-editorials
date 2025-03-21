@@ -60,6 +60,18 @@ html {
       margin: 0;
       padding: 0;
     }
+
+    &--small {
+      font-family: 'Neue Montreal Bold', proxima-nova-bold,
+        'Helvetica Neue Bold', sans-serif;
+      font-size: 2rem;
+      color: #fff;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      line-height: 2rem;
+      margin: 0 0 1rem;
+      padding: 0;
+    }
   }
 
   &-body {
@@ -150,46 +162,15 @@ html {
       }
     }
 
-    &__container {
-      position: relative;
-      width: 40%; // Make the container smaller
-      margin: 0 auto; // Center the container horizontally
-
-      .ed-overlay--dark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        transition: background 0.3s ease; // Add transition for smooth effect
-
-        &:hover {
-          background: rgba(0, 0, 0, 0.7); // Darken the overlay on hover
-        }
-      }
-
-      &-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        text-align: center;
-        color: #fff;
-      }
-
-      &-image {
-        // display: block;
-        min-width: 100%;
-        // width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-fit: fill;
-        object-fit: contain;
-        object-position: center top;
-      }
+    &__image {
+      // display: block;
+      min-width: 100%;
+      // width: 100%;
+      height: 100%;
+      // object-fit: cover;
+      // object-fit: fill;
+      object-fit: contain;
+      object-position: center top;
     }
   }
 
@@ -202,12 +183,13 @@ html {
       top: calc(50% + 80px);
       transform: translateY(-50%);
       width: 15%;
-      transition: opacity 0.2s;
       z-index: 2;
+      max-height: 60%;
+      overflow-y: scroll;
 
-      @include respond-to(medium) {
-        width: 20%;
-      }
+      // @include respond-to(medium) {
+      //   width: 20%;
+      // }
 
       // @include respond-to(large) {
       //   width: 30%;
@@ -230,6 +212,7 @@ html {
         &.active {
           font-weight: bold;
           color: $hbc-yellow; // Highlight color for active nav item
+          text-decoration: underline;
         }
 
         &:hover {
@@ -265,7 +248,7 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
 
     &__content {
-      background-color: #fff;
+      background-color: rgba($hbc-black, 1);
       margin: 15% auto;
       padding: 20px;
       border-radius: 8px;
